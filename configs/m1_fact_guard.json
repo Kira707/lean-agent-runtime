@@ -1,0 +1,47 @@
+{
+  "agent": {
+    "model": "deepseek-v4.1-flash",
+    "provider": "openai",
+    "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+    "api_key_env": "ARK_AGENT_API_KEY",
+    "temperature": 0
+  },
+  "user": {
+    "model": "deepseek-v4.1-flash",
+    "provider": "openai",
+    "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+    "api_key_env": "ARK_USER_API_KEY",
+    "temperature": 0
+  },
+  "user_frozen_from": "M0",
+  "user_strategy": "llm",
+  "request_timeout_seconds": 60,
+  "max_output_tokens": 4096,
+  "concurrency": 1,
+  "trials": 3,
+  "cost_cap_cny": "9.5",
+  "prices": {
+    "basis": "user-specified DeepSeek off-peak equivalent; NOT Coding Plan billing",
+    "currency": "CNY",
+    "unit_tokens": 1000000,
+    "cached_input": "0.02",
+    "uncached_input": "1.00",
+    "output": "4.00"
+  },
+  "variant": "fact_guard",
+  "budget": {
+    "max_steps": 30,
+    "max_model_calls": 80,
+    "max_total_tokens": 400000,
+    "max_wall_seconds": 600
+  },
+  "max_retries": 2,
+  "retry_wait_seconds": 60,
+  "min_request_interval_seconds": 3,
+  "unknown_request_reserve_cny": 1,
+  "harness": {
+    "payment_fact_check": false,
+    "retail_fact_check": true,
+    "max_text_retries": 2
+  }
+}

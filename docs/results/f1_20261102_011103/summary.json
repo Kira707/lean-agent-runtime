@@ -1,0 +1,833 @@
+{
+  "metrics": {
+    "all_guards": {
+      "complete": true,
+      "planned": 150,
+      "completed": 150,
+      "successes": 131,
+      "per_task_successes": {
+        "retail/test/1": 3,
+        "retail/test/5": 3,
+        "retail/test/10": 3,
+        "retail/test/12": 3,
+        "retail/test/13": 3,
+        "retail/test/15": 2,
+        "retail/test/16": 3,
+        "retail/test/17": 3,
+        "retail/test/18": 0,
+        "retail/test/23": 3,
+        "retail/test/25": 3,
+        "retail/test/27": 3,
+        "retail/test/29": 3,
+        "retail/test/31": 2,
+        "retail/test/32": 3,
+        "retail/test/35": 3,
+        "retail/test/36": 3,
+        "retail/test/37": 3,
+        "retail/test/39": 2,
+        "retail/test/40": 3,
+        "retail/test/42": 3,
+        "retail/test/46": 2,
+        "retail/test/50": 3,
+        "retail/test/51": 3,
+        "retail/test/53": 3,
+        "retail/test/54": 2,
+        "retail/test/56": 3,
+        "retail/test/57": 3,
+        "retail/test/59": 1,
+        "retail/test/60": 3,
+        "retail/test/62": 3,
+        "retail/test/64": 1,
+        "retail/test/65": 3,
+        "retail/test/66": 2,
+        "retail/test/69": 3,
+        "retail/test/73": 3,
+        "retail/test/74": 1,
+        "retail/test/77": 3,
+        "retail/test/81": 3,
+        "retail/test/83": 3,
+        "retail/test/84": 3,
+        "retail/test/94": 3,
+        "retail/test/97": 3,
+        "retail/test/98": 3,
+        "retail/test/104": 3,
+        "retail/test/108": 0,
+        "retail/test/109": 3,
+        "retail/test/111": 3,
+        "retail/test/112": 3,
+        "retail/test/113": 2
+      },
+      "pass1": 0.8733333333333333,
+      "pass2": 0.8066666666666668,
+      "pass3": 0.76,
+      "estimated_cost_cny": 3.82055528,
+      "mean_steps": 12.206666666666667,
+      "budget_exceeded_runs": 0,
+      "p50_wall_ms": 56984.5,
+      "p95_wall_ms": 104469,
+      "wall_sample_count": 150
+    },
+    "baseline": {
+      "complete": true,
+      "planned": 150,
+      "completed": 150,
+      "successes": 125,
+      "per_task_successes": {
+        "retail/test/1": 3,
+        "retail/test/5": 1,
+        "retail/test/10": 3,
+        "retail/test/12": 3,
+        "retail/test/13": 3,
+        "retail/test/15": 2,
+        "retail/test/16": 3,
+        "retail/test/17": 3,
+        "retail/test/18": 0,
+        "retail/test/23": 3,
+        "retail/test/25": 3,
+        "retail/test/27": 3,
+        "retail/test/29": 3,
+        "retail/test/31": 3,
+        "retail/test/32": 2,
+        "retail/test/35": 3,
+        "retail/test/36": 2,
+        "retail/test/37": 3,
+        "retail/test/39": 2,
+        "retail/test/40": 3,
+        "retail/test/42": 3,
+        "retail/test/46": 2,
+        "retail/test/50": 3,
+        "retail/test/51": 3,
+        "retail/test/53": 3,
+        "retail/test/54": 0,
+        "retail/test/56": 3,
+        "retail/test/57": 3,
+        "retail/test/59": 0,
+        "retail/test/60": 3,
+        "retail/test/62": 3,
+        "retail/test/64": 2,
+        "retail/test/65": 3,
+        "retail/test/66": 2,
+        "retail/test/69": 3,
+        "retail/test/73": 3,
+        "retail/test/74": 1,
+        "retail/test/77": 3,
+        "retail/test/81": 3,
+        "retail/test/83": 3,
+        "retail/test/84": 3,
+        "retail/test/94": 3,
+        "retail/test/97": 3,
+        "retail/test/98": 2,
+        "retail/test/104": 3,
+        "retail/test/108": 0,
+        "retail/test/109": 3,
+        "retail/test/111": 2,
+        "retail/test/112": 3,
+        "retail/test/113": 3
+      },
+      "pass1": 0.8333333333333333,
+      "pass2": 0.76,
+      "pass3": 0.7,
+      "estimated_cost_cny": 3.6474766,
+      "mean_steps": 12.28,
+      "budget_exceeded_runs": 0,
+      "p50_wall_ms": 57086.0,
+      "p95_wall_ms": 105219,
+      "wall_sample_count": 150
+    },
+    "payment_guard": {
+      "complete": true,
+      "planned": 150,
+      "completed": 150,
+      "successes": 126,
+      "per_task_successes": {
+        "retail/test/1": 3,
+        "retail/test/5": 0,
+        "retail/test/10": 3,
+        "retail/test/12": 3,
+        "retail/test/13": 3,
+        "retail/test/15": 2,
+        "retail/test/16": 3,
+        "retail/test/17": 3,
+        "retail/test/18": 0,
+        "retail/test/23": 2,
+        "retail/test/25": 3,
+        "retail/test/27": 3,
+        "retail/test/29": 3,
+        "retail/test/31": 3,
+        "retail/test/32": 2,
+        "retail/test/35": 3,
+        "retail/test/36": 3,
+        "retail/test/37": 3,
+        "retail/test/39": 1,
+        "retail/test/40": 3,
+        "retail/test/42": 3,
+        "retail/test/46": 3,
+        "retail/test/50": 3,
+        "retail/test/51": 3,
+        "retail/test/53": 3,
+        "retail/test/54": 2,
+        "retail/test/56": 3,
+        "retail/test/57": 3,
+        "retail/test/59": 0,
+        "retail/test/60": 3,
+        "retail/test/62": 3,
+        "retail/test/64": 2,
+        "retail/test/65": 3,
+        "retail/test/66": 1,
+        "retail/test/69": 3,
+        "retail/test/73": 3,
+        "retail/test/74": 2,
+        "retail/test/77": 3,
+        "retail/test/81": 3,
+        "retail/test/83": 3,
+        "retail/test/84": 3,
+        "retail/test/94": 3,
+        "retail/test/97": 3,
+        "retail/test/98": 3,
+        "retail/test/104": 3,
+        "retail/test/108": 1,
+        "retail/test/109": 3,
+        "retail/test/111": 1,
+        "retail/test/112": 3,
+        "retail/test/113": 2
+      },
+      "pass1": 0.84,
+      "pass2": 0.7666666666666667,
+      "pass3": 0.72,
+      "estimated_cost_cny": null,
+      "mean_steps": 12.18,
+      "budget_exceeded_runs": 0,
+      "p50_wall_ms": 57687.5,
+      "p95_wall_ms": 101969,
+      "wall_sample_count": 150
+    }
+  },
+  "compliance": {
+    "all_guards": {
+      "error_runs": 0,
+      "error_events": 0,
+      "blocked_messages": 5,
+      "false_interceptions": 3,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 7,
+      "extra_steps": 7,
+      "retail_facts": {
+        "checked_claims": 1336,
+        "visible_checked_claims": 1319,
+        "error_events": 3,
+        "error_runs": 3,
+        "visible_error_events": 0,
+        "visible_error_runs": 0,
+        "kinds": {
+          "amount:charge": 1,
+          "amount:difference": 44,
+          "amount:direction": 90,
+          "amount:order_total": 18,
+          "amount:refund": 109,
+          "amount:total": 4,
+          "item_attribute:backlight": 4,
+          "item_attribute:backrest height": 7,
+          "item_attribute:bagged/bagless": 3,
+          "item_attribute:band material": 1,
+          "item_attribute:battery life": 7,
+          "item_attribute:brightness": 1,
+          "item_attribute:capacity": 1,
+          "item_attribute:color": 119,
+          "item_attribute:compatibility": 13,
+          "item_attribute:connectivity": 1,
+          "item_attribute:deck material": 11,
+          "item_attribute:design": 11,
+          "item_attribute:dial color": 6,
+          "item_attribute:difficulty level": 3,
+          "item_attribute:display": 1,
+          "item_attribute:features": 9,
+          "item_attribute:filter type": 3,
+          "item_attribute:frame size": 1,
+          "item_attribute:length": 15,
+          "item_attribute:material": 54,
+          "item_attribute:piece count": 9,
+          "item_attribute:pieces": 3,
+          "item_attribute:power source": 1,
+          "item_attribute:processor": 24,
+          "item_attribute:ram": 24,
+          "item_attribute:resolution": 2,
+          "item_attribute:room size": 3,
+          "item_attribute:screen size": 31,
+          "item_attribute:size": 29,
+          "item_attribute:storage": 40,
+          "item_attribute:strap material": 6,
+          "item_attribute:style": 2,
+          "item_attribute:switch type": 6,
+          "item_attribute:theme": 3,
+          "item_attribute:type": 14,
+          "item_attribute:ventilation": 2,
+          "item_attribute:water resistance": 14,
+          "item_attribute:waterproof": 6,
+          "item_attribute:zoom": 1,
+          "item_name": 128,
+          "item_price": 451
+        },
+        "scope": "Explicit uniquely bound claims only. Unparsed/ambiguous prose is unverified, not counted as correct."
+      },
+      "false_interception_examples": [
+        {
+          "run_id": "all_guards_r01_test_112",
+          "trace_path": "all_guards_r01_test_112/trace.jsonl",
+          "message_index": 23,
+          "verdict": "false",
+          "fact_verdicts": [
+            null
+          ],
+          "text": "Great — let me lay out the full plan for order **#W3730488** so you can confirm everything before I make any changes.\n\n**1. Shipping address change**\n- **From:** 116 Laurel Lane, Suite 319, Houston, TX 77159\n- **To:** 555 Highland Drive, Suite 872, New York, NY 10116\n\n**2. Laptop configuration change**\n- **From:** 15\", i9, 32GB, 512GB SSD, black — $2,701.89\n- **To (Option A):** 15\", **i5**, 32GB, **256GB SSD**, **space grey** — $2,520.52\n\nJust to be transparent about what stays the same: the **screen size (15\") and RAM (32GB)** are unchanged, but this option does change the **processor (i9→i5), storage (512GB→256GB), and color (black→space grey)**. The new item is **$181.37 cheaper**, so you'd receive a **$181.37 refund**.\n\nA couple of things I need from you:\n- **Refund method:** Your only payment method on file is a **gift card (gift_card_7252880)**. Can the $181.37 refund go to that gift card?\n- ⚠️ Please note: since the laptop is the **only item you're changing** (the espresso machine stays as-is), and **item modifications can only be done once**, this action will change the order status to **\"pending (items modified)\"** — after which no further changes or cancellation are possible. Please confirm you've given me **all the items** you want to modify.\n\nShall I proceed with both changes as described? Please reply **\"yes\"** to confirm.",
+          "problems": [
+            {
+              "kind": "amount:refund",
+              "claimed_value": "181.37",
+              "expected_value": "5657.06",
+              "verdict": "violation",
+              "source_message_index": 18,
+              "context": "- Refund method: Your only payment method on file is a gift card (gift_card_7252880). Can the $181.37 refund go to that gift card?"
+            }
+          ],
+          "mechanisms": [
+            "H2"
+          ],
+          "review": {
+            "verdict": "false",
+            "confidence": "high",
+            "reason": "M18 gives laptop SKU 2913673670 price 2701.89; M20 gives the selected Option A SKU 2216662955 price 2520.52. The refund 181.37 is their difference, correctly stated. 5657.06 is the entire order (espresso machine 2955.17 + laptop 2701.89), not the laptop modification refund. The text requests modification and says cancellation is unavailable; it does not propose cancellation.",
+            "source_message_indices": [
+              18,
+              20,
+              22,
+              23
+            ],
+            "independent_calculation": {
+              "old_item_id": "2913673670",
+              "new_item_id": "2216662955",
+              "old_price": "2701.89",
+              "new_price": "2520.52",
+              "refund": "181.37"
+            },
+            "diagnosis": "The frozen parser does not recognize To (Option A) as a replacement heading, then matches cancellation inside a prohibition and infers a whole-order cancellation. Recorded for evaluation only; no frozen code change."
+          }
+        },
+        {
+          "run_id": "all_guards_r03_test_032",
+          "trace_path": "fact_block_review.json",
+          "message_index": 35,
+          "verdict": "false",
+          "fact_verdicts": [
+            null
+          ],
+          "text": "I found the sneakers — order **#W7449508**:\n\n- **Item to return:** Sneakers (size 6, black, synthetic) — $186.45\n- **Order also contains:** Espresso Machine (this will not be returned)\n- **Status:** Delivered\n- **Original payment:** gift card (ending 7711863)\n\nFor a return, the refund can go to either your **original payment method** or an **existing gift card**. Your original payment was gift card 7711863, which is an existing gift card.\n\nCould you please confirm:\n1. That you'd like to return the **Sneakers** from order **#W7449508**, and\n2. The payment method to receive the $186.45 refund — **gift card 7711863** (original method)?",
+          "problems": [
+            {
+              "kind": "amount:refund",
+              "claimed_value": "186.45",
+              "expected_value": "3141.62",
+              "verdict": "violation",
+              "source_message_index": 28,
+              "context": "2. The payment method to receive the $186.45 refund — gift card 7711863 (original method)?"
+            }
+          ],
+          "mechanisms": [
+            "H2"
+          ],
+          "review": {
+            "verdict": "false",
+            "confidence": "high",
+            "reason": "M28 order #W7449508 has Sneakers SKU 6477915553 at 186.45 and an Espresso Machine at 2955.17. M34 requests only the sneaker return; M35 explicitly states that the espresso machine will not be returned. The stated sneaker refund 186.45 is correct; 3141.62 is the whole order total and is not the requested refund.",
+            "source_message_indices": [
+              28,
+              34,
+              35
+            ],
+            "independent_calculation": {
+              "return_item_id": "6477915553",
+              "return_price": "186.45",
+              "excluded_item_id": "6200867091",
+              "excluded_price": "2955.17",
+              "whole_order_total": "3141.62"
+            },
+            "diagnosis": "The frozen return-item parser includes the adjacent Order also contains line despite its explicit will not be returned clause. Recorded for evaluation only; no frozen code change."
+          }
+        },
+        {
+          "run_id": "all_guards_r03_test_046",
+          "trace_path": "fact_block_review.json",
+          "message_index": 17,
+          "verdict": "false",
+          "fact_verdicts": [
+            null
+          ],
+          "text": "Here are the details for the return:\n\n- **Order:** #W9502127 (delivered)\n- **Items to return:**\n  - Air Purifier — $473.43\n  - Vacuum Cleaner (robotic) — $652.61\n- **Total refund:** **$1,126.04**\n- **Refund method:** Your original payment method, PayPal (paypal_2433177)\n\nOne important note on timing: I can't guarantee the refund within 3 days. Refunds to your original PayPal method typically take **5–7 business days** to process. The only way to receive a refund immediately would be an existing gift card, but I don't see one on your account. So I'm unable to confirm a 3-day timeframe.\n\nWould you like me to proceed with the return to your PayPal method with the 5–7 business day refund timeline? Please confirm with a **yes** to proceed.",
+          "problems": [
+            {
+              "kind": "amount:refund",
+              "claimed_value": "1126.04",
+              "expected_value": "1748.16",
+              "verdict": "violation",
+              "source_message_index": 14,
+              "context": "- Total refund: $1,126.04"
+            }
+          ],
+          "mechanisms": [
+            "H2"
+          ],
+          "review": {
+            "verdict": "false",
+            "confidence": "high",
+            "reason": "M14 gives Air Purifier SKU 9534205511 at 473.43, canister vacuum SKU 2872451762 at 622.12 and robotic vacuum SKU 6259501109 at 652.61. M16 explicitly selects the robotic vacuum. M17 correctly states 473.43 + 652.61 = 1126.04. The alleged expected 1748.16 wrongly adds the unselected canister vacuum. This verdict concerns the claimed amount violation, not other unselected policy checks.",
+            "source_message_indices": [
+              14,
+              16,
+              17
+            ],
+            "independent_calculation": {
+              "selected_items": [
+                "9534205511",
+                "6259501109"
+              ],
+              "selected_prices": [
+                "473.43",
+                "652.61"
+              ],
+              "refund": "1126.04",
+              "excluded_item": "2872451762",
+              "excluded_price": "622.12"
+            },
+            "diagnosis": "Frozen return inference matches every order item sharing the selected product name and ignores the explicit robotic variant. Recorded for evaluation only; no frozen code change."
+          }
+        }
+      ]
+    },
+    "baseline": {
+      "error_runs": 4,
+      "error_events": 5,
+      "blocked_messages": 0,
+      "false_interceptions": 0,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 0,
+      "extra_steps": 0,
+      "retail_facts": {
+        "checked_claims": 1445,
+        "visible_checked_claims": 1445,
+        "error_events": 7,
+        "error_runs": 6,
+        "visible_error_events": 7,
+        "visible_error_runs": 6,
+        "kinds": {
+          "amount:difference": 42,
+          "amount:direction": 88,
+          "amount:order_total": 8,
+          "amount:refund": 110,
+          "amount:total": 10,
+          "item_attribute:backlight": 1,
+          "item_attribute:backrest height": 3,
+          "item_attribute:bagged/bagless": 6,
+          "item_attribute:band material": 2,
+          "item_attribute:battery life": 16,
+          "item_attribute:brightness": 3,
+          "item_attribute:capacity": 2,
+          "item_attribute:color": 133,
+          "item_attribute:compartment": 2,
+          "item_attribute:compatibility": 4,
+          "item_attribute:connectivity": 4,
+          "item_attribute:deck material": 9,
+          "item_attribute:design": 9,
+          "item_attribute:dial color": 6,
+          "item_attribute:difficulty level": 10,
+          "item_attribute:display": 2,
+          "item_attribute:features": 14,
+          "item_attribute:filter type": 5,
+          "item_attribute:gender": 4,
+          "item_attribute:height": 3,
+          "item_attribute:length": 14,
+          "item_attribute:material": 58,
+          "item_attribute:piece count": 15,
+          "item_attribute:pieces": 10,
+          "item_attribute:power source": 3,
+          "item_attribute:processor": 18,
+          "item_attribute:ram": 18,
+          "item_attribute:resolution": 19,
+          "item_attribute:room size": 5,
+          "item_attribute:scent family": 4,
+          "item_attribute:screen size": 26,
+          "item_attribute:size": 36,
+          "item_attribute:storage": 31,
+          "item_attribute:strap material": 6,
+          "item_attribute:style": 2,
+          "item_attribute:switch type": 1,
+          "item_attribute:theme": 10,
+          "item_attribute:type": 14,
+          "item_attribute:ventilation": 2,
+          "item_attribute:water resistance": 23,
+          "item_attribute:waterproof": 15,
+          "item_name": 150,
+          "item_price": 469
+        },
+        "scope": "Explicit uniquely bound claims only. Unparsed/ambiguous prose is unverified, not counted as correct."
+      },
+      "false_interception_examples": []
+    },
+    "payment_guard": {
+      "error_runs": 0,
+      "error_events": 0,
+      "blocked_messages": 2,
+      "false_interceptions": 0,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 2,
+      "extra_steps": 2,
+      "retail_facts": {
+        "checked_claims": 1482,
+        "visible_checked_claims": 1476,
+        "error_events": 11,
+        "error_runs": 8,
+        "visible_error_events": 11,
+        "visible_error_runs": 8,
+        "kinds": {
+          "amount:charge": 1,
+          "amount:difference": 48,
+          "amount:direction": 92,
+          "amount:order_total": 8,
+          "amount:refund": 118,
+          "amount:total": 11,
+          "item_attribute:armrest": 2,
+          "item_attribute:backlight": 3,
+          "item_attribute:backrest height": 2,
+          "item_attribute:bagged/bagless": 2,
+          "item_attribute:band material": 1,
+          "item_attribute:battery life": 3,
+          "item_attribute:battery type": 4,
+          "item_attribute:brightness": 14,
+          "item_attribute:capacity": 6,
+          "item_attribute:color": 134,
+          "item_attribute:compartment": 1,
+          "item_attribute:compatibility": 8,
+          "item_attribute:connectivity": 1,
+          "item_attribute:deck material": 7,
+          "item_attribute:design": 7,
+          "item_attribute:dial color": 7,
+          "item_attribute:difficulty level": 7,
+          "item_attribute:display": 1,
+          "item_attribute:features": 8,
+          "item_attribute:filter type": 3,
+          "item_attribute:frame size": 1,
+          "item_attribute:gender": 10,
+          "item_attribute:height": 1,
+          "item_attribute:length": 14,
+          "item_attribute:material": 55,
+          "item_attribute:piece count": 10,
+          "item_attribute:pieces": 7,
+          "item_attribute:power source": 14,
+          "item_attribute:processor": 23,
+          "item_attribute:ram": 23,
+          "item_attribute:resolution": 9,
+          "item_attribute:room size": 3,
+          "item_attribute:scent family": 10,
+          "item_attribute:screen size": 31,
+          "item_attribute:size": 39,
+          "item_attribute:speed settings": 4,
+          "item_attribute:storage": 36,
+          "item_attribute:strap material": 7,
+          "item_attribute:style": 3,
+          "item_attribute:switch type": 5,
+          "item_attribute:theme": 7,
+          "item_attribute:type": 10,
+          "item_attribute:ventilation": 3,
+          "item_attribute:water resistance": 9,
+          "item_attribute:waterproof": 8,
+          "item_attribute:zoom": 1,
+          "item_name": 166,
+          "item_price": 474
+        },
+        "scope": "Explicit uniquely bound claims only. Unparsed/ambiguous prose is unverified, not counted as correct."
+      },
+      "false_interception_examples": []
+    }
+  },
+  "task_flips": {
+    "all_guards": [
+      {
+        "task": "retail/test/111",
+        "before": 2,
+        "after": 3
+      },
+      {
+        "task": "retail/test/113",
+        "before": 3,
+        "after": 2
+      },
+      {
+        "task": "retail/test/31",
+        "before": 3,
+        "after": 2
+      },
+      {
+        "task": "retail/test/32",
+        "before": 2,
+        "after": 3
+      },
+      {
+        "task": "retail/test/36",
+        "before": 2,
+        "after": 3
+      },
+      {
+        "task": "retail/test/5",
+        "before": 1,
+        "after": 3
+      },
+      {
+        "task": "retail/test/54",
+        "before": 0,
+        "after": 2
+      },
+      {
+        "task": "retail/test/59",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "task": "retail/test/64",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "task": "retail/test/98",
+        "before": 2,
+        "after": 3
+      }
+    ],
+    "payment_guard": [
+      {
+        "task": "retail/test/108",
+        "before": 0,
+        "after": 1
+      },
+      {
+        "task": "retail/test/111",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "task": "retail/test/113",
+        "before": 3,
+        "after": 2
+      },
+      {
+        "task": "retail/test/23",
+        "before": 3,
+        "after": 2
+      },
+      {
+        "task": "retail/test/36",
+        "before": 2,
+        "after": 3
+      },
+      {
+        "task": "retail/test/39",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "task": "retail/test/46",
+        "before": 2,
+        "after": 3
+      },
+      {
+        "task": "retail/test/5",
+        "before": 1,
+        "after": 0
+      },
+      {
+        "task": "retail/test/54",
+        "before": 0,
+        "after": 2
+      },
+      {
+        "task": "retail/test/66",
+        "before": 2,
+        "after": 1
+      },
+      {
+        "task": "retail/test/74",
+        "before": 1,
+        "after": 2
+      },
+      {
+        "task": "retail/test/98",
+        "before": 2,
+        "after": 3
+      }
+    ]
+  },
+  "manual_audit_required": true,
+  "manual_audit_sample_size": 10,
+  "manual_audit_complete": true,
+  "independent_card_audit_file": "independent_card_audit.json",
+  "independent_card_audit_summary": {
+    "reviewed": 10,
+    "consistent": 10,
+    "agreement_with_automatic": 10,
+    "inspected_prefix": 22,
+    "skipped": 12,
+    "text_extractor_used": false
+  },
+  "representative_traces": [
+    {
+      "run_id": "baseline_r01_test_001",
+      "trace_line": 20,
+      "text": "业务reward=1，仍两次把付款标识9513926说成卡号末尾；真实last_four是2478。",
+      "trace_path": "baseline_r01_test_001/trace.jsonl",
+      "reward": 1.0
+    },
+    {
+      "run_id": "payment_guard_r01_test_059",
+      "trace_line": 14,
+      "text": "H1拦截“ending 3599838”，模型重写为明确的payment_method_id；M11→M13。",
+      "trace_path": "payment_guard_r01_test_059/trace.jsonl",
+      "reward": 0.0
+    },
+    {
+      "run_id": "all_guards_r01_test_112",
+      "trace_line": 28,
+      "text": "正确退款181.37被H2误当作整单退款5657.06，是已确认误拦。",
+      "trace_path": "all_guards_r01_test_112/trace.jsonl",
+      "reward": 1.0
+    }
+  ],
+  "extra_costs_and_steps": {
+    "baseline": {
+      "blocked_messages": 0,
+      "correct_interceptions": 0,
+      "false_interceptions": 0,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 0,
+      "extra_steps": 0
+    },
+    "payment_guard": {
+      "blocked_messages": 2,
+      "correct_interceptions": 2,
+      "false_interceptions": 0,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 2,
+      "extra_steps": 2
+    },
+    "all_guards": {
+      "blocked_messages": 5,
+      "correct_interceptions": 2,
+      "false_interceptions": 3,
+      "unknown_interceptions": 0,
+      "extra_http_attempts": 7,
+      "extra_steps": 7
+    }
+  },
+  "infrastructure_failures": [
+    {
+      "run_id": "payment_guard_r01_test_023",
+      "type": "ConnectError",
+      "reward": null
+    },
+    {
+      "run_id": "payment_guard_r01_test_113",
+      "type": "AccountQuotaExceeded",
+      "reward": null
+    },
+    {
+      "run_id": "payment_guard_r03_test_005",
+      "type": "AccountQuotaExceeded",
+      "reward": null
+    }
+  ],
+  "budget": {
+    "known_equivalent_cny": 11.162723959999983,
+    "unknown_request_count": 3,
+    "scheduling_reserve_cny": 3.0,
+    "scheduling_cap_cny": 15.0,
+    "reserve_is_not_measured_cost": true
+  },
+  "completed_at": "2026-11-02T22:34:23.675028+08:00",
+  "analysis_implementation_commit": "263d8d23d540598fb2049a791a1cc844f27f5697",
+  "interpretation_notes": [
+    "Card-error figures use the frozen explicit payment-ID/card-ending definition; only actual user-visible statements count.",
+    "The H2 retail_facts violation fields are shared-matcher diagnostics, not independent truth. All three flagged H2 statements were independently reviewed as false interceptions; do not describe their withholding as three corrected factual errors.",
+    "Baseline visible card errors occur on tasks001/057. H1-only actual interceptions occur on task059; groupwise 4-to-0 is not a replay of the same five errors.",
+    "Task/trial matching does not provide identical user/model dialogue randomness. Higher raw reward in H1+H2 is not demonstrated H2 benefit: H2 triggered three times and all were false positives.",
+    "Three infrastructure failures, all in H1, retain reward=None and count as unsuccessful in the fixed denominator. They are not rerun or silently removed."
+  ],
+  "final_conclusions": {
+    "recommended_variant": "payment_guard",
+    "H1_enabled": true,
+    "H2_enabled_by_default": false,
+    "default_status": "service.app.RunRequest already defaults to payment_guard; no frozen code/config edits needed.",
+    "reward_statement": "三组reward差异按随机波动范围内处理，不归因于任何H。",
+    "primary_metric_statement": "Baseline测试集约2.7%（4/150）的轨迹出现付款标识／卡号末四位混用，H1单开组0/150；按冻结安排独立核对组合组10条银行卡轨迹，均与自动检查一致。",
+    "H2_negative_result": {
+      "development_checked_claims": 1569,
+      "development_confirmed_errors_in_scope": 0,
+      "f1_H2_interception_messages": 3,
+      "f1_H2_false_interceptions": 3,
+      "scope": "H2可判的扩展字段断言；不包含H1付款标识混用类别或未覆盖自由语义，字段条目不等于独立对话。",
+      "decision": "保留代码，默认关闭，作为负面结果。"
+    },
+    "reuse_registry": "configs/reusable_resources.json",
+    "failure_diagnosis_file": "failure_diagnosis.md"
+  },
+  "failure_diagnosis_summary": {
+    "baseline_failed_runs": 25,
+    "category_counts": {
+      "1": {
+        "name": "参数或ID错误",
+        "count": 0
+      },
+      "2": {
+        "name": "未确认写入",
+        "count": 0
+      },
+      "3": {
+        "name": "违反政策",
+        "count": 0
+      },
+      "4": {
+        "name": "多诉求遗漏",
+        "count": 0
+      },
+      "5": {
+        "name": "信息编造",
+        "count": 3
+      },
+      "6": {
+        "name": "过早结束或超预算",
+        "count": 0
+      },
+      "7": {
+        "name": "模拟器异常",
+        "count": 3
+      },
+      "8": {
+        "name": "基础设施错误",
+        "count": 0
+      },
+      "9": {
+        "name": "标注噪声",
+        "count": 17
+      },
+      "10": {
+        "name": "信息未利用或引导不足",
+        "count": 2
+      }
+    },
+    "shared_failure_task_definition": "each group has at least one failure in its three trials",
+    "shared_tasks": 9,
+    "baseline_failed_runs_from_shared_tasks": 18,
+    "partial_group_tasks": 6,
+    "baseline_failed_runs_from_partial_tasks": 7,
+    "all_nine_failed_tasks": 1,
+    "H1_failed_runs_with_trigger": 2,
+    "H1_total_failures": 24,
+    "combined_failed_runs_with_trigger": 1,
+    "combined_total_failures": 19
+  }
+}

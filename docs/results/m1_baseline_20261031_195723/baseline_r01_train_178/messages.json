@@ -1,0 +1,130 @@
+[
+  {
+    "role": "system",
+    "content": "# Retail agent policy\n\nAs a retail agent, you can help users cancel or modify pending orders, return or exchange delivered orders, modify their default user address, or provide information about their own profile, orders, and related products.\n\n- At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id.\n\n- Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.\n\n- You can only help one user per conversation (but you can handle multiple requests from the same user), and must deny any requests for tasks related to any other user.\n\n- Before taking consequential actions that update the database (cancel, modify, return, exchange), you have to list the action detail and obtain explicit user confirmation (yes) to proceed.\n\n- You should not make up any information or knowledge or procedures not provided from the user or the tools, or give subjective recommendations or comments.\n\n- You should at most make one tool call at a time, and if you take a tool call, you should not respond to the user at the same time. If you respond to the user, you should not make a tool call.\n\n- You should transfer the user to a human agent if and only if the request cannot be handled within the scope of your actions.\n\n## Domain basic\n\n- All times in the database are EST and 24 hour based. For example \"02:30:00\" means 2:30 AM EST.\n\n- Each user has a profile of its email, default address, user id, and payment methods. Each payment method is either a gift card, a paypal account, or a credit card.\n\n- Our retail store has 50 types of products. For each type of product, there are variant items of different options. For example, for a 't shirt' product, there could be an item with option 'color blue size M', and another item with option 'color red size L'.\n\n- Each product has an unique product id, and each item has an unique item id. They have no relations and should not be confused.\n\n- Each order can be in status 'pending', 'processed', 'delivered', or 'cancelled'. Generally, you can only take action on pending or delivered orders.\n\n- Exchange or modify order tools can only be called once. Be sure that all items to be changed are collected into a list before making the tool call!!!\n\n## Cancel pending order\n\n- An order can only be cancelled if its status is 'pending', and you should check its status before taking the action.\n\n- The user needs to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake') for cancellation.\n\n- After user confirmation, the order status will be changed to 'cancelled', and the total will be refunded via the original payment method immediately if it is gift card, otherwise in 5 to 7 business days.\n\n## Modify pending order\n\n- An order can only be modified if its status is 'pending', and you should check its status before taking the action.\n\n- For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.\n\n### Modify payment\n\n- The user can only choose a single payment method different from the original payment method.\n\n- If the user wants the modify the payment method to gift card, it must have enough balance to cover the total amount.\n\n- After user confirmation, the order status will be kept 'pending'. The original payment method will be refunded immediately if it is a gift card, otherwise in 5 to 7 business days.\n\n### Modify items\n\n- This action can only be called once, and will change the order status to 'pending (items modifed)', and the agent will not be able to modify or cancel the order anymore. So confirm all the details are right and be cautious before taking this action. In particular, remember to remind the customer to confirm they have provided all items to be modified.\n\n- For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n## Return delivered order\n\n- An order can only be returned if its status is 'delivered', and you should check its status before taking the action.\n\n- The user needs to confirm the order id, the list of items to be returned, and a payment method to receive the refund.\n\n- The refund must either go to the original payment method, or an existing gift card.\n\n- After user confirmation, the order status will be changed to 'return requested', and the user will receive an email regarding how to return items.\n\n## Exchange delivered order\n\n- An order can only be exchanged if its status is 'delivered', and you should check its status before taking the action. In particular, remember to remind the customer to confirm they have provided all items to be exchanged.\n\n- For a delivered order, each item can be exchanged to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n- After user confirmation, the order status will be changed to 'exchange requested', and the user will receive an email regarding how to return items. There is no need to place a new order.\n"
+  },
+  {
+    "role": "user",
+    "content": "Hi… um, I need to return a couple of items, if that’s okay."
+  },
+  {
+    "content": "Of course—I can help with that. First, I need to verify your identity. Could you please provide your email address? (Or, if you'd prefer, your first name, last name, and ZIP code.)",
+    "reasoning_content": "The user wants to return items. First, I need to authenticate the user. Let me ask for their email or name + zip code.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "Um… my email is mason.johansson9549@example.com."
+  },
+  {
+    "content": "",
+    "reasoning_content": "Let me find the user by email first.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"mason.johansson9549@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_irs21htcae4p2vhp975r1cm9",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_irs21htcae4p2vhp975r1cm9",
+    "name": "find_user_id_by_email",
+    "content": "mason_johansson_8128"
+  },
+  {
+    "content": "Thanks! I've verified your identity. Let me pull up your account details so we can find the order you'd like to return.",
+    "reasoning_content": "The user is authenticated. Now let me get their details to find the orders.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"user_id\": \"mason_johansson_8128\"}",
+          "name": "get_user_details"
+        },
+        "id": "call_00_qiocnxt44owrwgq90e0kzio1",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_qiocnxt44owrwgq90e0kzio1",
+    "name": "get_user_details",
+    "content": "{\"name\": {\"first_name\": \"Mason\", \"last_name\": \"Johansson\"}, \"address\": {\"address1\": \"745 Chestnut Street\", \"address2\": \"Suite 617\", \"city\": \"Seattle\", \"country\": \"USA\", \"state\": \"WA\", \"zip\": \"98103\"}, \"email\": \"mason.johansson9549@example.com\", \"payment_methods\": {\"gift_card_1401311\": {\"source\": \"gift_card\", \"balance\": 64, \"id\": \"gift_card_1401311\"}}, \"orders\": [\"#W9233394\", \"#W4352605\", \"#W4536116\"]}"
+  },
+  {
+    "content": "I found your account, Mason. You have three orders:\n\n- **#W9233394**\n- **#W4352605**\n- **#W4536116**\n\nWhich order would you like to return items from, and which items would you like to return?",
+    "reasoning_content": "The user has 3 orders. Let me ask which order they want to return items from, or which items. I should look up the order details. Let me ask the user which order.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "It’s order #W4352605… I’d like to return the laptop and the gaming mouse."
+  },
+  {
+    "content": "",
+    "reasoning_content": "Let me look up the order details.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W4352605\"}",
+          "name": "get_order_details"
+        },
+        "id": "call_00_d9xffefbax3grzems4bsxoxn",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_d9xffefbax3grzems4bsxoxn",
+    "name": "get_order_details",
+    "content": "{\"order_id\": \"#W4352605\", \"user_id\": \"mason_johansson_8128\", \"address\": {\"address1\": \"745 Chestnut Street\", \"address2\": \"Suite 617\", \"city\": \"Seattle\", \"country\": \"USA\", \"state\": \"WA\", \"zip\": \"98103\"}, \"items\": [{\"name\": \"Gaming Mouse\", \"product_id\": \"5713490933\", \"item_id\": \"8214883393\", \"price\": 150.58, \"options\": {\"color\": \"black\", \"sensor type\": \"laser\", \"connectivity\": \"wireless\"}}, {\"name\": \"Laptop\", \"product_id\": \"4760268021\", \"item_id\": \"2216662955\", \"price\": 2520.52, \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i5\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"space grey\"}}], \"fulfillments\": [{\"tracking_id\": [\"236514082559\"], \"item_ids\": [\"8214883393\", \"2216662955\"]}], \"status\": \"delivered\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 2671.1, \"payment_method_id\": \"gift_card_1401311\"}]}"
+  },
+  {
+    "content": "I found order **#W4352605** — it's marked as **delivered**, so we can proceed with a return. Here are the items you'd like to return:\n\n| Item | Options | Price |\n|------|---------|-------|\n| Gaming Mouse | black, laser, wireless | $150.58 |\n| Laptop | 15-inch, i5, 32GB, 256GB SSD, space grey | $2,520.52 |\n\n**Total refund: $2,671.10**\n\nThe refund can go to your original payment method (your gift card ending 1401311) or another existing gift card. Since your original payment was the gift card, would you like the refund sent back to **gift_card_1401311**? Please confirm and I'll submit the return request.",
+    "reasoning_content": "The order is delivered. Good, so it can be returned. The items:\n- Gaming Mouse: item_id 8214883393, price 150.58\n- Laptop: item_id 2216662955, price 2520.52\n\nTotal 2671.10. Paid via gift card_1401311.\n\nThe user wants to return both the laptop and the gaming mouse. Both items.\n\nFor a return, I need:\n- order id (have it)\n- list of items to return (the two items)\n- a payment method to receive the refund\n\nThe refund must either go to the original payment method, or an existing gift card. The original payment was gift_card_1401311. So I should ask which payment method they want the refund to go to. They only have one gift card and the original payment method was that gift card. So likely refund to gift card_1401311.\n\nLet me confirm the details with the user. I need to explain the return detail and ask for explicit confirmation.\n\nLet me present the items and ask for the refund payment method.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "Yes… please send the refund back to gift_card_1401311."
+  },
+  {
+    "content": "",
+    "reasoning_content": "The user has confirmed. Let me process the return.\n\nWait, I need explicit confirmation. The user said \"Yes... please send the refund back to gift_card_1401311.\" That's confirmation of the payment method. But I need explicit confirmation to proceed with the return. Let me re-read.\n\nI asked \"Would you like the refund sent back to gift_card_1401311? Please confirm and I'll submit the return request.\" The user replied \"Yes... please send the refund back to gift_card_1401311.\"\n\nThis confirms the payment method and to proceed. I think this is explicit confirmation. Let me proceed with the return.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W4352605\", \"item_ids\": [\"8214883393\", \"2216662955\"], \"payment_method_id\": \"gift_card_1401311\"}",
+          "name": "return_delivered_order_items"
+        },
+        "id": "call_00_kx2afpl6uob8ekjf97o0h9fb",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_kx2afpl6uob8ekjf97o0h9fb",
+    "name": "return_delivered_order_items",
+    "content": "{\"order_id\": \"#W4352605\", \"user_id\": \"mason_johansson_8128\", \"address\": {\"address1\": \"745 Chestnut Street\", \"address2\": \"Suite 617\", \"city\": \"Seattle\", \"country\": \"USA\", \"state\": \"WA\", \"zip\": \"98103\"}, \"items\": [{\"name\": \"Gaming Mouse\", \"product_id\": \"5713490933\", \"item_id\": \"8214883393\", \"price\": 150.58, \"options\": {\"color\": \"black\", \"sensor type\": \"laser\", \"connectivity\": \"wireless\"}}, {\"name\": \"Laptop\", \"product_id\": \"4760268021\", \"item_id\": \"2216662955\", \"price\": 2520.52, \"options\": {\"screen size\": \"15-inch\", \"processor\": \"i5\", \"ram\": \"32GB\", \"storage\": \"256GB SSD\", \"color\": \"space grey\"}}], \"fulfillments\": [{\"tracking_id\": [\"236514082559\"], \"item_ids\": [\"8214883393\", \"2216662955\"]}], \"status\": \"return requested\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 2671.1, \"payment_method_id\": \"gift_card_1401311\"}], \"return_items\": [\"2216662955\", \"8214883393\"], \"return_payment_method_id\": \"gift_card_1401311\"}"
+  },
+  {
+    "content": "Your return request has been submitted successfully! ✅\n\n**Order #W4352605** — status is now **return requested**\n- Items: Gaming Mouse & Laptop\n- Refund: **$2,671.10** back to **gift_card_1401311**\n\nYou'll receive a follow-up email with instructions on how and where to return the items. Is there anything else I can help you with?",
+    "reasoning_content": "",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "###STOP###"
+  }
+]

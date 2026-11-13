@@ -1,0 +1,229 @@
+[
+  {
+    "role": "system",
+    "content": "# Retail agent policy\n\nAs a retail agent, you can help users cancel or modify pending orders, return or exchange delivered orders, modify their default user address, or provide information about their own profile, orders, and related products.\n\n- At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id.\n\n- Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.\n\n- You can only help one user per conversation (but you can handle multiple requests from the same user), and must deny any requests for tasks related to any other user.\n\n- Before taking consequential actions that update the database (cancel, modify, return, exchange), you have to list the action detail and obtain explicit user confirmation (yes) to proceed.\n\n- You should not make up any information or knowledge or procedures not provided from the user or the tools, or give subjective recommendations or comments.\n\n- You should at most make one tool call at a time, and if you take a tool call, you should not respond to the user at the same time. If you respond to the user, you should not make a tool call.\n\n- You should transfer the user to a human agent if and only if the request cannot be handled within the scope of your actions.\n\n## Domain basic\n\n- All times in the database are EST and 24 hour based. For example \"02:30:00\" means 2:30 AM EST.\n\n- Each user has a profile of its email, default address, user id, and payment methods. Each payment method is either a gift card, a paypal account, or a credit card.\n\n- Our retail store has 50 types of products. For each type of product, there are variant items of different options. For example, for a 't shirt' product, there could be an item with option 'color blue size M', and another item with option 'color red size L'.\n\n- Each product has an unique product id, and each item has an unique item id. They have no relations and should not be confused.\n\n- Each order can be in status 'pending', 'processed', 'delivered', or 'cancelled'. Generally, you can only take action on pending or delivered orders.\n\n- Exchange or modify order tools can only be called once. Be sure that all items to be changed are collected into a list before making the tool call!!!\n\n## Cancel pending order\n\n- An order can only be cancelled if its status is 'pending', and you should check its status before taking the action.\n\n- The user needs to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake') for cancellation.\n\n- After user confirmation, the order status will be changed to 'cancelled', and the total will be refunded via the original payment method immediately if it is gift card, otherwise in 5 to 7 business days.\n\n## Modify pending order\n\n- An order can only be modified if its status is 'pending', and you should check its status before taking the action.\n\n- For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.\n\n### Modify payment\n\n- The user can only choose a single payment method different from the original payment method.\n\n- If the user wants the modify the payment method to gift card, it must have enough balance to cover the total amount.\n\n- After user confirmation, the order status will be kept 'pending'. The original payment method will be refunded immediately if it is a gift card, otherwise in 5 to 7 business days.\n\n### Modify items\n\n- This action can only be called once, and will change the order status to 'pending (items modifed)', and the agent will not be able to modify or cancel the order anymore. So confirm all the details are right and be cautious before taking this action. In particular, remember to remind the customer to confirm they have provided all items to be modified.\n\n- For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n## Return delivered order\n\n- An order can only be returned if its status is 'delivered', and you should check its status before taking the action.\n\n- The user needs to confirm the order id, the list of items to be returned, and a payment method to receive the refund.\n\n- The refund must either go to the original payment method, or an existing gift card.\n\n- After user confirmation, the order status will be changed to 'return requested', and the user will receive an email regarding how to return items.\n\n## Exchange delivered order\n\n- An order can only be exchanged if its status is 'delivered', and you should check its status before taking the action. In particular, remember to remind the customer to confirm they have provided all items to be exchanged.\n\n- For a delivered order, each item can be exchanged to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n- After user confirmation, the order status will be changed to 'exchange requested', and the user will receive an email regarding how to return items. There is no need to place a new order.\n"
+  },
+  {
+    "role": "user",
+    "content": "Hi, I just placed an order and realized I don’t need the items, so I’d like to cancel it."
+  },
+  {
+    "content": "I'd be happy to help you cancel your order. First, I need to verify your identity. Could you please provide me with your email address? Alternatively, you can provide your first name, last name, and zip code.",
+    "reasoning_content": "The user wants to cancel a pending order. But first, I need to authenticate the user's identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id.\n\nLet me ask for their email or name + zip code.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I’m not sure which email I used for the order — I have a few — but my name is Raj Lee; can you look it up by that?"
+  },
+  {
+    "content": "I can look it up by name, but I also need your zip code to verify your identity. Could you please provide the zip code associated with your account?",
+    "reasoning_content": "The user wants to look up by name. I need name + zip code. They only gave name. Let me ask for zip code.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I’m sorry, I don’t have the zip code handy right now — I’m not sure which one I used for this order."
+  },
+  {
+    "content": "I understand — but I'm unable to access or make changes to any account without first verifying your identity. To do that, I need either:\n\n- The **email address** used on the order, or\n- Your **first name, last name, and zip code**\n\nIf you can find any of these, such as by checking your confirmation email or bank/card statement for the order, I'll be glad to help you cancel the order right away. Is there anything you can look up to provide one of these?",
+    "reasoning_content": "The user can't remember their email or zip code. I need to authenticate the user identity. I cannot proceed without authentication. I should let them know I need one of these pieces of information to verify their identity.\n\nI should not make up information or proceed without authentication. Let me explain that I need the email or name + zip to verify identity.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I can try checking my confirmation emails, but I’m not sure it’ll help — one possible address is raj89@example.com."
+  },
+  {
+    "content": "",
+    "reasoning_content": "Let me look up the user by email.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"raj89@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_kzxp24qylackwfi1grmjis63",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_kzxp24qylackwfi1grmjis63",
+    "name": "find_user_id_by_email",
+    "content": "Error: user not found"
+  },
+  {
+    "content": "That email didn't match any account in our system. Do you have another email address you might have used, or perhaps you can find your zip code? Either would let me verify your identity and help cancel the order.",
+    "reasoning_content": "The email didn't return a user. Let me tell the user this email isn't found.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I might have used rajlee@example.com instead — can you check that one?"
+  },
+  {
+    "content": "",
+    "reasoning_content": "",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"rajlee@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_v3cnff4ghfhr3atas92rrpnr",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_v3cnff4ghfhr3atas92rrpnr",
+    "name": "find_user_id_by_email",
+    "content": "Error: user not found"
+  },
+  {
+    "content": "I'm sorry, but that email didn't match any account either. I'll need a valid email or your zip code to verify your identity before I can help. Do you have any other email address you may have used, or can you locate the zip code on your account?",
+    "reasoning_content": "Neither email worked. Let me let the user know.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I don’t have the zip code, unfortunately... can you try lee42@example.com?"
+  },
+  {
+    "content": "",
+    "reasoning_content": "",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"lee42@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_9rlcwucj30b2mbj2moa181py",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_9rlcwucj30b2mbj2moa181py",
+    "name": "find_user_id_by_email",
+    "content": "Error: user not found"
+  },
+  {
+    "content": "I'm sorry — that email didn't match any account in our system either. \n\nTo verify your identity, I really need one of the following that matches our records:\n- A valid **email address** used on the order, or\n- Your **first name, last name, and zip code**\n\nSince none of the emails so far have matched, checking your confirmation email or the account you ordered from might help. Is there anything else you can look up?",
+    "reasoning_content": "Still no match. Let me tell them.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "I’ve got one more I sometimes use… can you try raj.lee6137@example.com?"
+  },
+  {
+    "content": "",
+    "reasoning_content": "",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"raj.lee6137@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_jk7j0xf99v86o239ax4r5hzt",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_jk7j0xf99v86o239ax4r5hzt",
+    "name": "find_user_id_by_email",
+    "content": "raj_lee_3061"
+  },
+  {
+    "content": "Great news — I found your account with that email. You're verified now.\n\nLet me pull up your account details and orders so we can find the one you'd like to cancel.",
+    "reasoning_content": "Found the user. Now I can authenticate. Let me get the user details to find the order and verify.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"user_id\": \"raj_lee_3061\"}",
+          "name": "get_user_details"
+        },
+        "id": "call_00_v4euez8htsk4riwxtkqggf14",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_v4euez8htsk4riwxtkqggf14",
+    "name": "get_user_details",
+    "content": "{\"name\": {\"first_name\": \"Raj\", \"last_name\": \"Lee\"}, \"address\": {\"address1\": \"723 Hickory Lane\", \"address2\": \"Suite 917\", \"city\": \"Dallas\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"75368\"}, \"email\": \"raj.lee6137@example.com\", \"payment_methods\": {\"paypal_4133936\": {\"source\": \"paypal\", \"id\": \"paypal_4133936\"}}, \"orders\": [\"#W9933266\"]}"
+  },
+  {
+    "content": "",
+    "reasoning_content": "There's one order #W9933266. Let me get the order details to check status.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W9933266\"}",
+          "name": "get_order_details"
+        },
+        "id": "call_00_igcp5ar5sjv6p67r6v4266ft",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_igcp5ar5sjv6p67r6v4266ft",
+    "name": "get_order_details",
+    "content": "{\"order_id\": \"#W9933266\", \"user_id\": \"raj_lee_3061\", \"address\": {\"address1\": \"723 Hickory Lane\", \"address2\": \"Suite 917\", \"city\": \"Dallas\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"75368\"}, \"items\": [{\"name\": \"Pet Bed\", \"product_id\": \"2747247837\", \"item_id\": \"4537595158\", \"price\": 193.79, \"options\": {\"size\": \"small\", \"material\": \"fleece\", \"color\": \"brown\"}}, {\"name\": \"Yoga Mat\", \"product_id\": \"4635925001\", \"item_id\": \"5586947715\", \"price\": 92.53, \"options\": {\"thickness\": \"4mm\", \"material\": \"PVC\", \"color\": \"blue\"}}], \"fulfillments\": [], \"status\": \"pending\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 286.32, \"payment_method_id\": \"paypal_4133936\"}]}"
+  },
+  {
+    "content": "I found your order. Here are the details:\n\n**Order #W9933266** — Status: **Pending**\n- Pet Bed (small, fleece, brown) — $193.79\n- Yoga Mat (4mm, PVC, blue) — $92.53\n- **Total: $286.32**, paid via PayPal\n\nThis order is still pending, so it can be cancelled. Since you mentioned you no longer need the items, could you please confirm:\n\n1. The order ID: **#W9933266**\n2. The reason for cancellation — **\"no longer needed\"** or **\"ordered by mistake\"**\n\nOnce you confirm, I'll process the cancellation, and the refund of $286.32 will be returned to your PayPal account within 5–7 business days.",
+    "reasoning_content": "The order is pending. It has 2 items:\n- Pet Bed, item 4537595158, $193.79\n- Yoga Mat, item 5586947715, $92.53\nTotal: $286.32 paid via paypal.\n\nThe order can be cancelled since it's pending. I need to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake'). Let me present the details and ask for confirmation and reason.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "Yes, that’s the order — #W9933266 — and the reason is just “no longer needed.”"
+  },
+  {
+    "content": "",
+    "reasoning_content": "The user confirmed the order id and reason \"no longer needed\". Let me process the cancellation.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W9933266\", \"reason\": \"no longer needed\"}",
+          "name": "cancel_pending_order"
+        },
+        "id": "call_00_heikdtl8rnvc9dt9gqsp52w1",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_heikdtl8rnvc9dt9gqsp52w1",
+    "name": "cancel_pending_order",
+    "content": "{\"order_id\": \"#W9933266\", \"user_id\": \"raj_lee_3061\", \"address\": {\"address1\": \"723 Hickory Lane\", \"address2\": \"Suite 917\", \"city\": \"Dallas\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"75368\"}, \"items\": [{\"name\": \"Pet Bed\", \"product_id\": \"2747247837\", \"item_id\": \"4537595158\", \"price\": 193.79, \"options\": {\"size\": \"small\", \"material\": \"fleece\", \"color\": \"brown\"}}, {\"name\": \"Yoga Mat\", \"product_id\": \"4635925001\", \"item_id\": \"5586947715\", \"price\": 92.53, \"options\": {\"thickness\": \"4mm\", \"material\": \"PVC\", \"color\": \"blue\"}}], \"fulfillments\": [], \"status\": \"cancelled\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 286.32, \"payment_method_id\": \"paypal_4133936\"}, {\"transaction_type\": \"refund\", \"amount\": 286.32, \"payment_method_id\": \"paypal_4133936\"}], \"cancel_reason\": \"no longer needed\"}"
+  },
+  {
+    "content": "Your order **#W9933266** has been successfully cancelled. ✅\n\n- **Status:** Cancelled\n- **Refund:** $286.32 returned to your PayPal account (paypal_4133936)\n- **Timing:** PayPal refunds typically take 5–7 business days to process\n\nIs there anything else I can help you with?",
+    "reasoning_content": "",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "###STOP###"
+  }
+]

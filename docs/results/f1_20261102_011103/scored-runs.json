@@ -1,0 +1,7652 @@
+[
+  {
+    "run_id": "all_guards_r01_test_001",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 66792,
+      "output_tokens": 3969,
+      "cached_input_tokens": 59520,
+      "estimated_cost_cny": 0.0243384,
+      "cost_upper_bound_cny": 0.082668
+    },
+    "steps": 10,
+    "wall_ms": 50218
+  },
+  {
+    "run_id": "all_guards_r01_test_005",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 107494,
+      "output_tokens": 4906,
+      "cached_input_tokens": 97536,
+      "estimated_cost_cny": 0.03153272,
+      "cost_upper_bound_cny": 0.127118
+    },
+    "steps": 14,
+    "wall_ms": 65907
+  },
+  {
+    "run_id": "all_guards_r01_test_010",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42415,
+      "output_tokens": 1967,
+      "cached_input_tokens": 38656,
+      "estimated_cost_cny": 0.01240012,
+      "cost_upper_bound_cny": 0.050282999999999994
+    },
+    "steps": 8,
+    "wall_ms": 40375
+  },
+  {
+    "run_id": "all_guards_r01_test_012",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43450,
+      "output_tokens": 2444,
+      "cached_input_tokens": 39552,
+      "estimated_cost_cny": 0.014465039999999998,
+      "cost_upper_bound_cny": 0.053225999999999996
+    },
+    "steps": 8,
+    "wall_ms": 39875
+  },
+  {
+    "run_id": "all_guards_r01_test_013",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51476,
+      "output_tokens": 2693,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.016838719999999998,
+      "cost_upper_bound_cny": 0.062248
+    },
+    "steps": 9,
+    "wall_ms": 43406
+  },
+  {
+    "run_id": "all_guards_r01_test_015",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 82161,
+      "output_tokens": 4760,
+      "cached_input_tokens": 73728,
+      "estimated_cost_cny": 0.028947559999999997,
+      "cost_upper_bound_cny": 0.101201
+    },
+    "steps": 12,
+    "wall_ms": 60281
+  },
+  {
+    "run_id": "all_guards_r01_test_016",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 115695,
+      "output_tokens": 4141,
+      "cached_input_tokens": 107648,
+      "estimated_cost_cny": 0.02676396,
+      "cost_upper_bound_cny": 0.13225899999999996
+    },
+    "steps": 16,
+    "wall_ms": 75328
+  },
+  {
+    "run_id": "all_guards_r01_test_017",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41430,
+      "output_tokens": 1860,
+      "cached_input_tokens": 38400,
+      "estimated_cost_cny": 0.011238,
+      "cost_upper_bound_cny": 0.048870000000000004
+    },
+    "steps": 8,
+    "wall_ms": 46672
+  },
+  {
+    "run_id": "all_guards_r01_test_018",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 80393,
+      "output_tokens": 4078,
+      "cached_input_tokens": 73344,
+      "estimated_cost_cny": 0.024827879999999997,
+      "cost_upper_bound_cny": 0.096705
+    },
+    "steps": 12,
+    "wall_ms": 62734
+  },
+  {
+    "run_id": "all_guards_r01_test_023",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 144624,
+      "output_tokens": 4575,
+      "cached_input_tokens": 134016,
+      "estimated_cost_cny": 0.03158832,
+      "cost_upper_bound_cny": 0.162924
+    },
+    "steps": 18,
+    "wall_ms": 81406
+  },
+  {
+    "run_id": "all_guards_r01_test_025",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57057,
+      "output_tokens": 2691,
+      "cached_input_tokens": 51840,
+      "estimated_cost_cny": 0.0170178,
+      "cost_upper_bound_cny": 0.067821
+    },
+    "steps": 10,
+    "wall_ms": 45531
+  },
+  {
+    "run_id": "all_guards_r01_test_027",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57904,
+      "output_tokens": 4818,
+      "cached_input_tokens": 50816,
+      "estimated_cost_cny": 0.02737632,
+      "cost_upper_bound_cny": 0.077176
+    },
+    "steps": 9,
+    "wall_ms": 47422
+  },
+  {
+    "run_id": "all_guards_r01_test_029",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 187298,
+      "output_tokens": 16310,
+      "cached_input_tokens": 165376,
+      "estimated_cost_cny": 0.09046952000000001,
+      "cost_upper_bound_cny": 0.25253800000000004
+    },
+    "steps": 17,
+    "wall_ms": 111890
+  },
+  {
+    "run_id": "all_guards_r01_test_031",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 159899,
+      "output_tokens": 5411,
+      "cached_input_tokens": 149632,
+      "estimated_cost_cny": 0.034903640000000014,
+      "cost_upper_bound_cny": 0.18154300000000004
+    },
+    "steps": 21,
+    "wall_ms": 103344
+  },
+  {
+    "run_id": "all_guards_r01_test_032",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 135305,
+      "output_tokens": 5252,
+      "cached_input_tokens": 127104,
+      "estimated_cost_cny": 0.03175108,
+      "cost_upper_bound_cny": 0.156313
+    },
+    "steps": 19,
+    "wall_ms": 94359
+  },
+  {
+    "run_id": "all_guards_r01_test_035",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 103228,
+      "output_tokens": 4291,
+      "cached_input_tokens": 94336,
+      "estimated_cost_cny": 0.02794272,
+      "cost_upper_bound_cny": 0.120392
+    },
+    "steps": 15,
+    "wall_ms": 71750
+  },
+  {
+    "run_id": "all_guards_r01_test_036",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 130893,
+      "output_tokens": 5278,
+      "cached_input_tokens": 118784,
+      "estimated_cost_cny": 0.03559668,
+      "cost_upper_bound_cny": 0.15200500000000003
+    },
+    "steps": 17,
+    "wall_ms": 75672
+  },
+  {
+    "run_id": "all_guards_r01_test_037",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 116894,
+      "output_tokens": 5748,
+      "cached_input_tokens": 104960,
+      "estimated_cost_cny": 0.037025199999999994,
+      "cost_upper_bound_cny": 0.139886
+    },
+    "steps": 15,
+    "wall_ms": 68500
+  },
+  {
+    "run_id": "all_guards_r01_test_039",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 67409,
+      "output_tokens": 3852,
+      "cached_input_tokens": 61440,
+      "estimated_cost_cny": 0.022605800000000002,
+      "cost_upper_bound_cny": 0.082817
+    },
+    "steps": 11,
+    "wall_ms": 55219
+  },
+  {
+    "run_id": "all_guards_r01_test_040",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53801,
+      "output_tokens": 2258,
+      "cached_input_tokens": 50176,
+      "estimated_cost_cny": 0.01366052,
+      "cost_upper_bound_cny": 0.062833
+    },
+    "steps": 10,
+    "wall_ms": 54125
+  },
+  {
+    "run_id": "all_guards_r01_test_042",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 113681,
+      "output_tokens": 4355,
+      "cached_input_tokens": 104448,
+      "estimated_cost_cny": 0.02874196,
+      "cost_upper_bound_cny": 0.131101
+    },
+    "steps": 16,
+    "wall_ms": 75093
+  },
+  {
+    "run_id": "all_guards_r01_test_046",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 92734,
+      "output_tokens": 4148,
+      "cached_input_tokens": 85888,
+      "estimated_cost_cny": 0.025155759999999996,
+      "cost_upper_bound_cny": 0.10932599999999999
+    },
+    "steps": 14,
+    "wall_ms": 67219
+  },
+  {
+    "run_id": "all_guards_r01_test_050",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 24234,
+      "output_tokens": 1670,
+      "cached_input_tokens": 22144,
+      "estimated_cost_cny": 0.00921288,
+      "cost_upper_bound_cny": 0.030914000000000004
+    },
+    "steps": 5,
+    "wall_ms": 24641
+  },
+  {
+    "run_id": "all_guards_r01_test_051",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 35815,
+      "output_tokens": 2151,
+      "cached_input_tokens": 33024,
+      "estimated_cost_cny": 0.01205548,
+      "cost_upper_bound_cny": 0.044419
+    },
+    "steps": 7,
+    "wall_ms": 36093
+  },
+  {
+    "run_id": "all_guards_r01_test_053",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50042,
+      "output_tokens": 2049,
+      "cached_input_tokens": 45952,
+      "estimated_cost_cny": 0.013205040000000001,
+      "cost_upper_bound_cny": 0.058238000000000005
+    },
+    "steps": 9,
+    "wall_ms": 41782
+  },
+  {
+    "run_id": "all_guards_r01_test_054",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 147094,
+      "output_tokens": 5789,
+      "cached_input_tokens": 135424,
+      "estimated_cost_cny": 0.03753448,
+      "cost_upper_bound_cny": 0.17025
+    },
+    "steps": 19,
+    "wall_ms": 80187
+  },
+  {
+    "run_id": "all_guards_r01_test_056",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68916,
+      "output_tokens": 3267,
+      "cached_input_tokens": 62208,
+      "estimated_cost_cny": 0.02102016,
+      "cost_upper_bound_cny": 0.081984
+    },
+    "steps": 11,
+    "wall_ms": 53922
+  },
+  {
+    "run_id": "all_guards_r01_test_057",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 48532,
+      "output_tokens": 2354,
+      "cached_input_tokens": 44672,
+      "estimated_cost_cny": 0.01416944,
+      "cost_upper_bound_cny": 0.05794800000000001
+    },
+    "steps": 9,
+    "wall_ms": 47703
+  },
+  {
+    "run_id": "all_guards_r01_test_059",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 71418,
+      "output_tokens": 4981,
+      "cached_input_tokens": 64896,
+      "estimated_cost_cny": 0.027743919999999995,
+      "cost_upper_bound_cny": 0.09134199999999998
+    },
+    "steps": 11,
+    "wall_ms": 56890
+  },
+  {
+    "run_id": "all_guards_r01_test_060",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51553,
+      "output_tokens": 3622,
+      "cached_input_tokens": 46208,
+      "estimated_cost_cny": 0.020757160000000004,
+      "cost_upper_bound_cny": 0.066041
+    },
+    "steps": 8,
+    "wall_ms": 40547
+  },
+  {
+    "run_id": "all_guards_r01_test_062",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68362,
+      "output_tokens": 3084,
+      "cached_input_tokens": 62848,
+      "estimated_cost_cny": 0.019106959999999996,
+      "cost_upper_bound_cny": 0.08069799999999999
+    },
+    "steps": 11,
+    "wall_ms": 52360
+  },
+  {
+    "run_id": "all_guards_r01_test_064",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 69869,
+      "output_tokens": 4513,
+      "cached_input_tokens": 62848,
+      "estimated_cost_cny": 0.02632996,
+      "cost_upper_bound_cny": 0.087921
+    },
+    "steps": 11,
+    "wall_ms": 52781
+  },
+  {
+    "run_id": "all_guards_r01_test_065",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 69114,
+      "output_tokens": 4441,
+      "cached_input_tokens": 62208,
+      "estimated_cost_cny": 0.025914160000000002,
+      "cost_upper_bound_cny": 0.086878
+    },
+    "steps": 11,
+    "wall_ms": 53860
+  },
+  {
+    "run_id": "all_guards_r01_test_066",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51932,
+      "output_tokens": 2290,
+      "cached_input_tokens": 47744,
+      "estimated_cost_cny": 0.014302880000000002,
+      "cost_upper_bound_cny": 0.061092
+    },
+    "steps": 9,
+    "wall_ms": 47765
+  },
+  {
+    "run_id": "all_guards_r01_test_069",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 63432,
+      "output_tokens": 2891,
+      "cached_input_tokens": 58496,
+      "estimated_cost_cny": 0.017669920000000002,
+      "cost_upper_bound_cny": 0.07499600000000002
+    },
+    "steps": 11,
+    "wall_ms": 55109
+  },
+  {
+    "run_id": "all_guards_r01_test_073",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 37202,
+      "output_tokens": 1809,
+      "cached_input_tokens": 33536,
+      "estimated_cost_cny": 0.01157272,
+      "cost_upper_bound_cny": 0.044438000000000005
+    },
+    "steps": 7,
+    "wall_ms": 35782
+  },
+  {
+    "run_id": "all_guards_r01_test_074",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 113608,
+      "output_tokens": 4418,
+      "cached_input_tokens": 104576,
+      "estimated_cost_cny": 0.028795519999999998,
+      "cost_upper_bound_cny": 0.13127999999999998
+    },
+    "steps": 15,
+    "wall_ms": 70547
+  },
+  {
+    "run_id": "all_guards_r01_test_077",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51379,
+      "output_tokens": 2698,
+      "cached_input_tokens": 46464,
+      "estimated_cost_cny": 0.016636279999999996,
+      "cost_upper_bound_cny": 0.06217099999999999
+    },
+    "steps": 9,
+    "wall_ms": 46094
+  },
+  {
+    "run_id": "all_guards_r01_test_081",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83895,
+      "output_tokens": 3903,
+      "cached_input_tokens": 76544,
+      "estimated_cost_cny": 0.02449388,
+      "cost_upper_bound_cny": 0.09950700000000001
+    },
+    "steps": 13,
+    "wall_ms": 60359
+  },
+  {
+    "run_id": "all_guards_r01_test_083",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 81566,
+      "output_tokens": 2591,
+      "cached_input_tokens": 75392,
+      "estimated_cost_cny": 0.018045839999999997,
+      "cost_upper_bound_cny": 0.09193
+    },
+    "steps": 13,
+    "wall_ms": 62938
+  },
+  {
+    "run_id": "all_guards_r01_test_084",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72381,
+      "output_tokens": 2477,
+      "cached_input_tokens": 66816,
+      "estimated_cost_cny": 0.01680932,
+      "cost_upper_bound_cny": 0.082289
+    },
+    "steps": 12,
+    "wall_ms": 56344
+  },
+  {
+    "run_id": "all_guards_r01_test_094",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 84633,
+      "output_tokens": 3869,
+      "cached_input_tokens": 76928,
+      "estimated_cost_cny": 0.024719559999999998,
+      "cost_upper_bound_cny": 0.100109
+    },
+    "steps": 12,
+    "wall_ms": 56531
+  },
+  {
+    "run_id": "all_guards_r01_test_097",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 96583,
+      "output_tokens": 4759,
+      "cached_input_tokens": 88448,
+      "estimated_cost_cny": 0.02893996,
+      "cost_upper_bound_cny": 0.11561900000000003
+    },
+    "steps": 14,
+    "wall_ms": 69562
+  },
+  {
+    "run_id": "all_guards_r01_test_098",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 66563,
+      "output_tokens": 4348,
+      "cached_input_tokens": 59264,
+      "estimated_cost_cny": 0.02587628,
+      "cost_upper_bound_cny": 0.08395500000000002
+    },
+    "steps": 10,
+    "wall_ms": 47484
+  },
+  {
+    "run_id": "all_guards_r01_test_104",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 209672,
+      "output_tokens": 5734,
+      "cached_input_tokens": 197120,
+      "estimated_cost_cny": 0.0394304,
+      "cost_upper_bound_cny": 0.232608
+    },
+    "steps": 24,
+    "wall_ms": 113625
+  },
+  {
+    "run_id": "all_guards_r01_test_108",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/108",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 45790,
+      "output_tokens": 3182,
+      "cached_input_tokens": 41088,
+      "estimated_cost_cny": 0.01825176,
+      "cost_upper_bound_cny": 0.05851800000000001
+    },
+    "steps": 8,
+    "wall_ms": 40890
+  },
+  {
+    "run_id": "all_guards_r01_test_109",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56637,
+      "output_tokens": 2130,
+      "cached_input_tokens": 51712,
+      "estimated_cost_cny": 0.014479239999999999,
+      "cost_upper_bound_cny": 0.06515699999999999
+    },
+    "steps": 10,
+    "wall_ms": 45109
+  },
+  {
+    "run_id": "all_guards_r01_test_111",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 96039,
+      "output_tokens": 6319,
+      "cached_input_tokens": 86528,
+      "estimated_cost_cny": 0.03651755999999999,
+      "cost_upper_bound_cny": 0.12131500000000002
+    },
+    "steps": 13,
+    "wall_ms": 64922
+  },
+  {
+    "run_id": "all_guards_r01_test_112",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 245930,
+      "output_tokens": 20252,
+      "cached_input_tokens": 219520,
+      "estimated_cost_cny": 0.11180840000000002,
+      "cost_upper_bound_cny": 0.32693799999999995
+    },
+    "steps": 19,
+    "wall_ms": 121766
+  },
+  {
+    "run_id": "all_guards_r01_test_113",
+    "variant": "all_guards",
+    "trial": 1,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 177962,
+      "output_tokens": 7594,
+      "cached_input_tokens": 164096,
+      "estimated_cost_cny": 0.04752391999999999,
+      "cost_upper_bound_cny": 0.20833800000000002
+    },
+    "steps": 20,
+    "wall_ms": 93828
+  },
+  {
+    "run_id": "all_guards_r02_test_001",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 80681,
+      "output_tokens": 4586,
+      "cached_input_tokens": 67968,
+      "estimated_cost_cny": 0.03241635999999999,
+      "cost_upper_bound_cny": 0.09902499999999999
+    },
+    "steps": 11,
+    "wall_ms": 58078
+  },
+  {
+    "run_id": "all_guards_r02_test_005",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 115775,
+      "output_tokens": 4429,
+      "cached_input_tokens": 106496,
+      "estimated_cost_cny": 0.029124919999999995,
+      "cost_upper_bound_cny": 0.133491
+    },
+    "steps": 15,
+    "wall_ms": 68985
+  },
+  {
+    "run_id": "all_guards_r02_test_010",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50388,
+      "output_tokens": 2194,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.013754720000000002,
+      "cost_upper_bound_cny": 0.059163999999999994
+    },
+    "steps": 9,
+    "wall_ms": 45562
+  },
+  {
+    "run_id": "all_guards_r02_test_012",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43190,
+      "output_tokens": 2903,
+      "cached_input_tokens": 38784,
+      "estimated_cost_cny": 0.016793680000000002,
+      "cost_upper_bound_cny": 0.054802
+    },
+    "steps": 8,
+    "wall_ms": 50687
+  },
+  {
+    "run_id": "all_guards_r02_test_013",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51063,
+      "output_tokens": 2765,
+      "cached_input_tokens": 46080,
+      "estimated_cost_cny": 0.0169646,
+      "cost_upper_bound_cny": 0.062123
+    },
+    "steps": 9,
+    "wall_ms": 45000
+  },
+  {
+    "run_id": "all_guards_r02_test_015",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 71235,
+      "output_tokens": 3838,
+      "cached_input_tokens": 64000,
+      "estimated_cost_cny": 0.023866999999999996,
+      "cost_upper_bound_cny": 0.08658700000000001
+    },
+    "steps": 11,
+    "wall_ms": 53594
+  },
+  {
+    "run_id": "all_guards_r02_test_016",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 103848,
+      "output_tokens": 3165,
+      "cached_input_tokens": 96384,
+      "estimated_cost_cny": 0.022051679999999997,
+      "cost_upper_bound_cny": 0.11650799999999999
+    },
+    "steps": 15,
+    "wall_ms": 69828
+  },
+  {
+    "run_id": "all_guards_r02_test_017",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41487,
+      "output_tokens": 1786,
+      "cached_input_tokens": 38528,
+      "estimated_cost_cny": 0.010873559999999997,
+      "cost_upper_bound_cny": 0.048631
+    },
+    "steps": 8,
+    "wall_ms": 45219
+  },
+  {
+    "run_id": "all_guards_r02_test_018",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 71160,
+      "output_tokens": 4228,
+      "cached_input_tokens": 64128,
+      "estimated_cost_cny": 0.025226560000000006,
+      "cost_upper_bound_cny": 0.08807200000000001
+    },
+    "steps": 11,
+    "wall_ms": 61203
+  },
+  {
+    "run_id": "all_guards_r02_test_023",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 153501,
+      "output_tokens": 7502,
+      "cached_input_tokens": 139136,
+      "estimated_cost_cny": 0.047155720000000005,
+      "cost_upper_bound_cny": 0.18350899999999998
+    },
+    "steps": 17,
+    "wall_ms": 85859
+  },
+  {
+    "run_id": "all_guards_r02_test_025",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51510,
+      "output_tokens": 2571,
+      "cached_input_tokens": 46976,
+      "estimated_cost_cny": 0.01575752,
+      "cost_upper_bound_cny": 0.06179400000000001
+    },
+    "steps": 9,
+    "wall_ms": 43672
+  },
+  {
+    "run_id": "all_guards_r02_test_027",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53758,
+      "output_tokens": 3733,
+      "cached_input_tokens": 48512,
+      "estimated_cost_cny": 0.02114824,
+      "cost_upper_bound_cny": 0.06869
+    },
+    "steps": 9,
+    "wall_ms": 58672
+  },
+  {
+    "run_id": "all_guards_r02_test_029",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 155777,
+      "output_tokens": 8638,
+      "cached_input_tokens": 141824,
+      "estimated_cost_cny": 0.051341479999999995,
+      "cost_upper_bound_cny": 0.190329
+    },
+    "steps": 18,
+    "wall_ms": 107468
+  },
+  {
+    "run_id": "all_guards_r02_test_031",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 119658,
+      "output_tokens": 4166,
+      "cached_input_tokens": 112256,
+      "estimated_cost_cny": 0.02631112,
+      "cost_upper_bound_cny": 0.136322
+    },
+    "steps": 18,
+    "wall_ms": 89750
+  },
+  {
+    "run_id": "all_guards_r02_test_032",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 136033,
+      "output_tokens": 4752,
+      "cached_input_tokens": 127104,
+      "estimated_cost_cny": 0.03047908,
+      "cost_upper_bound_cny": 0.155041
+    },
+    "steps": 19,
+    "wall_ms": 93532
+  },
+  {
+    "run_id": "all_guards_r02_test_035",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 91991,
+      "output_tokens": 4126,
+      "cached_input_tokens": 83456,
+      "estimated_cost_cny": 0.026708120000000002,
+      "cost_upper_bound_cny": 0.10849499999999998
+    },
+    "steps": 14,
+    "wall_ms": 71422
+  },
+  {
+    "run_id": "all_guards_r02_test_036",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 121504,
+      "output_tokens": 5863,
+      "cached_input_tokens": 109440,
+      "estimated_cost_cny": 0.0377048,
+      "cost_upper_bound_cny": 0.144956
+    },
+    "steps": 16,
+    "wall_ms": 81218
+  },
+  {
+    "run_id": "all_guards_r02_test_037",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 135934,
+      "output_tokens": 6292,
+      "cached_input_tokens": 123776,
+      "estimated_cost_cny": 0.03980151999999999,
+      "cost_upper_bound_cny": 0.161102
+    },
+    "steps": 17,
+    "wall_ms": 85047
+  },
+  {
+    "run_id": "all_guards_r02_test_039",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68217,
+      "output_tokens": 4890,
+      "cached_input_tokens": 62208,
+      "estimated_cost_cny": 0.02681316,
+      "cost_upper_bound_cny": 0.087777
+    },
+    "steps": 11,
+    "wall_ms": 62484
+  },
+  {
+    "run_id": "all_guards_r02_test_040",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54811,
+      "output_tokens": 2402,
+      "cached_input_tokens": 50944,
+      "estimated_cost_cny": 0.014493879999999999,
+      "cost_upper_bound_cny": 0.06441899999999999
+    },
+    "steps": 10,
+    "wall_ms": 54500
+  },
+  {
+    "run_id": "all_guards_r02_test_042",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 126613,
+      "output_tokens": 5033,
+      "cached_input_tokens": 116608,
+      "estimated_cost_cny": 0.03246916,
+      "cost_upper_bound_cny": 0.14674500000000001
+    },
+    "steps": 17,
+    "wall_ms": 79031
+  },
+  {
+    "run_id": "all_guards_r02_test_046",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/46",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 63059,
+      "output_tokens": 4074,
+      "cached_input_tokens": 57728,
+      "estimated_cost_cny": 0.022781560000000003,
+      "cost_upper_bound_cny": 0.07935500000000001
+    },
+    "steps": 11,
+    "wall_ms": 57063
+  },
+  {
+    "run_id": "all_guards_r02_test_050",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 30590,
+      "output_tokens": 1746,
+      "cached_input_tokens": 28032,
+      "estimated_cost_cny": 0.01010264,
+      "cost_upper_bound_cny": 0.037574
+    },
+    "steps": 6,
+    "wall_ms": 30125
+  },
+  {
+    "run_id": "all_guards_r02_test_051",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 35999,
+      "output_tokens": 2407,
+      "cached_input_tokens": 33152,
+      "estimated_cost_cny": 0.013138040000000002,
+      "cost_upper_bound_cny": 0.045627
+    },
+    "steps": 7,
+    "wall_ms": 39984
+  },
+  {
+    "run_id": "all_guards_r02_test_053",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56253,
+      "output_tokens": 2104,
+      "cached_input_tokens": 51712,
+      "estimated_cost_cny": 0.013991239999999995,
+      "cost_upper_bound_cny": 0.064669
+    },
+    "steps": 10,
+    "wall_ms": 48891
+  },
+  {
+    "run_id": "all_guards_r02_test_054",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 150051,
+      "output_tokens": 5680,
+      "cached_input_tokens": 138368,
+      "estimated_cost_cny": 0.037170360000000006,
+      "cost_upper_bound_cny": 0.172771
+    },
+    "steps": 20,
+    "wall_ms": 90968
+  },
+  {
+    "run_id": "all_guards_r02_test_056",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68355,
+      "output_tokens": 3652,
+      "cached_input_tokens": 62336,
+      "estimated_cost_cny": 0.02187372,
+      "cost_upper_bound_cny": 0.082963
+    },
+    "steps": 11,
+    "wall_ms": 57219
+  },
+  {
+    "run_id": "all_guards_r02_test_057",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 31973,
+      "output_tokens": 3348,
+      "cached_input_tokens": 28800,
+      "estimated_cost_cny": 0.017141,
+      "cost_upper_bound_cny": 0.04536500000000001
+    },
+    "steps": 6,
+    "wall_ms": 42890
+  },
+  {
+    "run_id": "all_guards_r02_test_059",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 90161,
+      "output_tokens": 5428,
+      "cached_input_tokens": 82816,
+      "estimated_cost_cny": 0.030713320000000002,
+      "cost_upper_bound_cny": 0.11187300000000001
+    },
+    "steps": 13,
+    "wall_ms": 71828
+  },
+  {
+    "run_id": "all_guards_r02_test_060",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 61671,
+      "output_tokens": 4250,
+      "cached_input_tokens": 55296,
+      "estimated_cost_cny": 0.02448092,
+      "cost_upper_bound_cny": 0.07867099999999999
+    },
+    "steps": 9,
+    "wall_ms": 50594
+  },
+  {
+    "run_id": "all_guards_r02_test_062",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 66772,
+      "output_tokens": 2902,
+      "cached_input_tokens": 60672,
+      "estimated_cost_cny": 0.018921439999999998,
+      "cost_upper_bound_cny": 0.07837999999999999
+    },
+    "steps": 11,
+    "wall_ms": 58594
+  },
+  {
+    "run_id": "all_guards_r02_test_064",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 59662,
+      "output_tokens": 3499,
+      "cached_input_tokens": 52992,
+      "estimated_cost_cny": 0.02172584,
+      "cost_upper_bound_cny": 0.07365799999999999
+    },
+    "steps": 10,
+    "wall_ms": 50906
+  },
+  {
+    "run_id": "all_guards_r02_test_065",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43681,
+      "output_tokens": 2285,
+      "cached_input_tokens": 40192,
+      "estimated_cost_cny": 0.013432839999999998,
+      "cost_upper_bound_cny": 0.05282099999999999
+    },
+    "steps": 8,
+    "wall_ms": 46234
+  },
+  {
+    "run_id": "all_guards_r02_test_066",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 51099,
+      "output_tokens": 2489,
+      "cached_input_tokens": 46848,
+      "estimated_cost_cny": 0.015143959999999998,
+      "cost_upper_bound_cny": 0.061055000000000005
+    },
+    "steps": 9,
+    "wall_ms": 48344
+  },
+  {
+    "run_id": "all_guards_r02_test_069",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56248,
+      "output_tokens": 2511,
+      "cached_input_tokens": 51840,
+      "estimated_cost_cny": 0.015488799999999999,
+      "cost_upper_bound_cny": 0.066292
+    },
+    "steps": 10,
+    "wall_ms": 62328
+  },
+  {
+    "run_id": "all_guards_r02_test_073",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 36802,
+      "output_tokens": 1798,
+      "cached_input_tokens": 33408,
+      "estimated_cost_cny": 0.01125416,
+      "cost_upper_bound_cny": 0.043994000000000005
+    },
+    "steps": 7,
+    "wall_ms": 38234
+  },
+  {
+    "run_id": "all_guards_r02_test_074",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 114035,
+      "output_tokens": 4418,
+      "cached_input_tokens": 104192,
+      "estimated_cost_cny": 0.029598840000000005,
+      "cost_upper_bound_cny": 0.13170700000000002
+    },
+    "steps": 15,
+    "wall_ms": 70406
+  },
+  {
+    "run_id": "all_guards_r02_test_077",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43185,
+      "output_tokens": 2408,
+      "cached_input_tokens": 39424,
+      "estimated_cost_cny": 0.01418148,
+      "cost_upper_bound_cny": 0.05281699999999999
+    },
+    "steps": 8,
+    "wall_ms": 43484
+  },
+  {
+    "run_id": "all_guards_r02_test_081",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 79869,
+      "output_tokens": 2558,
+      "cached_input_tokens": 73856,
+      "estimated_cost_cny": 0.017722120000000004,
+      "cost_upper_bound_cny": 0.09010099999999999
+    },
+    "steps": 13,
+    "wall_ms": 60562
+  },
+  {
+    "run_id": "all_guards_r02_test_083",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65108,
+      "output_tokens": 2467,
+      "cached_input_tokens": 59264,
+      "estimated_cost_cny": 0.01689728,
+      "cost_upper_bound_cny": 0.07497599999999999
+    },
+    "steps": 11,
+    "wall_ms": 49844
+  },
+  {
+    "run_id": "all_guards_r02_test_084",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 71919,
+      "output_tokens": 2627,
+      "cached_input_tokens": 66688,
+      "estimated_cost_cny": 0.01707276,
+      "cost_upper_bound_cny": 0.08242699999999999
+    },
+    "steps": 12,
+    "wall_ms": 60672
+  },
+  {
+    "run_id": "all_guards_r02_test_094",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72674,
+      "output_tokens": 3665,
+      "cached_input_tokens": 65920,
+      "estimated_cost_cny": 0.0227324,
+      "cost_upper_bound_cny": 0.08733400000000001
+    },
+    "steps": 11,
+    "wall_ms": 56906
+  },
+  {
+    "run_id": "all_guards_r02_test_097",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83487,
+      "output_tokens": 4151,
+      "cached_input_tokens": 75648,
+      "estimated_cost_cny": 0.02595596,
+      "cost_upper_bound_cny": 0.10009100000000001
+    },
+    "steps": 13,
+    "wall_ms": 67516
+  },
+  {
+    "run_id": "all_guards_r02_test_098",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65800,
+      "output_tokens": 3820,
+      "cached_input_tokens": 58880,
+      "estimated_cost_cny": 0.0233776,
+      "cost_upper_bound_cny": 0.08108
+    },
+    "steps": 10,
+    "wall_ms": 50844
+  },
+  {
+    "run_id": "all_guards_r02_test_104",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 185061,
+      "output_tokens": 5161,
+      "cached_input_tokens": 173312,
+      "estimated_cost_cny": 0.03585924,
+      "cost_upper_bound_cny": 0.20570500000000003
+    },
+    "steps": 22,
+    "wall_ms": 104469
+  },
+  {
+    "run_id": "all_guards_r02_test_108",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/108",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 121036,
+      "output_tokens": 6867,
+      "cached_input_tokens": 108544,
+      "estimated_cost_cny": 0.042130879999999996,
+      "cost_upper_bound_cny": 0.148504
+    },
+    "steps": 14,
+    "wall_ms": 81687
+  },
+  {
+    "run_id": "all_guards_r02_test_109",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56445,
+      "output_tokens": 2722,
+      "cached_input_tokens": 51712,
+      "estimated_cost_cny": 0.016655239999999998,
+      "cost_upper_bound_cny": 0.067333
+    },
+    "steps": 10,
+    "wall_ms": 47031
+  },
+  {
+    "run_id": "all_guards_r02_test_111",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 96396,
+      "output_tokens": 5623,
+      "cached_input_tokens": 87296,
+      "estimated_cost_cny": 0.03333792000000001,
+      "cost_upper_bound_cny": 0.11888800000000001
+    },
+    "steps": 14,
+    "wall_ms": 75453
+  },
+  {
+    "run_id": "all_guards_r02_test_112",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 125686,
+      "output_tokens": 7740,
+      "cached_input_tokens": 112384,
+      "estimated_cost_cny": 0.04650968,
+      "cost_upper_bound_cny": 0.156646
+    },
+    "steps": 15,
+    "wall_ms": 75906
+  },
+  {
+    "run_id": "all_guards_r02_test_113",
+    "variant": "all_guards",
+    "trial": 2,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 170274,
+      "output_tokens": 6485,
+      "cached_input_tokens": 157312,
+      "estimated_cost_cny": 0.04204824000000001,
+      "cost_upper_bound_cny": 0.19621399999999994
+    },
+    "steps": 20,
+    "wall_ms": 99593
+  },
+  {
+    "run_id": "all_guards_r03_test_001",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 70904,
+      "output_tokens": 3307,
+      "cached_input_tokens": 63744,
+      "estimated_cost_cny": 0.02166288,
+      "cost_upper_bound_cny": 0.084132
+    },
+    "steps": 11,
+    "wall_ms": 60421
+  },
+  {
+    "run_id": "all_guards_r03_test_005",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 101823,
+      "output_tokens": 4412,
+      "cached_input_tokens": 93056,
+      "estimated_cost_cny": 0.02827612,
+      "cost_upper_bound_cny": 0.11947100000000002
+    },
+    "steps": 14,
+    "wall_ms": 66047
+  },
+  {
+    "run_id": "all_guards_r03_test_010",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 49429,
+      "output_tokens": 2078,
+      "cached_input_tokens": 45312,
+      "estimated_cost_cny": 0.01333524,
+      "cost_upper_bound_cny": 0.057741
+    },
+    "steps": 9,
+    "wall_ms": 45234
+  },
+  {
+    "run_id": "all_guards_r03_test_012",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 44211,
+      "output_tokens": 4030,
+      "cached_input_tokens": 39552,
+      "estimated_cost_cny": 0.02157004,
+      "cost_upper_bound_cny": 0.060331
+    },
+    "steps": 8,
+    "wall_ms": 46531
+  },
+  {
+    "run_id": "all_guards_r03_test_013",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 59042,
+      "output_tokens": 2754,
+      "cached_input_tokens": 53888,
+      "estimated_cost_cny": 0.017247759999999997,
+      "cost_upper_bound_cny": 0.07005800000000001
+    },
+    "steps": 10,
+    "wall_ms": 51140
+  },
+  {
+    "run_id": "all_guards_r03_test_015",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54059,
+      "output_tokens": 3110,
+      "cached_input_tokens": 47872,
+      "estimated_cost_cny": 0.019584440000000005,
+      "cost_upper_bound_cny": 0.066499
+    },
+    "steps": 9,
+    "wall_ms": 48328
+  },
+  {
+    "run_id": "all_guards_r03_test_016",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 94412,
+      "output_tokens": 3222,
+      "cached_input_tokens": 87424,
+      "estimated_cost_cny": 0.021624479999999998,
+      "cost_upper_bound_cny": 0.10729999999999998
+    },
+    "steps": 14,
+    "wall_ms": 69078
+  },
+  {
+    "run_id": "all_guards_r03_test_017",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 47508,
+      "output_tokens": 1456,
+      "cached_input_tokens": 44288,
+      "estimated_cost_cny": 0.00992976,
+      "cost_upper_bound_cny": 0.053332000000000004
+    },
+    "steps": 9,
+    "wall_ms": 47687
+  },
+  {
+    "run_id": "all_guards_r03_test_018",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 136231,
+      "output_tokens": 7090,
+      "cached_input_tokens": 125312,
+      "estimated_cost_cny": 0.04178524,
+      "cost_upper_bound_cny": 0.16459100000000002
+    },
+    "steps": 17,
+    "wall_ms": 115687
+  },
+  {
+    "run_id": "all_guards_r03_test_023",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161056,
+      "output_tokens": 5215,
+      "cached_input_tokens": 148736,
+      "estimated_cost_cny": 0.03615472000000001,
+      "cost_upper_bound_cny": 0.18191600000000002
+    },
+    "steps": 19,
+    "wall_ms": 83969
+  },
+  {
+    "run_id": "all_guards_r03_test_025",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 49290,
+      "output_tokens": 2314,
+      "cached_input_tokens": 45312,
+      "estimated_cost_cny": 0.014140240000000002,
+      "cost_upper_bound_cny": 0.058546
+    },
+    "steps": 9,
+    "wall_ms": 49843
+  },
+  {
+    "run_id": "all_guards_r03_test_027",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/27",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 76087,
+      "output_tokens": 5135,
+      "cached_input_tokens": 67584,
+      "estimated_cost_cny": 0.030394679999999997,
+      "cost_upper_bound_cny": 0.09662699999999999
+    },
+    "steps": 11,
+    "wall_ms": 55687
+  },
+  {
+    "run_id": "all_guards_r03_test_029",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122887,
+      "output_tokens": 4557,
+      "cached_input_tokens": 112640,
+      "estimated_cost_cny": 0.0307278,
+      "cost_upper_bound_cny": 0.14111500000000002
+    },
+    "steps": 16,
+    "wall_ms": 75953
+  },
+  {
+    "run_id": "all_guards_r03_test_031",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 129111,
+      "output_tokens": 4986,
+      "cached_input_tokens": 120320,
+      "estimated_cost_cny": 0.031141399999999996,
+      "cost_upper_bound_cny": 0.149055
+    },
+    "steps": 18,
+    "wall_ms": 89484
+  },
+  {
+    "run_id": "all_guards_r03_test_032",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161572,
+      "output_tokens": 7448,
+      "cached_input_tokens": 149120,
+      "estimated_cost_cny": 0.04522640000000001,
+      "cost_upper_bound_cny": 0.19136400000000006
+    },
+    "steps": 21,
+    "wall_ms": 105391
+  },
+  {
+    "run_id": "all_guards_r03_test_035",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 99094,
+      "output_tokens": 4960,
+      "cached_input_tokens": 90112,
+      "estimated_cost_cny": 0.03062424,
+      "cost_upper_bound_cny": 0.118934
+    },
+    "steps": 15,
+    "wall_ms": 73203
+  },
+  {
+    "run_id": "all_guards_r03_test_036",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 132349,
+      "output_tokens": 5968,
+      "cached_input_tokens": 120064,
+      "estimated_cost_cny": 0.03855828000000001,
+      "cost_upper_bound_cny": 0.15622100000000003
+    },
+    "steps": 17,
+    "wall_ms": 80235
+  },
+  {
+    "run_id": "all_guards_r03_test_037",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 124914,
+      "output_tokens": 5818,
+      "cached_input_tokens": 112128,
+      "estimated_cost_cny": 0.038300560000000004,
+      "cost_upper_bound_cny": 0.14818599999999998
+    },
+    "steps": 16,
+    "wall_ms": 73719
+  },
+  {
+    "run_id": "all_guards_r03_test_039",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/39",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 26533,
+      "output_tokens": 2760,
+      "cached_input_tokens": 24320,
+      "estimated_cost_cny": 0.013739399999999999,
+      "cost_upper_bound_cny": 0.037573
+    },
+    "steps": 5,
+    "wall_ms": 31516
+  },
+  {
+    "run_id": "all_guards_r03_test_040",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53745,
+      "output_tokens": 1836,
+      "cached_input_tokens": 50304,
+      "estimated_cost_cny": 0.01179108,
+      "cost_upper_bound_cny": 0.061089000000000004
+    },
+    "steps": 10,
+    "wall_ms": 52609
+  },
+  {
+    "run_id": "all_guards_r03_test_042",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 114034,
+      "output_tokens": 4585,
+      "cached_input_tokens": 104448,
+      "estimated_cost_cny": 0.030014959999999997,
+      "cost_upper_bound_cny": 0.13237400000000002
+    },
+    "steps": 16,
+    "wall_ms": 76016
+  },
+  {
+    "run_id": "all_guards_r03_test_046",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 110535,
+      "output_tokens": 10886,
+      "cached_input_tokens": 96256,
+      "estimated_cost_cny": 0.05974812,
+      "cost_upper_bound_cny": 0.154079
+    },
+    "steps": 13,
+    "wall_ms": 84907
+  },
+  {
+    "run_id": "all_guards_r03_test_050",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 24578,
+      "output_tokens": 4442,
+      "cached_input_tokens": 22784,
+      "estimated_cost_cny": 0.02001768,
+      "cost_upper_bound_cny": 0.042346
+    },
+    "steps": 5,
+    "wall_ms": 39032
+  },
+  {
+    "run_id": "all_guards_r03_test_051",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 36037,
+      "output_tokens": 2377,
+      "cached_input_tokens": 32896,
+      "estimated_cost_cny": 0.01330692,
+      "cost_upper_bound_cny": 0.045545
+    },
+    "steps": 7,
+    "wall_ms": 36969
+  },
+  {
+    "run_id": "all_guards_r03_test_053",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57711,
+      "output_tokens": 2957,
+      "cached_input_tokens": 53248,
+      "estimated_cost_cny": 0.017355960000000004,
+      "cost_upper_bound_cny": 0.06953899999999999
+    },
+    "steps": 10,
+    "wall_ms": 47921
+  },
+  {
+    "run_id": "all_guards_r03_test_054",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161299,
+      "output_tokens": 5902,
+      "cached_input_tokens": 149248,
+      "estimated_cost_cny": 0.03864396000000001,
+      "cost_upper_bound_cny": 0.184907
+    },
+    "steps": 20,
+    "wall_ms": 86750
+  },
+  {
+    "run_id": "all_guards_r03_test_056",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 69497,
+      "output_tokens": 3337,
+      "cached_input_tokens": 62848,
+      "estimated_cost_cny": 0.021253960000000002,
+      "cost_upper_bound_cny": 0.08284499999999999
+    },
+    "steps": 11,
+    "wall_ms": 55204
+  },
+  {
+    "run_id": "all_guards_r03_test_057",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 38287,
+      "output_tokens": 2384,
+      "cached_input_tokens": 35072,
+      "estimated_cost_cny": 0.01345244,
+      "cost_upper_bound_cny": 0.047823000000000004
+    },
+    "steps": 7,
+    "wall_ms": 42844
+  },
+  {
+    "run_id": "all_guards_r03_test_059",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 106254,
+      "output_tokens": 5831,
+      "cached_input_tokens": 98816,
+      "estimated_cost_cny": 0.03273832,
+      "cost_upper_bound_cny": 0.12957799999999997
+    },
+    "steps": 15,
+    "wall_ms": 76625
+  },
+  {
+    "run_id": "all_guards_r03_test_060",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 35574,
+      "output_tokens": 2471,
+      "cached_input_tokens": 30848,
+      "estimated_cost_cny": 0.01522696,
+      "cost_upper_bound_cny": 0.045458
+    },
+    "steps": 6,
+    "wall_ms": 30313
+  },
+  {
+    "run_id": "all_guards_r03_test_062",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64647,
+      "output_tokens": 2428,
+      "cached_input_tokens": 59520,
+      "estimated_cost_cny": 0.016029400000000003,
+      "cost_upper_bound_cny": 0.07435900000000001
+    },
+    "steps": 11,
+    "wall_ms": 57438
+  },
+  {
+    "run_id": "all_guards_r03_test_064",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68920,
+      "output_tokens": 4386,
+      "cached_input_tokens": 62208,
+      "estimated_cost_cny": 0.02550016,
+      "cost_upper_bound_cny": 0.08646400000000001
+    },
+    "steps": 11,
+    "wall_ms": 56875
+  },
+  {
+    "run_id": "all_guards_r03_test_065",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68957,
+      "output_tokens": 5401,
+      "cached_input_tokens": 62208,
+      "estimated_cost_cny": 0.029597159999999997,
+      "cost_upper_bound_cny": 0.090561
+    },
+    "steps": 11,
+    "wall_ms": 60532
+  },
+  {
+    "run_id": "all_guards_r03_test_066",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50423,
+      "output_tokens": 2464,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.014869720000000001,
+      "cost_upper_bound_cny": 0.060279
+    },
+    "steps": 9,
+    "wall_ms": 48265
+  },
+  {
+    "run_id": "all_guards_r03_test_069",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72736,
+      "output_tokens": 3420,
+      "cached_input_tokens": 67200,
+      "estimated_cost_cny": 0.020560000000000002,
+      "cost_upper_bound_cny": 0.08641599999999999
+    },
+    "steps": 12,
+    "wall_ms": 57984
+  },
+  {
+    "run_id": "all_guards_r03_test_073",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 36976,
+      "output_tokens": 1669,
+      "cached_input_tokens": 32896,
+      "estimated_cost_cny": 0.01141392,
+      "cost_upper_bound_cny": 0.043652
+    },
+    "steps": 7,
+    "wall_ms": 35484
+  },
+  {
+    "run_id": "all_guards_r03_test_074",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 126870,
+      "output_tokens": 4631,
+      "cached_input_tokens": 117120,
+      "estimated_cost_cny": 0.0306164,
+      "cost_upper_bound_cny": 0.145394
+    },
+    "steps": 16,
+    "wall_ms": 74031
+  },
+  {
+    "run_id": "all_guards_r03_test_077",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43357,
+      "output_tokens": 2093,
+      "cached_input_tokens": 39552,
+      "estimated_cost_cny": 0.012968039999999998,
+      "cost_upper_bound_cny": 0.051729
+    },
+    "steps": 8,
+    "wall_ms": 40532
+  },
+  {
+    "run_id": "all_guards_r03_test_081",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 81934,
+      "output_tokens": 3092,
+      "cached_input_tokens": 75136,
+      "estimated_cost_cny": 0.02066872,
+      "cost_upper_bound_cny": 0.09430199999999998
+    },
+    "steps": 13,
+    "wall_ms": 60172
+  },
+  {
+    "run_id": "all_guards_r03_test_083",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64385,
+      "output_tokens": 2180,
+      "cached_input_tokens": 59264,
+      "estimated_cost_cny": 0.015026280000000001,
+      "cost_upper_bound_cny": 0.073105
+    },
+    "steps": 11,
+    "wall_ms": 51125
+  },
+  {
+    "run_id": "all_guards_r03_test_084",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 73597,
+      "output_tokens": 2665,
+      "cached_input_tokens": 67712,
+      "estimated_cost_cny": 0.01789924,
+      "cost_upper_bound_cny": 0.084257
+    },
+    "steps": 12,
+    "wall_ms": 56562
+  },
+  {
+    "run_id": "all_guards_r03_test_094",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 62128,
+      "output_tokens": 2321,
+      "cached_input_tokens": 56192,
+      "estimated_cost_cny": 0.01634384,
+      "cost_upper_bound_cny": 0.07141199999999999
+    },
+    "steps": 10,
+    "wall_ms": 46875
+  },
+  {
+    "run_id": "all_guards_r03_test_097",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 86767,
+      "output_tokens": 4471,
+      "cached_input_tokens": 78720,
+      "estimated_cost_cny": 0.0275054,
+      "cost_upper_bound_cny": 0.10465099999999998
+    },
+    "steps": 13,
+    "wall_ms": 66000
+  },
+  {
+    "run_id": "all_guards_r03_test_098",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 69823,
+      "output_tokens": 4984,
+      "cached_input_tokens": 61696,
+      "estimated_cost_cny": 0.02929692,
+      "cost_upper_bound_cny": 0.08975899999999999
+    },
+    "steps": 10,
+    "wall_ms": 50421
+  },
+  {
+    "run_id": "all_guards_r03_test_104",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 221625,
+      "output_tokens": 6086,
+      "cached_input_tokens": 207744,
+      "estimated_cost_cny": 0.04237987999999999,
+      "cost_upper_bound_cny": 0.24596899999999994
+    },
+    "steps": 24,
+    "wall_ms": 112937
+  },
+  {
+    "run_id": "all_guards_r03_test_108",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/108",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 39183,
+      "output_tokens": 3925,
+      "cached_input_tokens": 33664,
+      "estimated_cost_cny": 0.02189228,
+      "cost_upper_bound_cny": 0.054882999999999994
+    },
+    "steps": 7,
+    "wall_ms": 40032
+  },
+  {
+    "run_id": "all_guards_r03_test_109",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57869,
+      "output_tokens": 2416,
+      "cached_input_tokens": 52864,
+      "estimated_cost_cny": 0.01572628,
+      "cost_upper_bound_cny": 0.06753300000000001
+    },
+    "steps": 10,
+    "wall_ms": 47781
+  },
+  {
+    "run_id": "all_guards_r03_test_111",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 101347,
+      "output_tokens": 7470,
+      "cached_input_tokens": 90368,
+      "estimated_cost_cny": 0.04266635999999999,
+      "cost_upper_bound_cny": 0.131227
+    },
+    "steps": 13,
+    "wall_ms": 77281
+  },
+  {
+    "run_id": "all_guards_r03_test_112",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122959,
+      "output_tokens": 7470,
+      "cached_input_tokens": 110208,
+      "estimated_cost_cny": 0.044835160000000006,
+      "cost_upper_bound_cny": 0.152839
+    },
+    "steps": 15,
+    "wall_ms": 71657
+  },
+  {
+    "run_id": "all_guards_r03_test_113",
+    "variant": "all_guards",
+    "trial": 3,
+    "task": "retail/test/113",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 73377,
+      "output_tokens": 2434,
+      "cached_input_tokens": 68096,
+      "estimated_cost_cny": 0.01637892,
+      "cost_upper_bound_cny": 0.083113
+    },
+    "steps": 12,
+    "wall_ms": 54157
+  },
+  {
+    "run_id": "baseline_r01_test_001",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57322,
+      "output_tokens": 2919,
+      "cached_input_tokens": 50816,
+      "estimated_cost_cny": 0.019198319999999998,
+      "cost_upper_bound_cny": 0.068998
+    },
+    "steps": 9,
+    "wall_ms": 45344
+  },
+  {
+    "run_id": "baseline_r01_test_005",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 72364,
+      "output_tokens": 4292,
+      "cached_input_tokens": 64640,
+      "estimated_cost_cny": 0.026184799999999998,
+      "cost_upper_bound_cny": 0.08953200000000001
+    },
+    "steps": 11,
+    "wall_ms": 54828
+  },
+  {
+    "run_id": "baseline_r01_test_010",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42638,
+      "output_tokens": 2207,
+      "cached_input_tokens": 38656,
+      "estimated_cost_cny": 0.01358312,
+      "cost_upper_bound_cny": 0.051466
+    },
+    "steps": 8,
+    "wall_ms": 38359
+  },
+  {
+    "run_id": "baseline_r01_test_012",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 35980,
+      "output_tokens": 2860,
+      "cached_input_tokens": 32640,
+      "estimated_cost_cny": 0.0154328,
+      "cost_upper_bound_cny": 0.04742
+    },
+    "steps": 7,
+    "wall_ms": 35672
+  },
+  {
+    "run_id": "baseline_r01_test_013",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 60265,
+      "output_tokens": 3291,
+      "cached_input_tokens": 54784,
+      "estimated_cost_cny": 0.01974068,
+      "cost_upper_bound_cny": 0.073429
+    },
+    "steps": 10,
+    "wall_ms": 51891
+  },
+  {
+    "run_id": "baseline_r01_test_015",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 80412,
+      "output_tokens": 3252,
+      "cached_input_tokens": 72832,
+      "estimated_cost_cny": 0.02204464,
+      "cost_upper_bound_cny": 0.09341999999999999
+    },
+    "steps": 12,
+    "wall_ms": 56297
+  },
+  {
+    "run_id": "baseline_r01_test_016",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 96370,
+      "output_tokens": 3864,
+      "cached_input_tokens": 88320,
+      "estimated_cost_cny": 0.025272400000000004,
+      "cost_upper_bound_cny": 0.11182600000000002
+    },
+    "steps": 14,
+    "wall_ms": 63109
+  },
+  {
+    "run_id": "baseline_r01_test_017",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41722,
+      "output_tokens": 1574,
+      "cached_input_tokens": 38784,
+      "estimated_cost_cny": 0.010009679999999998,
+      "cost_upper_bound_cny": 0.04801799999999999
+    },
+    "steps": 8,
+    "wall_ms": 44187
+  },
+  {
+    "run_id": "baseline_r01_test_018",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/18",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 19797,
+      "output_tokens": 1352,
+      "cached_input_tokens": 17920,
+      "estimated_cost_cny": 0.0076434,
+      "cost_upper_bound_cny": 0.025205
+    },
+    "steps": 4,
+    "wall_ms": 27265
+  },
+  {
+    "run_id": "baseline_r01_test_023",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161501,
+      "output_tokens": 5424,
+      "cached_input_tokens": 149120,
+      "estimated_cost_cny": 0.037059400000000006,
+      "cost_upper_bound_cny": 0.183197
+    },
+    "steps": 19,
+    "wall_ms": 86188
+  },
+  {
+    "run_id": "baseline_r01_test_025",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57679,
+      "output_tokens": 2836,
+      "cached_input_tokens": 52736,
+      "estimated_cost_cny": 0.01734172,
+      "cost_upper_bound_cny": 0.069023
+    },
+    "steps": 10,
+    "wall_ms": 45125
+  },
+  {
+    "run_id": "baseline_r01_test_027",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/27",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53808,
+      "output_tokens": 3399,
+      "cached_input_tokens": 48128,
+      "estimated_cost_cny": 0.020238560000000003,
+      "cost_upper_bound_cny": 0.06740399999999999
+    },
+    "steps": 9,
+    "wall_ms": 43828
+  },
+  {
+    "run_id": "baseline_r01_test_029",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 121347,
+      "output_tokens": 6334,
+      "cached_input_tokens": 109568,
+      "estimated_cost_cny": 0.03930636,
+      "cost_upper_bound_cny": 0.146683
+    },
+    "steps": 15,
+    "wall_ms": 68719
+  },
+  {
+    "run_id": "baseline_r01_test_031",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122468,
+      "output_tokens": 4243,
+      "cached_input_tokens": 114816,
+      "estimated_cost_cny": 0.02692032,
+      "cost_upper_bound_cny": 0.13944
+    },
+    "steps": 18,
+    "wall_ms": 152672
+  },
+  {
+    "run_id": "baseline_r01_test_032",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 143556,
+      "output_tokens": 4313,
+      "cached_input_tokens": 134400,
+      "estimated_cost_cny": 0.029096000000000004,
+      "cost_upper_bound_cny": 0.16080799999999998
+    },
+    "steps": 20,
+    "wall_ms": 96172
+  },
+  {
+    "run_id": "baseline_r01_test_035",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 154932,
+      "output_tokens": 4815,
+      "cached_input_tokens": 143744,
+      "estimated_cost_cny": 0.03332288,
+      "cost_upper_bound_cny": 0.17419200000000004
+    },
+    "steps": 20,
+    "wall_ms": 289453
+  },
+  {
+    "run_id": "baseline_r01_test_036",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 131381,
+      "output_tokens": 5543,
+      "cached_input_tokens": 119680,
+      "estimated_cost_cny": 0.0362666,
+      "cost_upper_bound_cny": 0.153553
+    },
+    "steps": 17,
+    "wall_ms": 76484
+  },
+  {
+    "run_id": "baseline_r01_test_037",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 119962,
+      "output_tokens": 5391,
+      "cached_input_tokens": 108032,
+      "estimated_cost_cny": 0.03565464,
+      "cost_upper_bound_cny": 0.141526
+    },
+    "steps": 16,
+    "wall_ms": 74203
+  },
+  {
+    "run_id": "baseline_r01_test_039",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 117871,
+      "output_tokens": 6272,
+      "cached_input_tokens": 109184,
+      "estimated_cost_cny": 0.03595867999999999,
+      "cost_upper_bound_cny": 0.14295899999999997
+    },
+    "steps": 16,
+    "wall_ms": 84062
+  },
+  {
+    "run_id": "baseline_r01_test_040",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54452,
+      "output_tokens": 2214,
+      "cached_input_tokens": 50816,
+      "estimated_cost_cny": 0.01350832,
+      "cost_upper_bound_cny": 0.063308
+    },
+    "steps": 10,
+    "wall_ms": 54469
+  },
+  {
+    "run_id": "baseline_r01_test_042",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 127182,
+      "output_tokens": 5180,
+      "cached_input_tokens": 116736,
+      "estimated_cost_cny": 0.03350072,
+      "cost_upper_bound_cny": 0.147902
+    },
+    "steps": 17,
+    "wall_ms": 81953
+  },
+  {
+    "run_id": "baseline_r01_test_046",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/46",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 65462,
+      "output_tokens": 3791,
+      "cached_input_tokens": 60032,
+      "estimated_cost_cny": 0.02179464,
+      "cost_upper_bound_cny": 0.08062600000000002
+    },
+    "steps": 11,
+    "wall_ms": 50734
+  },
+  {
+    "run_id": "baseline_r01_test_050",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 23949,
+      "output_tokens": 1413,
+      "cached_input_tokens": 22272,
+      "estimated_cost_cny": 0.0077744400000000005,
+      "cost_upper_bound_cny": 0.029601
+    },
+    "steps": 5,
+    "wall_ms": 23515
+  },
+  {
+    "run_id": "baseline_r01_test_051",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 36285,
+      "output_tokens": 1965,
+      "cached_input_tokens": 33024,
+      "estimated_cost_cny": 0.011781479999999999,
+      "cost_upper_bound_cny": 0.044145000000000004
+    },
+    "steps": 7,
+    "wall_ms": 35938
+  },
+  {
+    "run_id": "baseline_r01_test_053",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57622,
+      "output_tokens": 3056,
+      "cached_input_tokens": 52736,
+      "estimated_cost_cny": 0.018164720000000002,
+      "cost_upper_bound_cny": 0.069846
+    },
+    "steps": 10,
+    "wall_ms": 49953
+  },
+  {
+    "run_id": "baseline_r01_test_054",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 139022,
+      "output_tokens": 7223,
+      "cached_input_tokens": 126720,
+      "estimated_cost_cny": 0.043728400000000014,
+      "cost_upper_bound_cny": 0.16791399999999998
+    },
+    "steps": 18,
+    "wall_ms": 79188
+  },
+  {
+    "run_id": "baseline_r01_test_056",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 69767,
+      "output_tokens": 4126,
+      "cached_input_tokens": 62976,
+      "estimated_cost_cny": 0.02455452,
+      "cost_upper_bound_cny": 0.08627100000000001
+    },
+    "steps": 11,
+    "wall_ms": 55234
+  },
+  {
+    "run_id": "baseline_r01_test_057",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 38616,
+      "output_tokens": 2252,
+      "cached_input_tokens": 35072,
+      "estimated_cost_cny": 0.013253439999999998,
+      "cost_upper_bound_cny": 0.04762399999999999
+    },
+    "steps": 7,
+    "wall_ms": 42312
+  },
+  {
+    "run_id": "baseline_r01_test_059",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/59",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 36123,
+      "output_tokens": 3168,
+      "cached_input_tokens": 33152,
+      "estimated_cost_cny": 0.01630604,
+      "cost_upper_bound_cny": 0.048795
+    },
+    "steps": 7,
+    "wall_ms": 36375
+  },
+  {
+    "run_id": "baseline_r01_test_060",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51956,
+      "output_tokens": 3382,
+      "cached_input_tokens": 46080,
+      "estimated_cost_cny": 0.0203256,
+      "cost_upper_bound_cny": 0.06548399999999999
+    },
+    "steps": 8,
+    "wall_ms": 36922
+  },
+  {
+    "run_id": "baseline_r01_test_062",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 70143,
+      "output_tokens": 3842,
+      "cached_input_tokens": 63616,
+      "estimated_cost_cny": 0.023167319999999998,
+      "cost_upper_bound_cny": 0.08551099999999999
+    },
+    "steps": 11,
+    "wall_ms": 57016
+  },
+  {
+    "run_id": "baseline_r01_test_064",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 73094,
+      "output_tokens": 3234,
+      "cached_input_tokens": 67328,
+      "estimated_cost_cny": 0.020048559999999997,
+      "cost_upper_bound_cny": 0.08603000000000001
+    },
+    "steps": 12,
+    "wall_ms": 54390
+  },
+  {
+    "run_id": "baseline_r01_test_065",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 100971,
+      "output_tokens": 5057,
+      "cached_input_tokens": 92032,
+      "estimated_cost_cny": 0.031007639999999996,
+      "cost_upper_bound_cny": 0.121199
+    },
+    "steps": 14,
+    "wall_ms": 69109
+  },
+  {
+    "run_id": "baseline_r01_test_066",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64269,
+      "output_tokens": 2610,
+      "cached_input_tokens": 59392,
+      "estimated_cost_cny": 0.016504840000000003,
+      "cost_upper_bound_cny": 0.074709
+    },
+    "steps": 11,
+    "wall_ms": 57015
+  },
+  {
+    "run_id": "baseline_r01_test_069",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55830,
+      "output_tokens": 2144,
+      "cached_input_tokens": 51840,
+      "estimated_cost_cny": 0.013602799999999998,
+      "cost_upper_bound_cny": 0.064406
+    },
+    "steps": 10,
+    "wall_ms": 48312
+  },
+  {
+    "run_id": "baseline_r01_test_073",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50949,
+      "output_tokens": 2246,
+      "cached_input_tokens": 45952,
+      "estimated_cost_cny": 0.01490004,
+      "cost_upper_bound_cny": 0.059932999999999986
+    },
+    "steps": 9,
+    "wall_ms": 44406
+  },
+  {
+    "run_id": "baseline_r01_test_074",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 139422,
+      "output_tokens": 4500,
+      "cached_input_tokens": 129536,
+      "estimated_cost_cny": 0.03047672,
+      "cost_upper_bound_cny": 0.15742199999999998
+    },
+    "steps": 17,
+    "wall_ms": 81032
+  },
+  {
+    "run_id": "baseline_r01_test_077",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 57528,
+      "output_tokens": 2544,
+      "cached_input_tokens": 52736,
+      "estimated_cost_cny": 0.016022719999999997,
+      "cost_upper_bound_cny": 0.067704
+    },
+    "steps": 10,
+    "wall_ms": 55109
+  },
+  {
+    "run_id": "baseline_r01_test_081",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 81687,
+      "output_tokens": 3109,
+      "cached_input_tokens": 75008,
+      "estimated_cost_cny": 0.020615160000000004,
+      "cost_upper_bound_cny": 0.09412299999999998
+    },
+    "steps": 13,
+    "wall_ms": 60172
+  },
+  {
+    "run_id": "baseline_r01_test_083",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64693,
+      "output_tokens": 2853,
+      "cached_input_tokens": 59520,
+      "estimated_cost_cny": 0.0177754,
+      "cost_upper_bound_cny": 0.07610499999999999
+    },
+    "steps": 11,
+    "wall_ms": 51782
+  },
+  {
+    "run_id": "baseline_r01_test_084",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 73067,
+      "output_tokens": 2626,
+      "cached_input_tokens": 67584,
+      "estimated_cost_cny": 0.017338680000000002,
+      "cost_upper_bound_cny": 0.08357100000000002
+    },
+    "steps": 12,
+    "wall_ms": 56718
+  },
+  {
+    "run_id": "baseline_r01_test_094",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65371,
+      "output_tokens": 3109,
+      "cached_input_tokens": 58112,
+      "estimated_cost_cny": 0.020857239999999996,
+      "cost_upper_bound_cny": 0.077807
+    },
+    "steps": 10,
+    "wall_ms": 47906
+  },
+  {
+    "run_id": "baseline_r01_test_097",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83276,
+      "output_tokens": 3687,
+      "cached_input_tokens": 76160,
+      "estimated_cost_cny": 0.023387200000000004,
+      "cost_upper_bound_cny": 0.09802400000000001
+    },
+    "steps": 13,
+    "wall_ms": 63422
+  },
+  {
+    "run_id": "baseline_r01_test_098",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/98",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 67933,
+      "output_tokens": 5837,
+      "cached_input_tokens": 60416,
+      "estimated_cost_cny": 0.03207332,
+      "cost_upper_bound_cny": 0.091281
+    },
+    "steps": 10,
+    "wall_ms": 51109
+  },
+  {
+    "run_id": "baseline_r01_test_104",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 229539,
+      "output_tokens": 6243,
+      "cached_input_tokens": 216576,
+      "estimated_cost_cny": 0.04226651999999999,
+      "cost_upper_bound_cny": 0.254511
+    },
+    "steps": 25,
+    "wall_ms": 120656
+  },
+  {
+    "run_id": "baseline_r01_test_108",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/108",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 112708,
+      "output_tokens": 5636,
+      "cached_input_tokens": 101888,
+      "estimated_cost_cny": 0.035401760000000004,
+      "cost_upper_bound_cny": 0.135252
+    },
+    "steps": 14,
+    "wall_ms": 70406
+  },
+  {
+    "run_id": "baseline_r01_test_109",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 58724,
+      "output_tokens": 2960,
+      "cached_input_tokens": 53504,
+      "estimated_cost_cny": 0.01813008,
+      "cost_upper_bound_cny": 0.070564
+    },
+    "steps": 10,
+    "wall_ms": 47938
+  },
+  {
+    "run_id": "baseline_r01_test_111",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122870,
+      "output_tokens": 8890,
+      "cached_input_tokens": 109568,
+      "estimated_cost_cny": 0.05105336,
+      "cost_upper_bound_cny": 0.15842999999999996
+    },
+    "steps": 14,
+    "wall_ms": 77984
+  },
+  {
+    "run_id": "baseline_r01_test_112",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 130103,
+      "output_tokens": 8029,
+      "cached_input_tokens": 116608,
+      "estimated_cost_cny": 0.04794316,
+      "cost_upper_bound_cny": 0.162219
+    },
+    "steps": 15,
+    "wall_ms": 72141
+  },
+  {
+    "run_id": "baseline_r01_test_113",
+    "variant": "baseline",
+    "trial": 1,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 158958,
+      "output_tokens": 5886,
+      "cached_input_tokens": 146688,
+      "estimated_cost_cny": 0.03874776,
+      "cost_upper_bound_cny": 0.182502
+    },
+    "steps": 19,
+    "wall_ms": 87687
+  },
+  {
+    "run_id": "baseline_r02_test_001",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 58691,
+      "output_tokens": 3492,
+      "cached_input_tokens": 52352,
+      "estimated_cost_cny": 0.021354039999999998,
+      "cost_upper_bound_cny": 0.072659
+    },
+    "steps": 9,
+    "wall_ms": 46610
+  },
+  {
+    "run_id": "baseline_r02_test_005",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 70505,
+      "output_tokens": 4070,
+      "cached_input_tokens": 63104,
+      "estimated_cost_cny": 0.02494308,
+      "cost_upper_bound_cny": 0.08678499999999999
+    },
+    "steps": 11,
+    "wall_ms": 187329
+  },
+  {
+    "run_id": "baseline_r02_test_010",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42762,
+      "output_tokens": 2183,
+      "cached_input_tokens": 39168,
+      "estimated_cost_cny": 0.013109359999999999,
+      "cost_upper_bound_cny": 0.05149400000000001
+    },
+    "steps": 8,
+    "wall_ms": 39890
+  },
+  {
+    "run_id": "baseline_r02_test_012",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 44787,
+      "output_tokens": 3888,
+      "cached_input_tokens": 40064,
+      "estimated_cost_cny": 0.021076280000000003,
+      "cost_upper_bound_cny": 0.060339000000000004
+    },
+    "steps": 8,
+    "wall_ms": 46593
+  },
+  {
+    "run_id": "baseline_r02_test_013",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51670,
+      "output_tokens": 3311,
+      "cached_input_tokens": 46208,
+      "estimated_cost_cny": 0.01963016,
+      "cost_upper_bound_cny": 0.064914
+    },
+    "steps": 9,
+    "wall_ms": 48109
+  },
+  {
+    "run_id": "baseline_r02_test_015",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 89428,
+      "output_tokens": 3930,
+      "cached_input_tokens": 81792,
+      "estimated_cost_cny": 0.024991839999999998,
+      "cost_upper_bound_cny": 0.105148
+    },
+    "steps": 13,
+    "wall_ms": 65469
+  },
+  {
+    "run_id": "baseline_r02_test_016",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 103677,
+      "output_tokens": 3007,
+      "cached_input_tokens": 96512,
+      "estimated_cost_cny": 0.021123240000000005,
+      "cost_upper_bound_cny": 0.11570499999999999
+    },
+    "steps": 15,
+    "wall_ms": 68406
+  },
+  {
+    "run_id": "baseline_r02_test_017",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41316,
+      "output_tokens": 1514,
+      "cached_input_tokens": 38016,
+      "estimated_cost_cny": 0.01011632,
+      "cost_upper_bound_cny": 0.047372000000000004
+    },
+    "steps": 8,
+    "wall_ms": 45328
+  },
+  {
+    "run_id": "baseline_r02_test_018",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/18",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 61071,
+      "output_tokens": 3508,
+      "cached_input_tokens": 54784,
+      "estimated_cost_cny": 0.02141468,
+      "cost_upper_bound_cny": 0.07510299999999999
+    },
+    "steps": 10,
+    "wall_ms": 55875
+  },
+  {
+    "run_id": "baseline_r02_test_023",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 169256,
+      "output_tokens": 6454,
+      "cached_input_tokens": 156160,
+      "estimated_cost_cny": 0.04203520000000001,
+      "cost_upper_bound_cny": 0.19507200000000002
+    },
+    "steps": 19,
+    "wall_ms": 86766
+  },
+  {
+    "run_id": "baseline_r02_test_025",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72880,
+      "output_tokens": 2841,
+      "cached_input_tokens": 67328,
+      "estimated_cost_cny": 0.01826256,
+      "cost_upper_bound_cny": 0.08424400000000001
+    },
+    "steps": 12,
+    "wall_ms": 58750
+  },
+  {
+    "run_id": "baseline_r02_test_027",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65859,
+      "output_tokens": 4908,
+      "cached_input_tokens": 57984,
+      "estimated_cost_cny": 0.028666680000000003,
+      "cost_upper_bound_cny": 0.085491
+    },
+    "steps": 10,
+    "wall_ms": 60078
+  },
+  {
+    "run_id": "baseline_r02_test_029",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122740,
+      "output_tokens": 4737,
+      "cached_input_tokens": 112512,
+      "estimated_cost_cny": 0.031426239999999994,
+      "cost_upper_bound_cny": 0.141688
+    },
+    "steps": 16,
+    "wall_ms": 73921
+  },
+  {
+    "run_id": "baseline_r02_test_031",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 126911,
+      "output_tokens": 5963,
+      "cached_input_tokens": 117504,
+      "estimated_cost_cny": 0.03560908,
+      "cost_upper_bound_cny": 0.150763
+    },
+    "steps": 17,
+    "wall_ms": 97406
+  },
+  {
+    "run_id": "baseline_r02_test_032",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 180619,
+      "output_tokens": 4707,
+      "cached_input_tokens": 170496,
+      "estimated_cost_cny": 0.03236092,
+      "cost_upper_bound_cny": 0.19944699999999999
+    },
+    "steps": 24,
+    "wall_ms": 115953
+  },
+  {
+    "run_id": "baseline_r02_test_035",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 102791,
+      "output_tokens": 4304,
+      "cached_input_tokens": 93696,
+      "estimated_cost_cny": 0.02818492,
+      "cost_upper_bound_cny": 0.120007
+    },
+    "steps": 15,
+    "wall_ms": 74329
+  },
+  {
+    "run_id": "baseline_r02_test_036",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 120716,
+      "output_tokens": 5967,
+      "cached_input_tokens": 108032,
+      "estimated_cost_cny": 0.03871264,
+      "cost_upper_bound_cny": 0.144584
+    },
+    "steps": 16,
+    "wall_ms": 82343
+  },
+  {
+    "run_id": "baseline_r02_test_037",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 126566,
+      "output_tokens": 6206,
+      "cached_input_tokens": 114048,
+      "estimated_cost_cny": 0.03962295999999999,
+      "cost_upper_bound_cny": 0.15139
+    },
+    "steps": 16,
+    "wall_ms": 81078
+  },
+  {
+    "run_id": "baseline_r02_test_039",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/39",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 15036,
+      "output_tokens": 1971,
+      "cached_input_tokens": 13568,
+      "estimated_cost_cny": 0.00962336,
+      "cost_upper_bound_cny": 0.02292
+    },
+    "steps": 3,
+    "wall_ms": 23328
+  },
+  {
+    "run_id": "baseline_r02_test_040",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53564,
+      "output_tokens": 1850,
+      "cached_input_tokens": 49792,
+      "estimated_cost_cny": 0.01216784,
+      "cost_upper_bound_cny": 0.060964
+    },
+    "steps": 10,
+    "wall_ms": 52563
+  },
+  {
+    "run_id": "baseline_r02_test_042",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 123295,
+      "output_tokens": 4688,
+      "cached_input_tokens": 113408,
+      "estimated_cost_cny": 0.030907160000000003,
+      "cost_upper_bound_cny": 0.142047
+    },
+    "steps": 17,
+    "wall_ms": 80375
+  },
+  {
+    "run_id": "baseline_r02_test_046",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 84354,
+      "output_tokens": 4270,
+      "cached_input_tokens": 77568,
+      "estimated_cost_cny": 0.02541736,
+      "cost_upper_bound_cny": 0.101434
+    },
+    "steps": 13,
+    "wall_ms": 62735
+  },
+  {
+    "run_id": "baseline_r02_test_050",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 30360,
+      "output_tokens": 1815,
+      "cached_input_tokens": 27264,
+      "estimated_cost_cny": 0.010901280000000001,
+      "cost_upper_bound_cny": 0.037619999999999994
+    },
+    "steps": 6,
+    "wall_ms": 32734
+  },
+  {
+    "run_id": "baseline_r02_test_051",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43921,
+      "output_tokens": 2339,
+      "cached_input_tokens": 40192,
+      "estimated_cost_cny": 0.01388884,
+      "cost_upper_bound_cny": 0.053277
+    },
+    "steps": 8,
+    "wall_ms": 39625
+  },
+  {
+    "run_id": "baseline_r02_test_053",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56461,
+      "output_tokens": 1801,
+      "cached_input_tokens": 52096,
+      "estimated_cost_cny": 0.01261092,
+      "cost_upper_bound_cny": 0.063665
+    },
+    "steps": 10,
+    "wall_ms": 47172
+  },
+  {
+    "run_id": "baseline_r02_test_054",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 129617,
+      "output_tokens": 5347,
+      "cached_input_tokens": 119040,
+      "estimated_cost_cny": 0.0343458,
+      "cost_upper_bound_cny": 0.151005
+    },
+    "steps": 18,
+    "wall_ms": 81140
+  },
+  {
+    "run_id": "baseline_r02_test_056",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 66968,
+      "output_tokens": 2873,
+      "cached_input_tokens": 61184,
+      "estimated_cost_cny": 0.018499679999999998,
+      "cost_upper_bound_cny": 0.07845999999999999
+    },
+    "steps": 11,
+    "wall_ms": 57156
+  },
+  {
+    "run_id": "baseline_r02_test_057",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 46617,
+      "output_tokens": 2306,
+      "cached_input_tokens": 42624,
+      "estimated_cost_cny": 0.01406948,
+      "cost_upper_bound_cny": 0.055840999999999995
+    },
+    "steps": 8,
+    "wall_ms": 46594
+  },
+  {
+    "run_id": "baseline_r02_test_059",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 75216,
+      "output_tokens": 6894,
+      "cached_input_tokens": 69248,
+      "estimated_cost_cny": 0.03492896,
+      "cost_upper_bound_cny": 0.102792
+    },
+    "steps": 12,
+    "wall_ms": 78516
+  },
+  {
+    "run_id": "baseline_r02_test_060",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 52315,
+      "output_tokens": 3342,
+      "cached_input_tokens": 46464,
+      "estimated_cost_cny": 0.020148280000000005,
+      "cost_upper_bound_cny": 0.06568299999999999
+    },
+    "steps": 8,
+    "wall_ms": 41610
+  },
+  {
+    "run_id": "baseline_r02_test_062",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65417,
+      "output_tokens": 2787,
+      "cached_input_tokens": 60160,
+      "estimated_cost_cny": 0.017608199999999997,
+      "cost_upper_bound_cny": 0.07656500000000001
+    },
+    "steps": 11,
+    "wall_ms": 58515
+  },
+  {
+    "run_id": "baseline_r02_test_064",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 79266,
+      "output_tokens": 5030,
+      "cached_input_tokens": 71040,
+      "estimated_cost_cny": 0.0297668,
+      "cost_upper_bound_cny": 0.09938600000000002
+    },
+    "steps": 12,
+    "wall_ms": 67797
+  },
+  {
+    "run_id": "baseline_r02_test_065",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 86784,
+      "output_tokens": 3828,
+      "cached_input_tokens": 78848,
+      "estimated_cost_cny": 0.024824959999999997,
+      "cost_upper_bound_cny": 0.10209599999999999
+    },
+    "steps": 13,
+    "wall_ms": 63921
+  },
+  {
+    "run_id": "baseline_r02_test_066",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 49996,
+      "output_tokens": 2325,
+      "cached_input_tokens": 46208,
+      "estimated_cost_cny": 0.014012160000000001,
+      "cost_upper_bound_cny": 0.059296
+    },
+    "steps": 9,
+    "wall_ms": 49704
+  },
+  {
+    "run_id": "baseline_r02_test_069",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55753,
+      "output_tokens": 2150,
+      "cached_input_tokens": 51328,
+      "estimated_cost_cny": 0.014051559999999998,
+      "cost_upper_bound_cny": 0.064353
+    },
+    "steps": 10,
+    "wall_ms": 47734
+  },
+  {
+    "run_id": "baseline_r02_test_073",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50877,
+      "output_tokens": 2137,
+      "cached_input_tokens": 46464,
+      "estimated_cost_cny": 0.013890279999999998,
+      "cost_upper_bound_cny": 0.059425000000000006
+    },
+    "steps": 9,
+    "wall_ms": 50031
+  },
+  {
+    "run_id": "baseline_r02_test_074",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 105258,
+      "output_tokens": 5120,
+      "cached_input_tokens": 95488,
+      "estimated_cost_cny": 0.032159759999999996,
+      "cost_upper_bound_cny": 0.12573800000000002
+    },
+    "steps": 14,
+    "wall_ms": 67750
+  },
+  {
+    "run_id": "baseline_r02_test_077",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51992,
+      "output_tokens": 2829,
+      "cached_input_tokens": 46976,
+      "estimated_cost_cny": 0.01727152,
+      "cost_upper_bound_cny": 0.063308
+    },
+    "steps": 9,
+    "wall_ms": 47656
+  },
+  {
+    "run_id": "baseline_r02_test_081",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 77259,
+      "output_tokens": 3889,
+      "cached_input_tokens": 70016,
+      "estimated_cost_cny": 0.02419932,
+      "cost_upper_bound_cny": 0.09281500000000001
+    },
+    "steps": 12,
+    "wall_ms": 57734
+  },
+  {
+    "run_id": "baseline_r02_test_083",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65580,
+      "output_tokens": 3518,
+      "cached_input_tokens": 60032,
+      "estimated_cost_cny": 0.020820639999999998,
+      "cost_upper_bound_cny": 0.079652
+    },
+    "steps": 11,
+    "wall_ms": 56703
+  },
+  {
+    "run_id": "baseline_r02_test_084",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72586,
+      "output_tokens": 2560,
+      "cached_input_tokens": 67072,
+      "estimated_cost_cny": 0.01709544,
+      "cost_upper_bound_cny": 0.08282599999999998
+    },
+    "steps": 12,
+    "wall_ms": 58313
+  },
+  {
+    "run_id": "baseline_r02_test_094",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54912,
+      "output_tokens": 2691,
+      "cached_input_tokens": 48768,
+      "estimated_cost_cny": 0.01788336,
+      "cost_upper_bound_cny": 0.06567599999999998
+    },
+    "steps": 9,
+    "wall_ms": 44453
+  },
+  {
+    "run_id": "baseline_r02_test_097",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 111042,
+      "output_tokens": 4344,
+      "cached_input_tokens": 102016,
+      "estimated_cost_cny": 0.02844232,
+      "cost_upper_bound_cny": 0.128418
+    },
+    "steps": 16,
+    "wall_ms": 82829
+  },
+  {
+    "run_id": "baseline_r02_test_098",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 67000,
+      "output_tokens": 4264,
+      "cached_input_tokens": 59520,
+      "estimated_cost_cny": 0.0257264,
+      "cost_upper_bound_cny": 0.084056
+    },
+    "steps": 10,
+    "wall_ms": 52703
+  },
+  {
+    "run_id": "baseline_r02_test_104",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 197198,
+      "output_tokens": 5608,
+      "cached_input_tokens": 185472,
+      "estimated_cost_cny": 0.037867440000000016,
+      "cost_upper_bound_cny": 0.21962999999999996
+    },
+    "steps": 23,
+    "wall_ms": 118375
+  },
+  {
+    "run_id": "baseline_r02_test_108",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/108",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 113031,
+      "output_tokens": 5508,
+      "cached_input_tokens": 102528,
+      "estimated_cost_cny": 0.03458556,
+      "cost_upper_bound_cny": 0.13506300000000002
+    },
+    "steps": 14,
+    "wall_ms": 77328
+  },
+  {
+    "run_id": "baseline_r02_test_109",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72561,
+      "output_tokens": 3234,
+      "cached_input_tokens": 66688,
+      "estimated_cost_cny": 0.02014276,
+      "cost_upper_bound_cny": 0.085497
+    },
+    "steps": 12,
+    "wall_ms": 58859
+  },
+  {
+    "run_id": "baseline_r02_test_111",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 100067,
+      "output_tokens": 6469,
+      "cached_input_tokens": 90752,
+      "estimated_cost_cny": 0.037006040000000004,
+      "cost_upper_bound_cny": 0.12594299999999997
+    },
+    "steps": 14,
+    "wall_ms": 77656
+  },
+  {
+    "run_id": "baseline_r02_test_112",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122850,
+      "output_tokens": 7039,
+      "cached_input_tokens": 110592,
+      "estimated_cost_cny": 0.042625840000000005,
+      "cost_upper_bound_cny": 0.15100599999999997
+    },
+    "steps": 15,
+    "wall_ms": 76718
+  },
+  {
+    "run_id": "baseline_r02_test_113",
+    "variant": "baseline",
+    "trial": 2,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 155006,
+      "output_tokens": 6966,
+      "cached_input_tokens": 142336,
+      "estimated_cost_cny": 0.04338072,
+      "cost_upper_bound_cny": 0.18287
+    },
+    "steps": 19,
+    "wall_ms": 96000
+  },
+  {
+    "run_id": "baseline_r03_test_001",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 77209,
+      "output_tokens": 3640,
+      "cached_input_tokens": 69376,
+      "estimated_cost_cny": 0.023780520000000003,
+      "cost_upper_bound_cny": 0.091769
+    },
+    "steps": 11,
+    "wall_ms": 55562
+  },
+  {
+    "run_id": "baseline_r03_test_005",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 107797,
+      "output_tokens": 4529,
+      "cached_input_tokens": 98560,
+      "estimated_cost_cny": 0.029324199999999998,
+      "cost_upper_bound_cny": 0.125913
+    },
+    "steps": 14,
+    "wall_ms": 68437
+  },
+  {
+    "run_id": "baseline_r03_test_010",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42510,
+      "output_tokens": 2217,
+      "cached_input_tokens": 38912,
+      "estimated_cost_cny": 0.01324424,
+      "cost_upper_bound_cny": 0.05137799999999999
+    },
+    "steps": 8,
+    "wall_ms": 40562
+  },
+  {
+    "run_id": "baseline_r03_test_012",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42806,
+      "output_tokens": 2654,
+      "cached_input_tokens": 39040,
+      "estimated_cost_cny": 0.0151628,
+      "cost_upper_bound_cny": 0.053422
+    },
+    "steps": 8,
+    "wall_ms": 40328
+  },
+  {
+    "run_id": "baseline_r03_test_013",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 59359,
+      "output_tokens": 2837,
+      "cached_input_tokens": 54400,
+      "estimated_cost_cny": 0.017395,
+      "cost_upper_bound_cny": 0.070707
+    },
+    "steps": 10,
+    "wall_ms": 51609
+  },
+  {
+    "run_id": "baseline_r03_test_015",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 92832,
+      "output_tokens": 4269,
+      "cached_input_tokens": 84608,
+      "estimated_cost_cny": 0.026992159999999998,
+      "cost_upper_bound_cny": 0.109908
+    },
+    "steps": 13,
+    "wall_ms": 63750
+  },
+  {
+    "run_id": "baseline_r03_test_016",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 78459,
+      "output_tokens": 4165,
+      "cached_input_tokens": 70656,
+      "estimated_cost_cny": 0.02587612,
+      "cost_upper_bound_cny": 0.09511900000000001
+    },
+    "steps": 12,
+    "wall_ms": 57797
+  },
+  {
+    "run_id": "baseline_r03_test_017",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41357,
+      "output_tokens": 1660,
+      "cached_input_tokens": 38400,
+      "estimated_cost_cny": 0.010365000000000001,
+      "cost_upper_bound_cny": 0.047997000000000005
+    },
+    "steps": 8,
+    "wall_ms": 45406
+  },
+  {
+    "run_id": "baseline_r03_test_018",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 116401,
+      "output_tokens": 6463,
+      "cached_input_tokens": 107392,
+      "estimated_cost_cny": 0.03700884,
+      "cost_upper_bound_cny": 0.14225299999999996
+    },
+    "steps": 15,
+    "wall_ms": 81453
+  },
+  {
+    "run_id": "baseline_r03_test_023",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 201233,
+      "output_tokens": 5662,
+      "cached_input_tokens": 187520,
+      "estimated_cost_cny": 0.040111399999999985,
+      "cost_upper_bound_cny": 0.22388099999999997
+    },
+    "steps": 22,
+    "wall_ms": 99375
+  },
+  {
+    "run_id": "baseline_r03_test_025",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50205,
+      "output_tokens": 2365,
+      "cached_input_tokens": 46080,
+      "estimated_cost_cny": 0.014506599999999998,
+      "cost_upper_bound_cny": 0.05966500000000001
+    },
+    "steps": 9,
+    "wall_ms": 42109
+  },
+  {
+    "run_id": "baseline_r03_test_027",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54094,
+      "output_tokens": 3178,
+      "cached_input_tokens": 48000,
+      "estimated_cost_cny": 0.019766,
+      "cost_upper_bound_cny": 0.066806
+    },
+    "steps": 9,
+    "wall_ms": 44156
+  },
+  {
+    "run_id": "baseline_r03_test_029",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 128596,
+      "output_tokens": 5781,
+      "cached_input_tokens": 117504,
+      "estimated_cost_cny": 0.03656608,
+      "cost_upper_bound_cny": 0.15172
+    },
+    "steps": 16,
+    "wall_ms": 74094
+  },
+  {
+    "run_id": "baseline_r03_test_031",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 116446,
+      "output_tokens": 4569,
+      "cached_input_tokens": 108032,
+      "estimated_cost_cny": 0.02885064,
+      "cost_upper_bound_cny": 0.13472199999999998
+    },
+    "steps": 17,
+    "wall_ms": 82734
+  },
+  {
+    "run_id": "baseline_r03_test_032",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161192,
+      "output_tokens": 5039,
+      "cached_input_tokens": 151808,
+      "estimated_cost_cny": 0.03257616,
+      "cost_upper_bound_cny": 0.181348
+    },
+    "steps": 22,
+    "wall_ms": 108500
+  },
+  {
+    "run_id": "baseline_r03_test_035",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 112402,
+      "output_tokens": 4157,
+      "cached_input_tokens": 102912,
+      "estimated_cost_cny": 0.02817624,
+      "cost_upper_bound_cny": 0.12903
+    },
+    "steps": 16,
+    "wall_ms": 74984
+  },
+  {
+    "run_id": "baseline_r03_test_036",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/36",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 4799,
+      "output_tokens": 813,
+      "cached_input_tokens": 4480,
+      "estimated_cost_cny": 0.0036606,
+      "cost_upper_bound_cny": 0.008050999999999999
+    },
+    "steps": 1,
+    "wall_ms": 10625
+  },
+  {
+    "run_id": "baseline_r03_test_037",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 118239,
+      "output_tokens": 5924,
+      "cached_input_tokens": 105856,
+      "estimated_cost_cny": 0.03819612,
+      "cost_upper_bound_cny": 0.141935
+    },
+    "steps": 16,
+    "wall_ms": 78735
+  },
+  {
+    "run_id": "baseline_r03_test_039",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 92557,
+      "output_tokens": 5587,
+      "cached_input_tokens": 84096,
+      "estimated_cost_cny": 0.03249092,
+      "cost_upper_bound_cny": 0.11490500000000002
+    },
+    "steps": 13,
+    "wall_ms": 68343
+  },
+  {
+    "run_id": "baseline_r03_test_040",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53900,
+      "output_tokens": 1754,
+      "cached_input_tokens": 50560,
+      "estimated_cost_cny": 0.0113672,
+      "cost_upper_bound_cny": 0.06091600000000001
+    },
+    "steps": 10,
+    "wall_ms": 54391
+  },
+  {
+    "run_id": "baseline_r03_test_042",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 115761,
+      "output_tokens": 4252,
+      "cached_input_tokens": 106368,
+      "estimated_cost_cny": 0.02852836,
+      "cost_upper_bound_cny": 0.132769
+    },
+    "steps": 16,
+    "wall_ms": 75625
+  },
+  {
+    "run_id": "baseline_r03_test_046",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 80728,
+      "output_tokens": 2934,
+      "cached_input_tokens": 74496,
+      "estimated_cost_cny": 0.01945792,
+      "cost_upper_bound_cny": 0.09246399999999999
+    },
+    "steps": 13,
+    "wall_ms": 60422
+  },
+  {
+    "run_id": "baseline_r03_test_050",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 23948,
+      "output_tokens": 1228,
+      "cached_input_tokens": 22272,
+      "estimated_cost_cny": 0.00703344,
+      "cost_upper_bound_cny": 0.02886
+    },
+    "steps": 5,
+    "wall_ms": 23672
+  },
+  {
+    "run_id": "baseline_r03_test_051",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43674,
+      "output_tokens": 2179,
+      "cached_input_tokens": 40064,
+      "estimated_cost_cny": 0.01312728,
+      "cost_upper_bound_cny": 0.052390000000000006
+    },
+    "steps": 8,
+    "wall_ms": 37453
+  },
+  {
+    "run_id": "baseline_r03_test_053",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 76324,
+      "output_tokens": 3881,
+      "cached_input_tokens": 69888,
+      "estimated_cost_cny": 0.023357759999999998,
+      "cost_upper_bound_cny": 0.091848
+    },
+    "steps": 12,
+    "wall_ms": 61594
+  },
+  {
+    "run_id": "baseline_r03_test_054",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 160495,
+      "output_tokens": 6099,
+      "cached_input_tokens": 148352,
+      "estimated_cost_cny": 0.039506040000000006,
+      "cost_upper_bound_cny": 0.18489100000000003
+    },
+    "steps": 20,
+    "wall_ms": 86890
+  },
+  {
+    "run_id": "baseline_r03_test_056",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 79224,
+      "output_tokens": 4288,
+      "cached_input_tokens": 71680,
+      "estimated_cost_cny": 0.0261296,
+      "cost_upper_bound_cny": 0.09637599999999999
+    },
+    "steps": 12,
+    "wall_ms": 63640
+  },
+  {
+    "run_id": "baseline_r03_test_057",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 37684,
+      "output_tokens": 2259,
+      "cached_input_tokens": 34176,
+      "estimated_cost_cny": 0.013227520000000001,
+      "cost_upper_bound_cny": 0.046720000000000005
+    },
+    "steps": 7,
+    "wall_ms": 44391
+  },
+  {
+    "run_id": "baseline_r03_test_059",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 86707,
+      "output_tokens": 5650,
+      "cached_input_tokens": 80256,
+      "estimated_cost_cny": 0.030656120000000002,
+      "cost_upper_bound_cny": 0.109307
+    },
+    "steps": 13,
+    "wall_ms": 73203
+  },
+  {
+    "run_id": "baseline_r03_test_060",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53704,
+      "output_tokens": 3576,
+      "cached_input_tokens": 47616,
+      "estimated_cost_cny": 0.021344320000000003,
+      "cost_upper_bound_cny": 0.068008
+    },
+    "steps": 8,
+    "wall_ms": 41750
+  },
+  {
+    "run_id": "baseline_r03_test_062",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/62",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55658,
+      "output_tokens": 2566,
+      "cached_input_tokens": 50944,
+      "estimated_cost_cny": 0.015996879999999998,
+      "cost_upper_bound_cny": 0.065922
+    },
+    "steps": 10,
+    "wall_ms": 49359
+  },
+  {
+    "run_id": "baseline_r03_test_064",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 74023,
+      "output_tokens": 3325,
+      "cached_input_tokens": 67840,
+      "estimated_cost_cny": 0.020839799999999995,
+      "cost_upper_bound_cny": 0.08732299999999998
+    },
+    "steps": 12,
+    "wall_ms": 55469
+  },
+  {
+    "run_id": "baseline_r03_test_065",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 91106,
+      "output_tokens": 5067,
+      "cached_input_tokens": 82560,
+      "estimated_cost_cny": 0.0304652,
+      "cost_upper_bound_cny": 0.11137399999999999
+    },
+    "steps": 13,
+    "wall_ms": 66750
+  },
+  {
+    "run_id": "baseline_r03_test_066",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 58778,
+      "output_tokens": 2737,
+      "cached_input_tokens": 54016,
+      "estimated_cost_cny": 0.01679032,
+      "cost_upper_bound_cny": 0.069726
+    },
+    "steps": 10,
+    "wall_ms": 49984
+  },
+  {
+    "run_id": "baseline_r03_test_069",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55567,
+      "output_tokens": 2130,
+      "cached_input_tokens": 51456,
+      "estimated_cost_cny": 0.01366012,
+      "cost_upper_bound_cny": 0.064087
+    },
+    "steps": 10,
+    "wall_ms": 48312
+  },
+  {
+    "run_id": "baseline_r03_test_073",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51283,
+      "output_tokens": 2345,
+      "cached_input_tokens": 46848,
+      "estimated_cost_cny": 0.014751959999999998,
+      "cost_upper_bound_cny": 0.060662999999999995
+    },
+    "steps": 9,
+    "wall_ms": 48438
+  },
+  {
+    "run_id": "baseline_r03_test_074",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 154001,
+      "output_tokens": 5517,
+      "cached_input_tokens": 142592,
+      "estimated_cost_cny": 0.03632884,
+      "cost_upper_bound_cny": 0.176069
+    },
+    "steps": 18,
+    "wall_ms": 86328
+  },
+  {
+    "run_id": "baseline_r03_test_077",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 52052,
+      "output_tokens": 3490,
+      "cached_input_tokens": 47232,
+      "estimated_cost_cny": 0.019724639999999998,
+      "cost_upper_bound_cny": 0.06601199999999999
+    },
+    "steps": 9,
+    "wall_ms": 48672
+  },
+  {
+    "run_id": "baseline_r03_test_081",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83548,
+      "output_tokens": 3388,
+      "cached_input_tokens": 76544,
+      "estimated_cost_cny": 0.02208688,
+      "cost_upper_bound_cny": 0.0971
+    },
+    "steps": 13,
+    "wall_ms": 60328
+  },
+  {
+    "run_id": "baseline_r03_test_083",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64832,
+      "output_tokens": 2324,
+      "cached_input_tokens": 59264,
+      "estimated_cost_cny": 0.01604928,
+      "cost_upper_bound_cny": 0.074128
+    },
+    "steps": 11,
+    "wall_ms": 50656
+  },
+  {
+    "run_id": "baseline_r03_test_084",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 73017,
+      "output_tokens": 2524,
+      "cached_input_tokens": 67328,
+      "estimated_cost_cny": 0.017131559999999997,
+      "cost_upper_bound_cny": 0.08311299999999998
+    },
+    "steps": 12,
+    "wall_ms": 56828
+  },
+  {
+    "run_id": "baseline_r03_test_094",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64328,
+      "output_tokens": 3516,
+      "cached_input_tokens": 57600,
+      "estimated_cost_cny": 0.021943999999999995,
+      "cost_upper_bound_cny": 0.07839199999999999
+    },
+    "steps": 10,
+    "wall_ms": 51453
+  },
+  {
+    "run_id": "baseline_r03_test_097",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83962,
+      "output_tokens": 3755,
+      "cached_input_tokens": 76160,
+      "estimated_cost_cny": 0.024345199999999997,
+      "cost_upper_bound_cny": 0.09898200000000001
+    },
+    "steps": 13,
+    "wall_ms": 64046
+  },
+  {
+    "run_id": "baseline_r03_test_098",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65750,
+      "output_tokens": 4000,
+      "cached_input_tokens": 58752,
+      "estimated_cost_cny": 0.02417304,
+      "cost_upper_bound_cny": 0.08175
+    },
+    "steps": 10,
+    "wall_ms": 48718
+  },
+  {
+    "run_id": "baseline_r03_test_104",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 183667,
+      "output_tokens": 5772,
+      "cached_input_tokens": 172288,
+      "estimated_cost_cny": 0.037912760000000004,
+      "cost_upper_bound_cny": 0.20675500000000002
+    },
+    "steps": 22,
+    "wall_ms": 105219
+  },
+  {
+    "run_id": "baseline_r03_test_108",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/108",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 54240,
+      "output_tokens": 3922,
+      "cached_input_tokens": 48000,
+      "estimated_cost_cny": 0.022888000000000002,
+      "cost_upper_bound_cny": 0.069928
+    },
+    "steps": 9,
+    "wall_ms": 49235
+  },
+  {
+    "run_id": "baseline_r03_test_109",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55893,
+      "output_tokens": 1818,
+      "cached_input_tokens": 51328,
+      "estimated_cost_cny": 0.01286356,
+      "cost_upper_bound_cny": 0.063165
+    },
+    "steps": 10,
+    "wall_ms": 45063
+  },
+  {
+    "run_id": "baseline_r03_test_111",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 99654,
+      "output_tokens": 7402,
+      "cached_input_tokens": 89088,
+      "estimated_cost_cny": 0.04195576,
+      "cost_upper_bound_cny": 0.12926200000000002
+    },
+    "steps": 13,
+    "wall_ms": 70297
+  },
+  {
+    "run_id": "baseline_r03_test_112",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 133991,
+      "output_tokens": 6370,
+      "cached_input_tokens": 122112,
+      "estimated_cost_cny": 0.039801239999999995,
+      "cost_upper_bound_cny": 0.15947100000000003
+    },
+    "steps": 17,
+    "wall_ms": 78735
+  },
+  {
+    "run_id": "baseline_r03_test_113",
+    "variant": "baseline",
+    "trial": 3,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 155121,
+      "output_tokens": 6295,
+      "cached_input_tokens": 142976,
+      "estimated_cost_cny": 0.04018452,
+      "cost_upper_bound_cny": 0.180301
+    },
+    "steps": 19,
+    "wall_ms": 88516
+  },
+  {
+    "run_id": "payment_guard_r01_test_001",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 88269,
+      "output_tokens": 4257,
+      "cached_input_tokens": 80000,
+      "estimated_cost_cny": 0.026897000000000004,
+      "cost_upper_bound_cny": 0.105297
+    },
+    "steps": 12,
+    "wall_ms": 59203
+  },
+  {
+    "run_id": "payment_guard_r01_test_005",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/5",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 122300,
+      "output_tokens": 6707,
+      "cached_input_tokens": 112384,
+      "estimated_cost_cny": 0.03899168,
+      "cost_upper_bound_cny": 0.14912799999999998
+    },
+    "steps": 15,
+    "wall_ms": 76500
+  },
+  {
+    "run_id": "payment_guard_r01_test_010",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43020,
+      "output_tokens": 2286,
+      "cached_input_tokens": 39424,
+      "estimated_cost_cny": 0.013528479999999999,
+      "cost_upper_bound_cny": 0.052163999999999995
+    },
+    "steps": 8,
+    "wall_ms": 38953
+  },
+  {
+    "run_id": "payment_guard_r01_test_012",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 49691,
+      "output_tokens": 2276,
+      "cached_input_tokens": 45440,
+      "estimated_cost_cny": 0.014263799999999998,
+      "cost_upper_bound_cny": 0.058795
+    },
+    "steps": 9,
+    "wall_ms": 45234
+  },
+  {
+    "run_id": "payment_guard_r01_test_013",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51204,
+      "output_tokens": 3308,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.019026719999999997,
+      "cost_upper_bound_cny": 0.06443600000000001
+    },
+    "steps": 9,
+    "wall_ms": 47235
+  },
+  {
+    "run_id": "payment_guard_r01_test_015",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 74525,
+      "output_tokens": 3998,
+      "cached_input_tokens": 67712,
+      "estimated_cost_cny": 0.024159240000000002,
+      "cost_upper_bound_cny": 0.09051700000000001
+    },
+    "steps": 11,
+    "wall_ms": 57344
+  },
+  {
+    "run_id": "payment_guard_r01_test_016",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 104504,
+      "output_tokens": 4121,
+      "cached_input_tokens": 95872,
+      "estimated_cost_cny": 0.02703344,
+      "cost_upper_bound_cny": 0.120988
+    },
+    "steps": 15,
+    "wall_ms": 68250
+  },
+  {
+    "run_id": "payment_guard_r01_test_017",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41777,
+      "output_tokens": 1368,
+      "cached_input_tokens": 38784,
+      "estimated_cost_cny": 0.00924068,
+      "cost_upper_bound_cny": 0.047249
+    },
+    "steps": 8,
+    "wall_ms": 45906
+  },
+  {
+    "run_id": "payment_guard_r01_test_018",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/18",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 89847,
+      "output_tokens": 4858,
+      "cached_input_tokens": 82688,
+      "estimated_cost_cny": 0.028244759999999997,
+      "cost_upper_bound_cny": 0.10927899999999999
+    },
+    "steps": 13,
+    "wall_ms": 70609
+  },
+  {
+    "run_id": "payment_guard_r01_test_023",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/23",
+    "status": "model_error",
+    "reward": null,
+    "usage": {
+      "input_tokens": 164620,
+      "output_tokens": 4684,
+      "cached_input_tokens": 152832,
+      "estimated_cost_cny": 0.033580639999999995,
+      "cost_upper_bound_cny": 0.18335600000000002
+    },
+    "steps": 20,
+    "wall_ms": 224203
+  },
+  {
+    "run_id": "payment_guard_r01_test_025",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65261,
+      "output_tokens": 2724,
+      "cached_input_tokens": 60160,
+      "estimated_cost_cny": 0.0172002,
+      "cost_upper_bound_cny": 0.07615699999999999
+    },
+    "steps": 11,
+    "wall_ms": 50937
+  },
+  {
+    "run_id": "payment_guard_r01_test_027",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 90775,
+      "output_tokens": 5578,
+      "cached_input_tokens": 81280,
+      "estimated_cost_cny": 0.03343259999999999,
+      "cost_upper_bound_cny": 0.11308700000000002
+    },
+    "steps": 12,
+    "wall_ms": 55234
+  },
+  {
+    "run_id": "payment_guard_r01_test_029",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 124631,
+      "output_tokens": 4862,
+      "cached_input_tokens": 114176,
+      "estimated_cost_cny": 0.03218652000000001,
+      "cost_upper_bound_cny": 0.14407899999999996
+    },
+    "steps": 16,
+    "wall_ms": 70687
+  },
+  {
+    "run_id": "payment_guard_r01_test_031",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 119030,
+      "output_tokens": 5078,
+      "cached_input_tokens": 110592,
+      "estimated_cost_cny": 0.030961840000000004,
+      "cost_upper_bound_cny": 0.13934199999999997
+    },
+    "steps": 17,
+    "wall_ms": 83391
+  },
+  {
+    "run_id": "payment_guard_r01_test_032",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/32",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 48098,
+      "output_tokens": 2578,
+      "cached_input_tokens": 44416,
+      "estimated_cost_cny": 0.014882320000000001,
+      "cost_upper_bound_cny": 0.058410000000000004
+    },
+    "steps": 9,
+    "wall_ms": 42047
+  },
+  {
+    "run_id": "payment_guard_r01_test_035",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 111142,
+      "output_tokens": 5263,
+      "cached_input_tokens": 100992,
+      "estimated_cost_cny": 0.033221839999999996,
+      "cost_upper_bound_cny": 0.13219400000000003
+    },
+    "steps": 16,
+    "wall_ms": 79750
+  },
+  {
+    "run_id": "payment_guard_r01_test_036",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 122808,
+      "output_tokens": 6208,
+      "cached_input_tokens": 110592,
+      "estimated_cost_cny": 0.039259840000000004,
+      "cost_upper_bound_cny": 0.14764000000000002
+    },
+    "steps": 16,
+    "wall_ms": 76297
+  },
+  {
+    "run_id": "payment_guard_r01_test_037",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 112158,
+      "output_tokens": 5573,
+      "cached_input_tokens": 101120,
+      "estimated_cost_cny": 0.0353524,
+      "cost_upper_bound_cny": 0.13445
+    },
+    "steps": 15,
+    "wall_ms": 68329
+  },
+  {
+    "run_id": "payment_guard_r01_test_039",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 64798,
+      "output_tokens": 3897,
+      "cached_input_tokens": 59264,
+      "estimated_cost_cny": 0.022307279999999995,
+      "cost_upper_bound_cny": 0.08038600000000001
+    },
+    "steps": 11,
+    "wall_ms": 59407
+  },
+  {
+    "run_id": "payment_guard_r01_test_040",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54860,
+      "output_tokens": 2342,
+      "cached_input_tokens": 50816,
+      "estimated_cost_cny": 0.01442832,
+      "cost_upper_bound_cny": 0.064228
+    },
+    "steps": 10,
+    "wall_ms": 53766
+  },
+  {
+    "run_id": "payment_guard_r01_test_042",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 118559,
+      "output_tokens": 3894,
+      "cached_input_tokens": 109184,
+      "estimated_cost_cny": 0.027134679999999998,
+      "cost_upper_bound_cny": 0.13413500000000003
+    },
+    "steps": 17,
+    "wall_ms": 80641
+  },
+  {
+    "run_id": "payment_guard_r01_test_046",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 83579,
+      "output_tokens": 3461,
+      "cached_input_tokens": 76544,
+      "estimated_cost_cny": 0.022409879999999997,
+      "cost_upper_bound_cny": 0.097423
+    },
+    "steps": 13,
+    "wall_ms": 60219
+  },
+  {
+    "run_id": "payment_guard_r01_test_050",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 30290,
+      "output_tokens": 1638,
+      "cached_input_tokens": 27520,
+      "estimated_cost_cny": 0.0098724,
+      "cost_upper_bound_cny": 0.036842
+    },
+    "steps": 6,
+    "wall_ms": 28922
+  },
+  {
+    "run_id": "payment_guard_r01_test_051",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42350,
+      "output_tokens": 2147,
+      "cached_input_tokens": 39168,
+      "estimated_cost_cny": 0.01255336,
+      "cost_upper_bound_cny": 0.050938
+    },
+    "steps": 8,
+    "wall_ms": 41828
+  },
+  {
+    "run_id": "payment_guard_r01_test_053",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/53",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64911,
+      "output_tokens": 3013,
+      "cached_input_tokens": 59520,
+      "estimated_cost_cny": 0.018633399999999998,
+      "cost_upper_bound_cny": 0.076963
+    },
+    "steps": 11,
+    "wall_ms": 51937
+  },
+  {
+    "run_id": "payment_guard_r01_test_054",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 146328,
+      "output_tokens": 7307,
+      "cached_input_tokens": 133248,
+      "estimated_cost_cny": 0.04497296,
+      "cost_upper_bound_cny": 0.17555600000000002
+    },
+    "steps": 18,
+    "wall_ms": 76547
+  },
+  {
+    "run_id": "payment_guard_r01_test_056",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68966,
+      "output_tokens": 3464,
+      "cached_input_tokens": 62720,
+      "estimated_cost_cny": 0.0213564,
+      "cost_upper_bound_cny": 0.082822
+    },
+    "steps": 11,
+    "wall_ms": 52500
+  },
+  {
+    "run_id": "payment_guard_r01_test_057",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 37848,
+      "output_tokens": 2231,
+      "cached_input_tokens": 34432,
+      "estimated_cost_cny": 0.013028640000000001,
+      "cost_upper_bound_cny": 0.04677200000000001
+    },
+    "steps": 7,
+    "wall_ms": 42438
+  },
+  {
+    "run_id": "payment_guard_r01_test_059",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 64244,
+      "output_tokens": 7450,
+      "cached_input_tokens": 57600,
+      "estimated_cost_cny": 0.037596,
+      "cost_upper_bound_cny": 0.09404399999999999
+    },
+    "steps": 10,
+    "wall_ms": 61859
+  },
+  {
+    "run_id": "payment_guard_r01_test_060",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51979,
+      "output_tokens": 2759,
+      "cached_input_tokens": 46592,
+      "estimated_cost_cny": 0.01735484,
+      "cost_upper_bound_cny": 0.063015
+    },
+    "steps": 8,
+    "wall_ms": 39625
+  },
+  {
+    "run_id": "payment_guard_r01_test_062",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 75149,
+      "output_tokens": 3035,
+      "cached_input_tokens": 68608,
+      "estimated_cost_cny": 0.020053160000000004,
+      "cost_upper_bound_cny": 0.087289
+    },
+    "steps": 12,
+    "wall_ms": 65157
+  },
+  {
+    "run_id": "payment_guard_r01_test_064",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 73332,
+      "output_tokens": 3416,
+      "cached_input_tokens": 67328,
+      "estimated_cost_cny": 0.021014559999999998,
+      "cost_upper_bound_cny": 0.08699599999999999
+    },
+    "steps": 12,
+    "wall_ms": 57125
+  },
+  {
+    "run_id": "payment_guard_r01_test_065",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cached_input_tokens": null,
+      "estimated_cost_cny": null,
+      "cost_upper_bound_cny": null
+    },
+    "steps": 12,
+    "wall_ms": 117812
+  },
+  {
+    "run_id": "payment_guard_r01_test_066",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 59085,
+      "output_tokens": 2768,
+      "cached_input_tokens": 54272,
+      "estimated_cost_cny": 0.016970439999999996,
+      "cost_upper_bound_cny": 0.070157
+    },
+    "steps": 10,
+    "wall_ms": 50781
+  },
+  {
+    "run_id": "payment_guard_r01_test_069",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55470,
+      "output_tokens": 2285,
+      "cached_input_tokens": 51328,
+      "estimated_cost_cny": 0.01430856,
+      "cost_upper_bound_cny": 0.06461
+    },
+    "steps": 10,
+    "wall_ms": 48406
+  },
+  {
+    "run_id": "payment_guard_r01_test_073",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43672,
+      "output_tokens": 1930,
+      "cached_input_tokens": 39808,
+      "estimated_cost_cny": 0.012380160000000001,
+      "cost_upper_bound_cny": 0.051392
+    },
+    "steps": 8,
+    "wall_ms": 42125
+  },
+  {
+    "run_id": "payment_guard_r01_test_074",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 148238,
+      "output_tokens": 4143,
+      "cached_input_tokens": 137856,
+      "estimated_cost_cny": 0.029711120000000004,
+      "cost_upper_bound_cny": 0.16481
+    },
+    "steps": 18,
+    "wall_ms": 86813
+  },
+  {
+    "run_id": "payment_guard_r01_test_077",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43402,
+      "output_tokens": 1948,
+      "cached_input_tokens": 39424,
+      "estimated_cost_cny": 0.012558479999999999,
+      "cost_upper_bound_cny": 0.051193999999999996
+    },
+    "steps": 8,
+    "wall_ms": 42594
+  },
+  {
+    "run_id": "payment_guard_r01_test_081",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 75045,
+      "output_tokens": 2911,
+      "cached_input_tokens": 68992,
+      "estimated_cost_cny": 0.019076839999999998,
+      "cost_upper_bound_cny": 0.086689
+    },
+    "steps": 12,
+    "wall_ms": 54375
+  },
+  {
+    "run_id": "payment_guard_r01_test_083",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 82724,
+      "output_tokens": 3139,
+      "cached_input_tokens": 76160,
+      "estimated_cost_cny": 0.0206432,
+      "cost_upper_bound_cny": 0.09527999999999999
+    },
+    "steps": 13,
+    "wall_ms": 62657
+  },
+  {
+    "run_id": "payment_guard_r01_test_084",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 73282,
+      "output_tokens": 2776,
+      "cached_input_tokens": 67456,
+      "estimated_cost_cny": 0.01827912,
+      "cost_upper_bound_cny": 0.084386
+    },
+    "steps": 12,
+    "wall_ms": 57500
+  },
+  {
+    "run_id": "payment_guard_r01_test_094",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54333,
+      "output_tokens": 2553,
+      "cached_input_tokens": 48512,
+      "estimated_cost_cny": 0.01700324,
+      "cost_upper_bound_cny": 0.064545
+    },
+    "steps": 9,
+    "wall_ms": 42453
+  },
+  {
+    "run_id": "payment_guard_r01_test_097",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 84463,
+      "output_tokens": 3717,
+      "cached_input_tokens": 76928,
+      "estimated_cost_cny": 0.023941560000000004,
+      "cost_upper_bound_cny": 0.099331
+    },
+    "steps": 13,
+    "wall_ms": 64500
+  },
+  {
+    "run_id": "payment_guard_r01_test_098",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 82680,
+      "output_tokens": 5791,
+      "cached_input_tokens": 73600,
+      "estimated_cost_cny": 0.03371600000000001,
+      "cost_upper_bound_cny": 0.10584399999999998
+    },
+    "steps": 11,
+    "wall_ms": 54703
+  },
+  {
+    "run_id": "payment_guard_r01_test_104",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 208619,
+      "output_tokens": 5910,
+      "cached_input_tokens": 196480,
+      "estimated_cost_cny": 0.0397086,
+      "cost_upper_bound_cny": 0.23225900000000002
+    },
+    "steps": 24,
+    "wall_ms": 113781
+  },
+  {
+    "run_id": "payment_guard_r01_test_108",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/108",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 38259,
+      "output_tokens": 2988,
+      "cached_input_tokens": 33152,
+      "estimated_cost_cny": 0.017722039999999998,
+      "cost_upper_bound_cny": 0.05021099999999999
+    },
+    "steps": 7,
+    "wall_ms": 35860
+  },
+  {
+    "run_id": "payment_guard_r01_test_109",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 49976,
+      "output_tokens": 2216,
+      "cached_input_tokens": 45568,
+      "estimated_cost_cny": 0.014183359999999999,
+      "cost_upper_bound_cny": 0.05884000000000001
+    },
+    "steps": 9,
+    "wall_ms": 43219
+  },
+  {
+    "run_id": "payment_guard_r01_test_111",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 109694,
+      "output_tokens": 7921,
+      "cached_input_tokens": 98048,
+      "estimated_cost_cny": 0.045290959999999984,
+      "cost_upper_bound_cny": 0.14137799999999998
+    },
+    "steps": 13,
+    "wall_ms": 67172
+  },
+  {
+    "run_id": "payment_guard_r01_test_112",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 160620,
+      "output_tokens": 7964,
+      "cached_input_tokens": 146176,
+      "estimated_cost_cny": 0.04922352,
+      "cost_upper_bound_cny": 0.192476
+    },
+    "steps": 18,
+    "wall_ms": 85656
+  },
+  {
+    "run_id": "payment_guard_r01_test_113",
+    "variant": "payment_guard",
+    "trial": 1,
+    "task": "retail/test/113",
+    "status": "model_error",
+    "reward": null,
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cached_input_tokens": null,
+      "estimated_cost_cny": null,
+      "cost_upper_bound_cny": null
+    },
+    "steps": 6,
+    "wall_ms": 29812
+  },
+  {
+    "run_id": "payment_guard_r02_test_001",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 76396,
+      "output_tokens": 4404,
+      "cached_input_tokens": 68736,
+      "estimated_cost_cny": 0.026650719999999992,
+      "cost_upper_bound_cny": 0.09401200000000001
+    },
+    "steps": 11,
+    "wall_ms": 59422
+  },
+  {
+    "run_id": "payment_guard_r02_test_005",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/5",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 71298,
+      "output_tokens": 4447,
+      "cached_input_tokens": 64384,
+      "estimated_cost_cny": 0.025989679999999994,
+      "cost_upper_bound_cny": 0.089086
+    },
+    "steps": 11,
+    "wall_ms": 57875
+  },
+  {
+    "run_id": "payment_guard_r02_test_010",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42956,
+      "output_tokens": 2152,
+      "cached_input_tokens": 38784,
+      "estimated_cost_cny": 0.013555679999999999,
+      "cost_upper_bound_cny": 0.051564
+    },
+    "steps": 8,
+    "wall_ms": 46172
+  },
+  {
+    "run_id": "payment_guard_r02_test_012",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 42282,
+      "output_tokens": 2443,
+      "cached_input_tokens": 38784,
+      "estimated_cost_cny": 0.014045680000000001,
+      "cost_upper_bound_cny": 0.052054
+    },
+    "steps": 8,
+    "wall_ms": 40375
+  },
+  {
+    "run_id": "payment_guard_r02_test_013",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53174,
+      "output_tokens": 3335,
+      "cached_input_tokens": 47616,
+      "estimated_cost_cny": 0.019850319999999994,
+      "cost_upper_bound_cny": 0.06651400000000002
+    },
+    "steps": 9,
+    "wall_ms": 48687
+  },
+  {
+    "run_id": "payment_guard_r02_test_015",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/15",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 53857,
+      "output_tokens": 3232,
+      "cached_input_tokens": 48512,
+      "estimated_cost_cny": 0.019243239999999998,
+      "cost_upper_bound_cny": 0.06678500000000001
+    },
+    "steps": 9,
+    "wall_ms": 45594
+  },
+  {
+    "run_id": "payment_guard_r02_test_016",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 80219,
+      "output_tokens": 3786,
+      "cached_input_tokens": 72320,
+      "estimated_cost_cny": 0.0244894,
+      "cost_upper_bound_cny": 0.09536300000000002
+    },
+    "steps": 12,
+    "wall_ms": 59407
+  },
+  {
+    "run_id": "payment_guard_r02_test_017",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 48309,
+      "output_tokens": 1645,
+      "cached_input_tokens": 44672,
+      "estimated_cost_cny": 0.01111044,
+      "cost_upper_bound_cny": 0.054889
+    },
+    "steps": 9,
+    "wall_ms": 48531
+  },
+  {
+    "run_id": "payment_guard_r02_test_018",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 79793,
+      "output_tokens": 4174,
+      "cached_input_tokens": 72320,
+      "estimated_cost_cny": 0.025615400000000003,
+      "cost_upper_bound_cny": 0.096489
+    },
+    "steps": 12,
+    "wall_ms": 69344
+  },
+  {
+    "run_id": "payment_guard_r02_test_023",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 163862,
+      "output_tokens": 4573,
+      "cached_input_tokens": 152704,
+      "estimated_cost_cny": 0.032504080000000005,
+      "cost_upper_bound_cny": 0.182154
+    },
+    "steps": 20,
+    "wall_ms": 115156
+  },
+  {
+    "run_id": "payment_guard_r02_test_025",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 48470,
+      "output_tokens": 2097,
+      "cached_input_tokens": 44800,
+      "estimated_cost_cny": 0.012954,
+      "cost_upper_bound_cny": 0.05685799999999999
+    },
+    "steps": 9,
+    "wall_ms": 42953
+  },
+  {
+    "run_id": "payment_guard_r02_test_027",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/27",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65393,
+      "output_tokens": 4678,
+      "cached_input_tokens": 56960,
+      "estimated_cost_cny": 0.0282842,
+      "cost_upper_bound_cny": 0.084105
+    },
+    "steps": 10,
+    "wall_ms": 62141
+  },
+  {
+    "run_id": "payment_guard_r02_test_029",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 140035,
+      "output_tokens": 6427,
+      "cached_input_tokens": 128384,
+      "estimated_cost_cny": 0.03992668,
+      "cost_upper_bound_cny": 0.165743
+    },
+    "steps": 17,
+    "wall_ms": 82984
+  },
+  {
+    "run_id": "payment_guard_r02_test_031",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 112455,
+      "output_tokens": 3829,
+      "cached_input_tokens": 104960,
+      "estimated_cost_cny": 0.024910199999999997,
+      "cost_upper_bound_cny": 0.12777100000000002
+    },
+    "steps": 17,
+    "wall_ms": 82078
+  },
+  {
+    "run_id": "payment_guard_r02_test_032",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 156004,
+      "output_tokens": 4689,
+      "cached_input_tokens": 146432,
+      "estimated_cost_cny": 0.03125664,
+      "cost_upper_bound_cny": 0.17476000000000003
+    },
+    "steps": 21,
+    "wall_ms": 101969
+  },
+  {
+    "run_id": "payment_guard_r02_test_035",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 118922,
+      "output_tokens": 4549,
+      "cached_input_tokens": 109696,
+      "estimated_cost_cny": 0.029615919999999997,
+      "cost_upper_bound_cny": 0.137118
+    },
+    "steps": 17,
+    "wall_ms": 90578
+  },
+  {
+    "run_id": "payment_guard_r02_test_036",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 130861,
+      "output_tokens": 6007,
+      "cached_input_tokens": 118272,
+      "estimated_cost_cny": 0.03898244,
+      "cost_upper_bound_cny": 0.15488900000000003
+    },
+    "steps": 17,
+    "wall_ms": 84578
+  },
+  {
+    "run_id": "payment_guard_r02_test_037",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 121399,
+      "output_tokens": 6695,
+      "cached_input_tokens": 108544,
+      "estimated_cost_cny": 0.04180588,
+      "cost_upper_bound_cny": 0.14817899999999998
+    },
+    "steps": 15,
+    "wall_ms": 74062
+  },
+  {
+    "run_id": "payment_guard_r02_test_039",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56795,
+      "output_tokens": 2926,
+      "cached_input_tokens": 52352,
+      "estimated_cost_cny": 0.01719404,
+      "cost_upper_bound_cny": 0.068499
+    },
+    "steps": 10,
+    "wall_ms": 50109
+  },
+  {
+    "run_id": "payment_guard_r02_test_040",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54728,
+      "output_tokens": 2092,
+      "cached_input_tokens": 50816,
+      "estimated_cost_cny": 0.01329632,
+      "cost_upper_bound_cny": 0.063096
+    },
+    "steps": 10,
+    "wall_ms": 53954
+  },
+  {
+    "run_id": "payment_guard_r02_test_042",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 117580,
+      "output_tokens": 4976,
+      "cached_input_tokens": 107520,
+      "estimated_cost_cny": 0.0321144,
+      "cost_upper_bound_cny": 0.137484
+    },
+    "steps": 17,
+    "wall_ms": 225875
+  },
+  {
+    "run_id": "payment_guard_r02_test_046",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 92059,
+      "output_tokens": 3527,
+      "cached_input_tokens": 85120,
+      "estimated_cost_cny": 0.0227494,
+      "cost_upper_bound_cny": 0.10616700000000001
+    },
+    "steps": 14,
+    "wall_ms": 68453
+  },
+  {
+    "run_id": "payment_guard_r02_test_050",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 23672,
+      "output_tokens": 1141,
+      "cached_input_tokens": 22016,
+      "estimated_cost_cny": 0.006660319999999999,
+      "cost_upper_bound_cny": 0.028235999999999997
+    },
+    "steps": 5,
+    "wall_ms": 25484
+  },
+  {
+    "run_id": "payment_guard_r02_test_051",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 35976,
+      "output_tokens": 1920,
+      "cached_input_tokens": 32896,
+      "estimated_cost_cny": 0.011417919999999998,
+      "cost_upper_bound_cny": 0.043656
+    },
+    "steps": 7,
+    "wall_ms": 37359
+  },
+  {
+    "run_id": "payment_guard_r02_test_053",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56553,
+      "output_tokens": 2022,
+      "cached_input_tokens": 52224,
+      "estimated_cost_cny": 0.013461479999999998,
+      "cost_upper_bound_cny": 0.064641
+    },
+    "steps": 10,
+    "wall_ms": 48500
+  },
+  {
+    "run_id": "payment_guard_r02_test_054",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 141278,
+      "output_tokens": 5687,
+      "cached_input_tokens": 130304,
+      "estimated_cost_cny": 0.036328080000000006,
+      "cost_upper_bound_cny": 0.16402600000000003
+    },
+    "steps": 19,
+    "wall_ms": 86765
+  },
+  {
+    "run_id": "payment_guard_r02_test_056",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68488,
+      "output_tokens": 3996,
+      "cached_input_tokens": 61824,
+      "estimated_cost_cny": 0.02388448,
+      "cost_upper_bound_cny": 0.08447200000000002
+    },
+    "steps": 11,
+    "wall_ms": 60438
+  },
+  {
+    "run_id": "payment_guard_r02_test_057",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 39892,
+      "output_tokens": 3663,
+      "cached_input_tokens": 35200,
+      "estimated_cost_cny": 0.020048,
+      "cost_upper_bound_cny": 0.054544
+    },
+    "steps": 7,
+    "wall_ms": 48938
+  },
+  {
+    "run_id": "payment_guard_r02_test_059",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/59",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 70567,
+      "output_tokens": 4651,
+      "cached_input_tokens": 63872,
+      "estimated_cost_cny": 0.026576439999999996,
+      "cost_upper_bound_cny": 0.089171
+    },
+    "steps": 11,
+    "wall_ms": 59859
+  },
+  {
+    "run_id": "payment_guard_r02_test_060",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54081,
+      "output_tokens": 3837,
+      "cached_input_tokens": 47488,
+      "estimated_cost_cny": 0.02289076,
+      "cost_upper_bound_cny": 0.06942900000000002
+    },
+    "steps": 8,
+    "wall_ms": 43063
+  },
+  {
+    "run_id": "payment_guard_r02_test_062",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65954,
+      "output_tokens": 2864,
+      "cached_input_tokens": 60672,
+      "estimated_cost_cny": 0.017951439999999996,
+      "cost_upper_bound_cny": 0.07741
+    },
+    "steps": 11,
+    "wall_ms": 60515
+  },
+  {
+    "run_id": "payment_guard_r02_test_064",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 75805,
+      "output_tokens": 3732,
+      "cached_input_tokens": 68864,
+      "estimated_cost_cny": 0.023246279999999998,
+      "cost_upper_bound_cny": 0.09073299999999997
+    },
+    "steps": 12,
+    "wall_ms": 60203
+  },
+  {
+    "run_id": "payment_guard_r02_test_065",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56863,
+      "output_tokens": 3125,
+      "cached_input_tokens": 52992,
+      "estimated_cost_cny": 0.017430839999999996,
+      "cost_upper_bound_cny": 0.069363
+    },
+    "steps": 10,
+    "wall_ms": 60938
+  },
+  {
+    "run_id": "payment_guard_r02_test_066",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 55757,
+      "output_tokens": 2377,
+      "cached_input_tokens": 51584,
+      "estimated_cost_cny": 0.01471268,
+      "cost_upper_bound_cny": 0.06526499999999999
+    },
+    "steps": 10,
+    "wall_ms": 52765
+  },
+  {
+    "run_id": "payment_guard_r02_test_069",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55750,
+      "output_tokens": 2318,
+      "cached_input_tokens": 51456,
+      "estimated_cost_cny": 0.014595120000000001,
+      "cost_upper_bound_cny": 0.06502199999999998
+    },
+    "steps": 10,
+    "wall_ms": 49984
+  },
+  {
+    "run_id": "payment_guard_r02_test_073",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51485,
+      "output_tokens": 1923,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.013767719999999999,
+      "cost_upper_bound_cny": 0.059176999999999993
+    },
+    "steps": 9,
+    "wall_ms": 46125
+  },
+  {
+    "run_id": "payment_guard_r02_test_074",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 138483,
+      "output_tokens": 5284,
+      "cached_input_tokens": 127360,
+      "estimated_cost_cny": 0.0348062,
+      "cost_upper_bound_cny": 0.15961899999999998
+    },
+    "steps": 17,
+    "wall_ms": 80047
+  },
+  {
+    "run_id": "payment_guard_r02_test_077",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43412,
+      "output_tokens": 2120,
+      "cached_input_tokens": 39424,
+      "estimated_cost_cny": 0.01325648,
+      "cost_upper_bound_cny": 0.051892
+    },
+    "steps": 8,
+    "wall_ms": 41031
+  },
+  {
+    "run_id": "payment_guard_r02_test_081",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 78651,
+      "output_tokens": 3835,
+      "cached_input_tokens": 71296,
+      "estimated_cost_cny": 0.024120919999999997,
+      "cost_upper_bound_cny": 0.093991
+    },
+    "steps": 12,
+    "wall_ms": 57187
+  },
+  {
+    "run_id": "payment_guard_r02_test_083",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 74021,
+      "output_tokens": 2771,
+      "cached_input_tokens": 68096,
+      "estimated_cost_cny": 0.01837092,
+      "cost_upper_bound_cny": 0.08510499999999999
+    },
+    "steps": 12,
+    "wall_ms": 58531
+  },
+  {
+    "run_id": "payment_guard_r02_test_084",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64922,
+      "output_tokens": 2434,
+      "cached_input_tokens": 59776,
+      "estimated_cost_cny": 0.016077519999999998,
+      "cost_upper_bound_cny": 0.07465799999999999
+    },
+    "steps": 11,
+    "wall_ms": 50750
+  },
+  {
+    "run_id": "payment_guard_r02_test_094",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 54982,
+      "output_tokens": 2560,
+      "cached_input_tokens": 48768,
+      "estimated_cost_cny": 0.017429359999999998,
+      "cost_upper_bound_cny": 0.06522199999999999
+    },
+    "steps": 9,
+    "wall_ms": 44938
+  },
+  {
+    "run_id": "payment_guard_r02_test_097",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 82625,
+      "output_tokens": 4159,
+      "cached_input_tokens": 75520,
+      "estimated_cost_cny": 0.025251399999999997,
+      "cost_upper_bound_cny": 0.09926100000000002
+    },
+    "steps": 13,
+    "wall_ms": 69016
+  },
+  {
+    "run_id": "payment_guard_r02_test_098",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65741,
+      "output_tokens": 4111,
+      "cached_input_tokens": 58624,
+      "estimated_cost_cny": 0.024733479999999995,
+      "cost_upper_bound_cny": 0.082185
+    },
+    "steps": 10,
+    "wall_ms": 52359
+  },
+  {
+    "run_id": "payment_guard_r02_test_104",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 209385,
+      "output_tokens": 5455,
+      "cached_input_tokens": 197248,
+      "estimated_cost_cny": 0.03790196,
+      "cost_upper_bound_cny": 0.23120500000000005
+    },
+    "steps": 24,
+    "wall_ms": 115672
+  },
+  {
+    "run_id": "payment_guard_r02_test_108",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/108",
+    "status": "env_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 52644,
+      "output_tokens": 3098,
+      "cached_input_tokens": 47232,
+      "estimated_cost_cny": 0.018748640000000004,
+      "cost_upper_bound_cny": 0.065036
+    },
+    "steps": 9,
+    "wall_ms": 56016
+  },
+  {
+    "run_id": "payment_guard_r02_test_109",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 55856,
+      "output_tokens": 1878,
+      "cached_input_tokens": 51200,
+      "estimated_cost_cny": 0.013191999999999999,
+      "cost_upper_bound_cny": 0.06336800000000001
+    },
+    "steps": 10,
+    "wall_ms": 45500
+  },
+  {
+    "run_id": "payment_guard_r02_test_111",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 110392,
+      "output_tokens": 7561,
+      "cached_input_tokens": 98816,
+      "estimated_cost_cny": 0.04379632000000001,
+      "cost_upper_bound_cny": 0.14063599999999998
+    },
+    "steps": 14,
+    "wall_ms": 81907
+  },
+  {
+    "run_id": "payment_guard_r02_test_112",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 127853,
+      "output_tokens": 7964,
+      "cached_input_tokens": 115072,
+      "estimated_cost_cny": 0.04693844,
+      "cost_upper_bound_cny": 0.159709
+    },
+    "steps": 15,
+    "wall_ms": 82984
+  },
+  {
+    "run_id": "payment_guard_r02_test_113",
+    "variant": "payment_guard",
+    "trial": 2,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 161794,
+      "output_tokens": 6693,
+      "cached_input_tokens": 149120,
+      "estimated_cost_cny": 0.04242839999999999,
+      "cost_upper_bound_cny": 0.188566
+    },
+    "steps": 19,
+    "wall_ms": 94359
+  },
+  {
+    "run_id": "payment_guard_r03_test_001",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/1",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 75603,
+      "output_tokens": 3182,
+      "cached_input_tokens": 67840,
+      "estimated_cost_cny": 0.0218478,
+      "cost_upper_bound_cny": 0.088331
+    },
+    "steps": 11,
+    "wall_ms": 55890
+  },
+  {
+    "run_id": "payment_guard_r03_test_005",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/5",
+    "status": "model_error",
+    "reward": null,
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "cached_input_tokens": null,
+      "estimated_cost_cny": null,
+      "cost_upper_bound_cny": null
+    },
+    "steps": 11,
+    "wall_ms": 60797
+  },
+  {
+    "run_id": "payment_guard_r03_test_010",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/10",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 50535,
+      "output_tokens": 2584,
+      "cached_input_tokens": 46336,
+      "estimated_cost_cny": 0.01546172,
+      "cost_upper_bound_cny": 0.06087099999999999
+    },
+    "steps": 9,
+    "wall_ms": 45406
+  },
+  {
+    "run_id": "payment_guard_r03_test_012",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/12",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51895,
+      "output_tokens": 3351,
+      "cached_input_tokens": 47232,
+      "estimated_cost_cny": 0.01901164,
+      "cost_upper_bound_cny": 0.06529900000000001
+    },
+    "steps": 9,
+    "wall_ms": 46547
+  },
+  {
+    "run_id": "payment_guard_r03_test_013",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/13",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 52606,
+      "output_tokens": 3011,
+      "cached_input_tokens": 47232,
+      "estimated_cost_cny": 0.01836264,
+      "cost_upper_bound_cny": 0.06465
+    },
+    "steps": 9,
+    "wall_ms": 45984
+  },
+  {
+    "run_id": "payment_guard_r03_test_015",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/15",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 71338,
+      "output_tokens": 3334,
+      "cached_input_tokens": 64384,
+      "estimated_cost_cny": 0.02157768,
+      "cost_upper_bound_cny": 0.084674
+    },
+    "steps": 11,
+    "wall_ms": 53766
+  },
+  {
+    "run_id": "payment_guard_r03_test_016",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/16",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 93476,
+      "output_tokens": 3626,
+      "cached_input_tokens": 86272,
+      "estimated_cost_cny": 0.023433439999999996,
+      "cost_upper_bound_cny": 0.10798
+    },
+    "steps": 14,
+    "wall_ms": 63375
+  },
+  {
+    "run_id": "payment_guard_r03_test_017",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/17",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 41301,
+      "output_tokens": 1354,
+      "cached_input_tokens": 38144,
+      "estimated_cost_cny": 0.00933588,
+      "cost_upper_bound_cny": 0.046716999999999995
+    },
+    "steps": 8,
+    "wall_ms": 45437
+  },
+  {
+    "run_id": "payment_guard_r03_test_018",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/18",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 107787,
+      "output_tokens": 4797,
+      "cached_input_tokens": 99584,
+      "estimated_cost_cny": 0.029382679999999994,
+      "cost_upper_bound_cny": 0.12697500000000003
+    },
+    "steps": 15,
+    "wall_ms": 74875
+  },
+  {
+    "run_id": "payment_guard_r03_test_023",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/23",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 190019,
+      "output_tokens": 7635,
+      "cached_input_tokens": 176128,
+      "estimated_cost_cny": 0.04795355999999998,
+      "cost_upper_bound_cny": 0.220559
+    },
+    "steps": 20,
+    "wall_ms": 98031
+  },
+  {
+    "run_id": "payment_guard_r03_test_025",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/25",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56180,
+      "output_tokens": 2945,
+      "cached_input_tokens": 51584,
+      "estimated_cost_cny": 0.017407680000000002,
+      "cost_upper_bound_cny": 0.06796
+    },
+    "steps": 10,
+    "wall_ms": 50547
+  },
+  {
+    "run_id": "payment_guard_r03_test_027",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/27",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 88665,
+      "output_tokens": 6437,
+      "cached_input_tokens": 78976,
+      "estimated_cost_cny": 0.03701652,
+      "cost_upper_bound_cny": 0.11441299999999999
+    },
+    "steps": 12,
+    "wall_ms": 59000
+  },
+  {
+    "run_id": "payment_guard_r03_test_029",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/29",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 116038,
+      "output_tokens": 5255,
+      "cached_input_tokens": 105600,
+      "estimated_cost_cny": 0.03357,
+      "cost_upper_bound_cny": 0.13705799999999999
+    },
+    "steps": 15,
+    "wall_ms": 66843
+  },
+  {
+    "run_id": "payment_guard_r03_test_031",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/31",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 126169,
+      "output_tokens": 5055,
+      "cached_input_tokens": 117760,
+      "estimated_cost_cny": 0.0309842,
+      "cost_upper_bound_cny": 0.146389
+    },
+    "steps": 18,
+    "wall_ms": 89422
+  },
+  {
+    "run_id": "payment_guard_r03_test_032",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/32",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 143864,
+      "output_tokens": 4477,
+      "cached_input_tokens": 135296,
+      "estimated_cost_cny": 0.029181919999999997,
+      "cost_upper_bound_cny": 0.16177200000000003
+    },
+    "steps": 20,
+    "wall_ms": 97312
+  },
+  {
+    "run_id": "payment_guard_r03_test_035",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/35",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 109137,
+      "output_tokens": 4342,
+      "cached_input_tokens": 99968,
+      "estimated_cost_cny": 0.02853636,
+      "cost_upper_bound_cny": 0.126505
+    },
+    "steps": 16,
+    "wall_ms": 82109
+  },
+  {
+    "run_id": "payment_guard_r03_test_036",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/36",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 120858,
+      "output_tokens": 6576,
+      "cached_input_tokens": 108032,
+      "estimated_cost_cny": 0.041290639999999997,
+      "cost_upper_bound_cny": 0.147162
+    },
+    "steps": 15,
+    "wall_ms": 72422
+  },
+  {
+    "run_id": "payment_guard_r03_test_037",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/37",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 119334,
+      "output_tokens": 5746,
+      "cached_input_tokens": 107520,
+      "estimated_cost_cny": 0.0369484,
+      "cost_upper_bound_cny": 0.142318
+    },
+    "steps": 15,
+    "wall_ms": 71500
+  },
+  {
+    "run_id": "payment_guard_r03_test_039",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/39",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 69536,
+      "output_tokens": 7029,
+      "cached_input_tokens": 62464,
+      "estimated_cost_cny": 0.036437279999999996,
+      "cost_upper_bound_cny": 0.09765199999999999
+    },
+    "steps": 10,
+    "wall_ms": 60203
+  },
+  {
+    "run_id": "payment_guard_r03_test_040",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/40",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 53755,
+      "output_tokens": 2119,
+      "cached_input_tokens": 50048,
+      "estimated_cost_cny": 0.01318396,
+      "cost_upper_bound_cny": 0.062231
+    },
+    "steps": 10,
+    "wall_ms": 57453
+  },
+  {
+    "run_id": "payment_guard_r03_test_042",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/42",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 142466,
+      "output_tokens": 4938,
+      "cached_input_tokens": 131712,
+      "estimated_cost_cny": 0.03314024000000001,
+      "cost_upper_bound_cny": 0.16221799999999997
+    },
+    "steps": 19,
+    "wall_ms": 95265
+  },
+  {
+    "run_id": "payment_guard_r03_test_046",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/46",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 84124,
+      "output_tokens": 3959,
+      "cached_input_tokens": 77056,
+      "estimated_cost_cny": 0.02444512,
+      "cost_upper_bound_cny": 0.09996000000000001
+    },
+    "steps": 13,
+    "wall_ms": 60703
+  },
+  {
+    "run_id": "payment_guard_r03_test_050",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/50",
+    "status": "env_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 30119,
+      "output_tokens": 1648,
+      "cached_input_tokens": 27136,
+      "estimated_cost_cny": 0.01011772,
+      "cost_upper_bound_cny": 0.03671100000000001
+    },
+    "steps": 6,
+    "wall_ms": 30547
+  },
+  {
+    "run_id": "payment_guard_r03_test_051",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/51",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 36049,
+      "output_tokens": 1744,
+      "cached_input_tokens": 33152,
+      "estimated_cost_cny": 0.01053604,
+      "cost_upper_bound_cny": 0.04302500000000001
+    },
+    "steps": 7,
+    "wall_ms": 40031
+  },
+  {
+    "run_id": "payment_guard_r03_test_053",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/53",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 49856,
+      "output_tokens": 2856,
+      "cached_input_tokens": 45184,
+      "estimated_cost_cny": 0.01699968,
+      "cost_upper_bound_cny": 0.06128
+    },
+    "steps": 9,
+    "wall_ms": 42390
+  },
+  {
+    "run_id": "payment_guard_r03_test_054",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/54",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 152302,
+      "output_tokens": 6352,
+      "cached_input_tokens": 139136,
+      "estimated_cost_cny": 0.04135671999999999,
+      "cost_upper_bound_cny": 0.17771
+    },
+    "steps": 19,
+    "wall_ms": 84390
+  },
+  {
+    "run_id": "payment_guard_r03_test_056",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/56",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 68865,
+      "output_tokens": 3907,
+      "cached_input_tokens": 62848,
+      "estimated_cost_cny": 0.02290196,
+      "cost_upper_bound_cny": 0.084493
+    },
+    "steps": 11,
+    "wall_ms": 56140
+  },
+  {
+    "run_id": "payment_guard_r03_test_057",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/57",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 37633,
+      "output_tokens": 1759,
+      "cached_input_tokens": 34688,
+      "estimated_cost_cny": 0.01067476,
+      "cost_upper_bound_cny": 0.04466900000000001
+    },
+    "steps": 7,
+    "wall_ms": 40500
+  },
+  {
+    "run_id": "payment_guard_r03_test_059",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/59",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 77919,
+      "output_tokens": 6005,
+      "cached_input_tokens": 70912,
+      "estimated_cost_cny": 0.03244523999999999,
+      "cost_upper_bound_cny": 0.101939
+    },
+    "steps": 12,
+    "wall_ms": 70516
+  },
+  {
+    "run_id": "payment_guard_r03_test_060",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/60",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 51758,
+      "output_tokens": 3709,
+      "cached_input_tokens": 46208,
+      "estimated_cost_cny": 0.021310159999999998,
+      "cost_upper_bound_cny": 0.066594
+    },
+    "steps": 8,
+    "wall_ms": 41640
+  },
+  {
+    "run_id": "payment_guard_r03_test_062",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/62",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 66042,
+      "output_tokens": 2691,
+      "cached_input_tokens": 60544,
+      "estimated_cost_cny": 0.01747288,
+      "cost_upper_bound_cny": 0.076806
+    },
+    "steps": 11,
+    "wall_ms": 56453
+  },
+  {
+    "run_id": "payment_guard_r03_test_064",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/64",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 78088,
+      "output_tokens": 4380,
+      "cached_input_tokens": 70912,
+      "estimated_cost_cny": 0.02611424,
+      "cost_upper_bound_cny": 0.09560799999999998
+    },
+    "steps": 12,
+    "wall_ms": 58813
+  },
+  {
+    "run_id": "payment_guard_r03_test_065",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/65",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 74573,
+      "output_tokens": 5096,
+      "cached_input_tokens": 69760,
+      "estimated_cost_cny": 0.026592199999999996,
+      "cost_upper_bound_cny": 0.09495699999999999
+    },
+    "steps": 12,
+    "wall_ms": 75515
+  },
+  {
+    "run_id": "payment_guard_r03_test_066",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/66",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 51621,
+      "output_tokens": 2515,
+      "cached_input_tokens": 47232,
+      "estimated_cost_cny": 0.01539364,
+      "cost_upper_bound_cny": 0.061681
+    },
+    "steps": 9,
+    "wall_ms": 48047
+  },
+  {
+    "run_id": "payment_guard_r03_test_069",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/69",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 56220,
+      "output_tokens": 2354,
+      "cached_input_tokens": 51584,
+      "estimated_cost_cny": 0.015083679999999999,
+      "cost_upper_bound_cny": 0.065636
+    },
+    "steps": 10,
+    "wall_ms": 47844
+  },
+  {
+    "run_id": "payment_guard_r03_test_073",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/73",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43677,
+      "output_tokens": 1950,
+      "cached_input_tokens": 39808,
+      "estimated_cost_cny": 0.01246516,
+      "cost_upper_bound_cny": 0.051477
+    },
+    "steps": 8,
+    "wall_ms": 42359
+  },
+  {
+    "run_id": "payment_guard_r03_test_074",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/74",
+    "status": "user_ended",
+    "reward": 0.0,
+    "usage": {
+      "input_tokens": 137539,
+      "output_tokens": 5389,
+      "cached_input_tokens": 127232,
+      "estimated_cost_cny": 0.03440763999999999,
+      "cost_upper_bound_cny": 0.159095
+    },
+    "steps": 17,
+    "wall_ms": 83843
+  },
+  {
+    "run_id": "payment_guard_r03_test_077",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/77",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 43677,
+      "output_tokens": 2214,
+      "cached_input_tokens": 39680,
+      "estimated_cost_cny": 0.013646599999999998,
+      "cost_upper_bound_cny": 0.05253300000000001
+    },
+    "steps": 8,
+    "wall_ms": 40312
+  },
+  {
+    "run_id": "payment_guard_r03_test_081",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/81",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 74400,
+      "output_tokens": 3010,
+      "cached_input_tokens": 67968,
+      "estimated_cost_cny": 0.019831360000000003,
+      "cost_upper_bound_cny": 0.08644
+    },
+    "steps": 12,
+    "wall_ms": 54109
+  },
+  {
+    "run_id": "payment_guard_r03_test_083",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/83",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 65299,
+      "output_tokens": 2716,
+      "cached_input_tokens": 59776,
+      "estimated_cost_cny": 0.017582519999999997,
+      "cost_upper_bound_cny": 0.07616300000000001
+    },
+    "steps": 11,
+    "wall_ms": 51250
+  },
+  {
+    "run_id": "payment_guard_r03_test_084",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/84",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 72902,
+      "output_tokens": 2778,
+      "cached_input_tokens": 66816,
+      "estimated_cost_cny": 0.01853432,
+      "cost_upper_bound_cny": 0.08401399999999999
+    },
+    "steps": 12,
+    "wall_ms": 57328
+  },
+  {
+    "run_id": "payment_guard_r03_test_094",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/94",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 64273,
+      "output_tokens": 2899,
+      "cached_input_tokens": 57344,
+      "estimated_cost_cny": 0.019671879999999996,
+      "cost_upper_bound_cny": 0.07586899999999999
+    },
+    "steps": 10,
+    "wall_ms": 48000
+  },
+  {
+    "run_id": "payment_guard_r03_test_097",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/97",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 81291,
+      "output_tokens": 3365,
+      "cached_input_tokens": 74240,
+      "estimated_cost_cny": 0.0219958,
+      "cost_upper_bound_cny": 0.094751
+    },
+    "steps": 13,
+    "wall_ms": 64765
+  },
+  {
+    "run_id": "payment_guard_r03_test_098",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/98",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 67259,
+      "output_tokens": 4342,
+      "cached_input_tokens": 59648,
+      "estimated_cost_cny": 0.02617196,
+      "cost_upper_bound_cny": 0.084627
+    },
+    "steps": 10,
+    "wall_ms": 47578
+  },
+  {
+    "run_id": "payment_guard_r03_test_104",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/104",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 216961,
+      "output_tokens": 5891,
+      "cached_input_tokens": 204160,
+      "estimated_cost_cny": 0.0404482,
+      "cost_upper_bound_cny": 0.24052500000000007
+    },
+    "steps": 24,
+    "wall_ms": 114719
+  },
+  {
+    "run_id": "payment_guard_r03_test_108",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/108",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 132436,
+      "output_tokens": 10566,
+      "cached_input_tokens": 116864,
+      "estimated_cost_cny": 0.060173279999999996,
+      "cost_upper_bound_cny": 0.1747
+    },
+    "steps": 13,
+    "wall_ms": 82500
+  },
+  {
+    "run_id": "payment_guard_r03_test_109",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/109",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 58168,
+      "output_tokens": 2736,
+      "cached_input_tokens": 52864,
+      "estimated_cost_cny": 0.01730528,
+      "cost_upper_bound_cny": 0.06911199999999999
+    },
+    "steps": 10,
+    "wall_ms": 53062
+  },
+  {
+    "run_id": "payment_guard_r03_test_111",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/111",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 146396,
+      "output_tokens": 10261,
+      "cached_input_tokens": 131712,
+      "estimated_cost_cny": 0.05836224000000001,
+      "cost_upper_bound_cny": 0.18744000000000002
+    },
+    "steps": 16,
+    "wall_ms": 87328
+  },
+  {
+    "run_id": "payment_guard_r03_test_112",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/112",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 142155,
+      "output_tokens": 8396,
+      "cached_input_tokens": 127616,
+      "estimated_cost_cny": 0.05067532000000001,
+      "cost_upper_bound_cny": 0.175739
+    },
+    "steps": 16,
+    "wall_ms": 78609
+  },
+  {
+    "run_id": "payment_guard_r03_test_113",
+    "variant": "payment_guard",
+    "trial": 3,
+    "task": "retail/test/113",
+    "status": "user_ended",
+    "reward": 1.0,
+    "usage": {
+      "input_tokens": 164785,
+      "output_tokens": 6771,
+      "cached_input_tokens": 151552,
+      "estimated_cost_cny": 0.043348039999999984,
+      "cost_upper_bound_cny": 0.191869
+    },
+    "steps": 19,
+    "wall_ms": 90344
+  }
+]

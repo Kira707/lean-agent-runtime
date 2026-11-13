@@ -1,0 +1,5823 @@
+{
+  "approved": true,
+  "core": {
+    "implementation_commit": "10c70f9c202009b1805aefe2cc0564b618738f48",
+    "configs": {
+      "baseline": {
+        "agent": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_AGENT_API_KEY",
+          "temperature": 0
+        },
+        "user": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_USER_API_KEY",
+          "temperature": 0
+        },
+        "user_frozen_from": "M0",
+        "user_strategy": "llm",
+        "request_timeout_seconds": 60,
+        "max_output_tokens": 4096,
+        "concurrency": 1,
+        "trials": 3,
+        "cost_cap_cny": "15",
+        "prices": {
+          "basis": "user-specified DeepSeek off-peak equivalent; NOT Coding Plan billing",
+          "currency": "CNY",
+          "unit_tokens": 1000000,
+          "cached_input": "0.02",
+          "uncached_input": "1.00",
+          "output": "4.00"
+        },
+        "variant": "baseline",
+        "budget": {
+          "max_steps": 30,
+          "max_model_calls": 80,
+          "max_total_tokens": 400000,
+          "max_wall_seconds": 600
+        },
+        "max_retries": 2,
+        "retry_wait_seconds": 60,
+        "min_request_interval_seconds": 3,
+        "unknown_request_reserve_cny": 1
+      },
+      "payment_guard": {
+        "agent": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_AGENT_API_KEY",
+          "temperature": 0
+        },
+        "user": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_USER_API_KEY",
+          "temperature": 0
+        },
+        "user_frozen_from": "M0",
+        "user_strategy": "llm",
+        "request_timeout_seconds": 60,
+        "max_output_tokens": 4096,
+        "concurrency": 1,
+        "trials": 3,
+        "cost_cap_cny": "15",
+        "prices": {
+          "basis": "user-specified DeepSeek off-peak equivalent; NOT Coding Plan billing",
+          "currency": "CNY",
+          "unit_tokens": 1000000,
+          "cached_input": "0.02",
+          "uncached_input": "1.00",
+          "output": "4.00"
+        },
+        "variant": "payment_guard",
+        "budget": {
+          "max_steps": 30,
+          "max_model_calls": 80,
+          "max_total_tokens": 400000,
+          "max_wall_seconds": 600
+        },
+        "max_retries": 2,
+        "retry_wait_seconds": 60,
+        "min_request_interval_seconds": 3,
+        "unknown_request_reserve_cny": 1,
+        "harness": {
+          "payment_fact_check": true,
+          "max_text_retries": 2
+        }
+      },
+      "all_guards": {
+        "agent": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_AGENT_API_KEY",
+          "temperature": 0
+        },
+        "user": {
+          "model": "deepseek-v4.1-flash",
+          "provider": "openai",
+          "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+          "api_key_env": "ARK_USER_API_KEY",
+          "temperature": 0
+        },
+        "user_frozen_from": "M0",
+        "user_strategy": "llm",
+        "request_timeout_seconds": 60,
+        "max_output_tokens": 4096,
+        "concurrency": 1,
+        "trials": 3,
+        "cost_cap_cny": "15",
+        "prices": {
+          "basis": "user-specified DeepSeek off-peak equivalent; NOT Coding Plan billing",
+          "currency": "CNY",
+          "unit_tokens": 1000000,
+          "cached_input": "0.02",
+          "uncached_input": "1.00",
+          "output": "4.00"
+        },
+        "variant": "all_guards",
+        "budget": {
+          "max_steps": 30,
+          "max_model_calls": 80,
+          "max_total_tokens": 400000,
+          "max_wall_seconds": 600
+        },
+        "max_retries": 2,
+        "retry_wait_seconds": 60,
+        "min_request_interval_seconds": 3,
+        "unknown_request_reserve_cny": 1,
+        "harness": {
+          "payment_fact_check": true,
+          "retail_fact_check": true,
+          "max_text_retries": 2
+        }
+      }
+    },
+    "tasks": [
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      }
+    ],
+    "tau": {
+      "commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+      "patch_sha256": "54c39f07f39969aee7d680d3449314f4bafa50d6f24ffb86e4da985997a749ba",
+      "worktree": "approved_patch"
+    },
+    "policy_sha256": "e50aad2150625a5bcce494fff461b7dd825a7c7f5db1500b5b61b9bf7327b692",
+    "audit": {
+      "shared_extractor": true,
+      "sample_size": 10,
+      "seed": 20261031,
+      "variant": "all_guards",
+      "method": "Read card-related H trajectories directly, without fact extractor; report with F1"
+    },
+    "account_quota_policy": "Pause after current failure; resume unstarted jobs after provider reset plus 5 seconds"
+  },
+  "protocol_hash": "be6ba1b65a621a5729f70bbd02773041f1ea4330cfe3e6b0b9ab89bb8a9827bb",
+  "jobs": [
+    {
+      "run_id": "payment_guard_r01_test_001",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_001",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_001",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_005",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_005",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_005",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_010",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_010",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_010",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_012",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_012",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_012",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_013",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_013",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_013",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_015",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_015",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_015",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_016",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_016",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_016",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_017",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_017",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_017",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_018",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_018",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_018",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_023",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_023",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_023",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_025",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_025",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_025",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_027",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_027",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_027",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_029",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_029",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_029",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_031",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_031",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_031",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_032",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_032",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_032",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_035",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_035",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_035",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_036",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_036",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_036",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_037",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_037",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_037",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_039",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_039",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_039",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_040",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_040",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_040",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_042",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_042",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_042",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_046",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_046",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_046",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_050",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_050",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_050",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_051",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_051",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_051",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_053",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_053",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_053",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_054",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_054",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_054",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_056",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_056",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_056",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_057",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_057",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_057",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_059",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_059",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_059",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_060",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_060",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_060",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_062",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_062",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_062",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_064",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_064",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_064",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_065",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_065",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_065",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_066",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_066",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_066",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_069",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_069",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_069",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_073",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_073",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_073",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_074",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_074",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_074",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_077",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_077",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_077",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_081",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_081",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_081",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_083",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_083",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_083",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_084",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_084",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_084",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_094",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_094",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_094",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_097",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_097",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_097",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_098",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_098",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_098",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_104",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_104",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_104",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_108",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_108",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_108",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_109",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_109",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_109",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r01_test_111",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_111",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_111",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_112",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r01_test_112",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_112",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r01_test_113",
+      "variant": "all_guards",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r01_test_113",
+      "variant": "baseline",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r01_test_113",
+      "variant": "payment_guard",
+      "trial": 1,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_001",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_001",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_001",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_005",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_005",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_005",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_010",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_010",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_010",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_012",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_012",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_012",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_013",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_013",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_013",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_015",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_015",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_015",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_016",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_016",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_016",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_017",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_017",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_017",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_018",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_018",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_018",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_023",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_023",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_023",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_025",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_025",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_025",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_027",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_027",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_027",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_029",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_029",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_029",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_031",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_031",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_031",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_032",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_032",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_032",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_035",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_035",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_035",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_036",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_036",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_036",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_037",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_037",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_037",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_039",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_039",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_039",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_040",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_040",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_040",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_042",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_042",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_042",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_046",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_046",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_046",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_050",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_050",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_050",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_051",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_051",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_051",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_053",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_053",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_053",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_054",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_054",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_054",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_056",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_056",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_056",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_057",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_057",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_057",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_059",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_059",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_059",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_060",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_060",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_060",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_062",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_062",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_062",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_064",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_064",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_064",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_065",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_065",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_065",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_066",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_066",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_066",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_069",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_069",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_069",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_073",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_073",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_073",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_074",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_074",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_074",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_077",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_077",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_077",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_081",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_081",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_081",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_083",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_083",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_083",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_084",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_084",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_084",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_094",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_094",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_094",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_097",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_097",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_097",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_098",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_098",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_098",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_104",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_104",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_104",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_108",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_108",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_108",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_109",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_109",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_109",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_111",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_111",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_111",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r02_test_112",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r02_test_112",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_112",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r02_test_113",
+      "variant": "baseline",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r02_test_113",
+      "variant": "payment_guard",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r02_test_113",
+      "variant": "all_guards",
+      "trial": 2,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_001",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_001",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_001",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 1
+      },
+      "task": "retail/test/1",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_005",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_005",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_005",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 5
+      },
+      "task": "retail/test/5",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_010",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_010",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_010",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 10
+      },
+      "task": "retail/test/10",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_012",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_012",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_012",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 12
+      },
+      "task": "retail/test/12",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_013",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_013",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_013",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 13
+      },
+      "task": "retail/test/13",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_015",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_015",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_015",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 15
+      },
+      "task": "retail/test/15",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_016",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_016",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_016",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 16
+      },
+      "task": "retail/test/16",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_017",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_017",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_017",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 17
+      },
+      "task": "retail/test/17",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_018",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_018",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_018",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 18
+      },
+      "task": "retail/test/18",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_023",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_023",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_023",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 23
+      },
+      "task": "retail/test/23",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_025",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_025",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_025",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 25
+      },
+      "task": "retail/test/25",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_027",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_027",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_027",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 27
+      },
+      "task": "retail/test/27",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_029",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_029",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_029",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 29
+      },
+      "task": "retail/test/29",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_031",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_031",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_031",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 31
+      },
+      "task": "retail/test/31",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_032",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_032",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_032",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 32
+      },
+      "task": "retail/test/32",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_035",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_035",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_035",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 35
+      },
+      "task": "retail/test/35",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_036",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_036",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_036",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 36
+      },
+      "task": "retail/test/36",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_037",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_037",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_037",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 37
+      },
+      "task": "retail/test/37",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_039",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_039",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_039",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 39
+      },
+      "task": "retail/test/39",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_040",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_040",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_040",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 40
+      },
+      "task": "retail/test/40",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_042",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_042",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_042",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 42
+      },
+      "task": "retail/test/42",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_046",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_046",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_046",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 46
+      },
+      "task": "retail/test/46",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_050",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_050",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_050",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 50
+      },
+      "task": "retail/test/50",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_051",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_051",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_051",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 51
+      },
+      "task": "retail/test/51",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_053",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_053",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_053",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 53
+      },
+      "task": "retail/test/53",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_054",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_054",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_054",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 54
+      },
+      "task": "retail/test/54",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_056",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_056",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_056",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 56
+      },
+      "task": "retail/test/56",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_057",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_057",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_057",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 57
+      },
+      "task": "retail/test/57",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_059",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_059",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_059",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 59
+      },
+      "task": "retail/test/59",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_060",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_060",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_060",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 60
+      },
+      "task": "retail/test/60",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_062",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_062",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_062",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 62
+      },
+      "task": "retail/test/62",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_064",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_064",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_064",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 64
+      },
+      "task": "retail/test/64",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_065",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_065",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_065",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 65
+      },
+      "task": "retail/test/65",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_066",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_066",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_066",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 66
+      },
+      "task": "retail/test/66",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_069",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_069",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_069",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 69
+      },
+      "task": "retail/test/69",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_073",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_073",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_073",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 73
+      },
+      "task": "retail/test/73",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_074",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_074",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_074",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 74
+      },
+      "task": "retail/test/74",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_077",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_077",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_077",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 77
+      },
+      "task": "retail/test/77",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_081",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_081",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_081",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 81
+      },
+      "task": "retail/test/81",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_083",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_083",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_083",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 83
+      },
+      "task": "retail/test/83",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_084",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_084",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_084",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 84
+      },
+      "task": "retail/test/84",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_094",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_094",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_094",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 94
+      },
+      "task": "retail/test/94",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_097",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_097",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_097",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 97
+      },
+      "task": "retail/test/97",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_098",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_098",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_098",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 98
+      },
+      "task": "retail/test/98",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_104",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_104",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_104",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 104
+      },
+      "task": "retail/test/104",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_108",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_108",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_108",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 108
+      },
+      "task": "retail/test/108",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_109",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_109",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_109",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 109
+      },
+      "task": "retail/test/109",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "all_guards_r03_test_111",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_111",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_111",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 111
+      },
+      "task": "retail/test/111",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "baseline_r03_test_112",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_112",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_112",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 112
+      },
+      "task": "retail/test/112",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "payment_guard_r03_test_113",
+      "variant": "payment_guard",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "250461488043f135127b662e8c644e64996e9c798a797c9cf25021e7a476a06d"
+    },
+    {
+      "run_id": "all_guards_r03_test_113",
+      "variant": "all_guards",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "25f678ecb68d5fed8b3a17fdbd27ac044e5fecffb38bcd11b9c82c221497f0cb"
+    },
+    {
+      "run_id": "baseline_r03_test_113",
+      "variant": "baseline",
+      "trial": 3,
+      "task_ref": {
+        "domain": "retail",
+        "split": "test",
+        "index": 113
+      },
+      "task": "retail/test/113",
+      "config_hash": "c788394e9fd21f757d451d11aca04551ecee21e5861827f9400910d5feb42afb"
+    }
+  ],
+  "approval_amendment": {
+    "date": "2026-11-02",
+    "authorization": "User confirmed freeze and approved F1 execution; batch scheduling cap only raised to 15 CNY.",
+    "previous_protocol_hash": "7249c767ee65769130774b7d1456386a4fc22bee4b2c9504ec73975d143d5d97",
+    "previous_implementation_commit": "b1ff00eb168487c0f2ae0495831cc0c14758bd3c",
+    "batch_cost_cap_cny": {
+      "before": "9.5",
+      "after": "15"
+    },
+    "implementation_change": "F1 budget-override validation only; Agent/H, data and transport unchanged."
+  }
+}

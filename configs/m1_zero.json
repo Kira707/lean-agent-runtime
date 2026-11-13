@@ -1,0 +1,12 @@
+{
+  "call_config": "configs/m0_pilot.json",
+  "rounds": 3,
+  "concurrency": 1,
+  "cost_cap_cny": "30",
+  "success_audit_seed": 20261030,
+  "prediction": {"pass1": 0.9, "pass3": 0.8},
+  "repair_categories": [1, 2, 3, 5, 6],
+  "minimum_repair_tasks": 4,
+  "audit_count": 10,
+  "minimum_policy_violations": 3
+}

@@ -1,0 +1,6 @@
+[submodule "vendor/tau-bench"]
+	path = vendor/tau-bench
+	url = https://github.com/sierra-research/tau-bench.git
+[submodule "vendor/nanocode"]
+	path = vendor/nanocode
+	url = https://github.com/1rgs/nanocode.git

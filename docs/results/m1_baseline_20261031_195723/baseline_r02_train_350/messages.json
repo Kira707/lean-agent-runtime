@@ -1,0 +1,121 @@
+[
+  {
+    "role": "system",
+    "content": "# Retail agent policy\n\nAs a retail agent, you can help users cancel or modify pending orders, return or exchange delivered orders, modify their default user address, or provide information about their own profile, orders, and related products.\n\n- At the beginning of the conversation, you have to authenticate the user identity by locating their user id via email, or via name + zip code. This has to be done even when the user already provides the user id.\n\n- Once the user has been authenticated, you can provide the user with information about order, product, profile information, e.g. help the user look up order id.\n\n- You can only help one user per conversation (but you can handle multiple requests from the same user), and must deny any requests for tasks related to any other user.\n\n- Before taking consequential actions that update the database (cancel, modify, return, exchange), you have to list the action detail and obtain explicit user confirmation (yes) to proceed.\n\n- You should not make up any information or knowledge or procedures not provided from the user or the tools, or give subjective recommendations or comments.\n\n- You should at most make one tool call at a time, and if you take a tool call, you should not respond to the user at the same time. If you respond to the user, you should not make a tool call.\n\n- You should transfer the user to a human agent if and only if the request cannot be handled within the scope of your actions.\n\n## Domain basic\n\n- All times in the database are EST and 24 hour based. For example \"02:30:00\" means 2:30 AM EST.\n\n- Each user has a profile of its email, default address, user id, and payment methods. Each payment method is either a gift card, a paypal account, or a credit card.\n\n- Our retail store has 50 types of products. For each type of product, there are variant items of different options. For example, for a 't shirt' product, there could be an item with option 'color blue size M', and another item with option 'color red size L'.\n\n- Each product has an unique product id, and each item has an unique item id. They have no relations and should not be confused.\n\n- Each order can be in status 'pending', 'processed', 'delivered', or 'cancelled'. Generally, you can only take action on pending or delivered orders.\n\n- Exchange or modify order tools can only be called once. Be sure that all items to be changed are collected into a list before making the tool call!!!\n\n## Cancel pending order\n\n- An order can only be cancelled if its status is 'pending', and you should check its status before taking the action.\n\n- The user needs to confirm the order id and the reason (either 'no longer needed' or 'ordered by mistake') for cancellation.\n\n- After user confirmation, the order status will be changed to 'cancelled', and the total will be refunded via the original payment method immediately if it is gift card, otherwise in 5 to 7 business days.\n\n## Modify pending order\n\n- An order can only be modified if its status is 'pending', and you should check its status before taking the action.\n\n- For a pending order, you can take actions to modify its shipping address, payment method, or product item options, but nothing else.\n\n### Modify payment\n\n- The user can only choose a single payment method different from the original payment method.\n\n- If the user wants the modify the payment method to gift card, it must have enough balance to cover the total amount.\n\n- After user confirmation, the order status will be kept 'pending'. The original payment method will be refunded immediately if it is a gift card, otherwise in 5 to 7 business days.\n\n### Modify items\n\n- This action can only be called once, and will change the order status to 'pending (items modifed)', and the agent will not be able to modify or cancel the order anymore. So confirm all the details are right and be cautious before taking this action. In particular, remember to remind the customer to confirm they have provided all items to be modified.\n\n- For a pending order, each item can be modified to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n## Return delivered order\n\n- An order can only be returned if its status is 'delivered', and you should check its status before taking the action.\n\n- The user needs to confirm the order id, the list of items to be returned, and a payment method to receive the refund.\n\n- The refund must either go to the original payment method, or an existing gift card.\n\n- After user confirmation, the order status will be changed to 'return requested', and the user will receive an email regarding how to return items.\n\n## Exchange delivered order\n\n- An order can only be exchanged if its status is 'delivered', and you should check its status before taking the action. In particular, remember to remind the customer to confirm they have provided all items to be exchanged.\n\n- For a delivered order, each item can be exchanged to an available new item of the same product but of different product option. There cannot be any change of product types, e.g. modify shirt to shoe.\n\n- The user must provide a payment method to pay or receive refund of the price difference. If the user provides a gift card, it must have enough balance to cover the price difference.\n\n- After user confirmation, the order status will be changed to 'exchange requested', and the user will receive an email regarding how to return items. There is no need to place a new order.\n"
+  },
+  {
+    "role": "user",
+    "content": "Um, hi… I’d like to return an electric kettle, please."
+  },
+  {
+    "content": "Hi! I'd be happy to help you with a return. First, I need to verify your identity. Could you please provide your email address, or alternatively your first name, last name, and zip code?",
+    "reasoning_content": "The user wants to return an electric kettle. First, I need to authenticate the user. I need to find their user id via email or name + zip code.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "My email is yara.johansson5198@example.com."
+  },
+  {
+    "content": "",
+    "reasoning_content": "Let me find the user id by email.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"email\": \"yara.johansson5198@example.com\"}",
+          "name": "find_user_id_by_email"
+        },
+        "id": "call_00_h4pd657xrjryi7ewcrz0yxx3",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_h4pd657xrjryi7ewcrz0yxx3",
+    "name": "find_user_id_by_email",
+    "content": "yara_johansson_9032"
+  },
+  {
+    "content": "Thanks, I've verified your identity. Let me pull up your account details to find the order with the electric kettle.",
+    "reasoning_content": "I have the user id. Now let me get the user details to find the order with the electric kettle.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"user_id\": \"yara_johansson_9032\"}",
+          "name": "get_user_details"
+        },
+        "id": "call_00_8wpiwynqsguilhjekj72np8l",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_8wpiwynqsguilhjekj72np8l",
+    "name": "get_user_details",
+    "content": "{\"name\": {\"first_name\": \"Yara\", \"last_name\": \"Johansson\"}, \"address\": {\"address1\": \"816 Oak Street\", \"address2\": \"Suite 528\", \"city\": \"San Francisco\", \"country\": \"USA\", \"state\": \"CA\", \"zip\": \"94128\"}, \"email\": \"yara.johansson5198@example.com\", \"payment_methods\": {\"credit_card_6699629\": {\"source\": \"credit_card\", \"brand\": \"visa\", \"last_four\": \"6348\", \"id\": \"credit_card_6699629\"}}, \"orders\": [\"#W6904184\", \"#W9538251\"]}"
+  },
+  {
+    "content": "",
+    "reasoning_content": "Let me look at the orders to find the electric kettle. There are two orders. Let me get details on both.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W6904184\"}",
+          "name": "get_order_details"
+        },
+        "id": "call_00_1cqfdago4jfnr195jvwuram0",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_1cqfdago4jfnr195jvwuram0",
+    "name": "get_order_details",
+    "content": "{\"order_id\": \"#W6904184\", \"user_id\": \"yara_johansson_9032\", \"address\": {\"address1\": \"816 Oak Street\", \"address2\": \"Suite 528\", \"city\": \"San Francisco\", \"country\": \"USA\", \"state\": \"CA\", \"zip\": \"94128\"}, \"items\": [{\"name\": \"Electric Kettle\", \"product_id\": \"1075968781\", \"item_id\": \"8142779083\", \"price\": 157.53, \"options\": {\"capacity\": \"1L\", \"material\": \"stainless steel\", \"color\": \"silver\"}}, {\"name\": \"Wireless Earbuds\", \"product_id\": \"9924732112\", \"item_id\": \"6077640618\", \"price\": 242.92, \"options\": {\"color\": \"blue\", \"battery life\": \"8 hours\", \"water resistance\": \"not resistant\"}}], \"fulfillments\": [{\"tracking_id\": [\"724492219985\"], \"item_ids\": [\"8142779083\", \"6077640618\"]}], \"status\": \"delivered\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 400.45, \"payment_method_id\": \"credit_card_6699629\"}]}"
+  },
+  {
+    "content": "I found the electric kettle. Here are the details:\n\n- **Order:** #W6904184 (status: delivered)\n- **Item to return:** Electric Kettle — 1L, stainless steel, silver — $157.53\n- **Original payment method:** Visa credit card ending in 6348\n\nFor the refund, it can go back to your original payment method (the Visa ending in 6348) or an existing gift card. You don't appear to have a gift card on file, so the refund would go to your Visa ending in 6348.\n\nWould you like to proceed with returning this Electric Kettle, with the refund going to your Visa ending in 6348? Please confirm.",
+    "reasoning_content": "Order #W6904184 is delivered and contains the Electric Kettle (item_id 8142779083, price 157.53). The user wants to return it. It's a delivered order, so return is possible.\n\nLet me confirm the details. The user needs to confirm order id, list of items to be returned, and a payment method to receive refund. The refund must go to original payment method or an existing gift card.\n\nThe original payment method was credit_card_6699629. The only payment method on file is credit_card_6699629.\n\nLet me check the other order too? No need - the electric kettle is in order #W6904184. Let me confirm with the user.\n\nI should present the return details and ask for confirmation.",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "Yes, that’s fine—please go ahead with the return to my Visa ending in 6348."
+  },
+  {
+    "content": "",
+    "reasoning_content": "The user confirmed. Let me process the return. Order #W6904184, item 8142779083, payment method credit_card_6699629.",
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"order_id\": \"#W6904184\", \"item_ids\": [\"8142779083\"], \"payment_method_id\": \"credit_card_6699629\"}",
+          "name": "return_delivered_order_items"
+        },
+        "id": "call_00_rdqhv6f3wuzrz16ce3ez1x25",
+        "type": "function"
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_00_rdqhv6f3wuzrz16ce3ez1x25",
+    "name": "return_delivered_order_items",
+    "content": "{\"order_id\": \"#W6904184\", \"user_id\": \"yara_johansson_9032\", \"address\": {\"address1\": \"816 Oak Street\", \"address2\": \"Suite 528\", \"city\": \"San Francisco\", \"country\": \"USA\", \"state\": \"CA\", \"zip\": \"94128\"}, \"items\": [{\"name\": \"Electric Kettle\", \"product_id\": \"1075968781\", \"item_id\": \"8142779083\", \"price\": 157.53, \"options\": {\"capacity\": \"1L\", \"material\": \"stainless steel\", \"color\": \"silver\"}}, {\"name\": \"Wireless Earbuds\", \"product_id\": \"9924732112\", \"item_id\": \"6077640618\", \"price\": 242.92, \"options\": {\"color\": \"blue\", \"battery life\": \"8 hours\", \"water resistance\": \"not resistant\"}}], \"fulfillments\": [{\"tracking_id\": [\"724492219985\"], \"item_ids\": [\"8142779083\", \"6077640618\"]}], \"status\": \"return requested\", \"payment_history\": [{\"transaction_type\": \"payment\", \"amount\": 400.45, \"payment_method_id\": \"credit_card_6699629\"}], \"return_items\": [\"8142779083\"], \"return_payment_method_id\": \"credit_card_6699629\"}"
+  },
+  {
+    "content": "Your return has been successfully requested! ✅\n\n- **Order:** #W6904184 now has status **\"return requested\"**\n- **Item:** Electric Kettle — 1L, stainless steel, silver — $157.53\n- **Refund method:** Visa ending in 6348\n\nYou'll receive a follow-up email with instructions on how and where to return the item. Is there anything else I can help you with?",
+    "reasoning_content": "",
+    "role": "assistant"
+  },
+  {
+    "role": "user",
+    "content": "###STOP###"
+  }
+]

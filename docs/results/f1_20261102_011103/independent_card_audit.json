@@ -1,0 +1,295 @@
+{
+  "complete": true,
+  "reviewer": "Codex assistant direct reading",
+  "reviewed_at": "2026-11-02T22:24:19.479577+08:00",
+  "seed": 20261031,
+  "variant": "all_guards",
+  "required": 10,
+  "inspected_prefix_length": 22,
+  "text_extractor_used_for_selection": false,
+  "text_extractor_used_for_review": false,
+  "llm_judge_api_used": false,
+  "method": "Read all actual user-visible assistant text in frozen candidate order, excluding tool-call text and withheld messages by structure. Read raw tool payment_methods/payment_history to verify bank-card number or credit-card payment-ID claims. Gift/PayPal-only and generic card mentions without identifiers were skipped. No facts.extract or fact_claims was invoked.",
+  "reviews": [
+    {
+      "candidate_position": 1,
+      "run_id": "all_guards_r03_test_051",
+      "visible_bank_message_indices": [
+        11,
+        15
+      ],
+      "payment_method_id": "credit_card_8105988",
+      "actual_last_four": "8484",
+      "source_message_indices": [
+        8,
+        10,
+        14
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Original Mastercard and return target match the same ID; every stated ending is 8484.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 6,
+      "run_id": "all_guards_r02_test_094",
+      "visible_bank_message_indices": [
+        19,
+        23
+      ],
+      "payment_method_id": "credit_card_3677959",
+      "actual_last_four": "1531",
+      "source_message_indices": [
+        8,
+        12,
+        22
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Exchange proposal and completion both use Mastercard ending 1531, matching the original card.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 7,
+      "run_id": "all_guards_r03_test_012",
+      "visible_bank_message_indices": [
+        13,
+        15
+      ],
+      "payment_method_id": "credit_card_3124723",
+      "actual_last_four": "7285",
+      "source_message_indices": [
+        8,
+        10,
+        12
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Original-card statements and rejection of PayPal substitution consistently use ending 7285.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 9,
+      "run_id": "all_guards_r02_test_073",
+      "visible_bank_message_indices": [
+        11,
+        15
+      ],
+      "payment_method_id": "credit_card_6824399",
+      "actual_last_four": "8991",
+      "source_message_indices": [
+        8,
+        10,
+        14
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Return proposal and completed return identify the original Visa ending 8991.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 10,
+      "run_id": "all_guards_r01_test_094",
+      "visible_bank_message_indices": [
+        19,
+        21,
+        25
+      ],
+      "payment_method_id": "credit_card_3677959",
+      "actual_last_four": "1531",
+      "source_message_indices": [
+        8,
+        12,
+        24
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Explicit credit_card_3677959 is labelled as payment ID, while card-ending statements consistently say 1531.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 11,
+      "run_id": "all_guards_r03_test_083",
+      "visible_bank_message_indices": [
+        17
+      ],
+      "payment_method_id": "credit_card_1565124",
+      "actual_last_four": "2732",
+      "source_message_indices": [
+        8,
+        16
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Listed Mastercard ending 2732 is a real available card; the selected tablet refund correctly remains on its gift card.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 14,
+      "run_id": "all_guards_r03_test_010",
+      "visible_bank_message_indices": [
+        13,
+        15,
+        17
+      ],
+      "payment_method_id": "credit_card_3124723",
+      "actual_last_four": "7285",
+      "source_message_indices": [
+        8,
+        10,
+        12
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Repeated Visa ending 7285 is bound to W5490111, with the other order kept as PayPal.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 20,
+      "run_id": "all_guards_r02_test_023",
+      "visible_bank_message_indices": [
+        19,
+        23,
+        27,
+        35
+      ],
+      "payment_method_id": "credit_card_7901829",
+      "actual_last_four": "7312",
+      "source_message_indices": [
+        8,
+        10,
+        12,
+        16,
+        30,
+        32,
+        34
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Helmet, luggage and grill refunds all refer to Visa 7312, including abbreviated Visa 7312 phrases.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 21,
+      "run_id": "all_guards_r02_test_111",
+      "visible_bank_message_indices": [
+        25,
+        29
+      ],
+      "payment_method_id": "credit_card_5694100",
+      "actual_last_four": "3292",
+      "source_message_indices": [
+        8,
+        10,
+        28
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "Tablet modification proposal and completion correctly say Mastercard ending 3292.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    },
+    {
+      "candidate_position": 22,
+      "run_id": "all_guards_r02_test_074",
+      "visible_bank_message_indices": [
+        21
+      ],
+      "payment_method_id": "credit_card_4466831",
+      "actual_last_four": "2697",
+      "source_message_indices": [
+        8,
+        10,
+        24
+      ],
+      "manual_verdict": "consistent",
+      "manual_payment_id_confusion": false,
+      "confidence": "high",
+      "reason": "The offered Visa (...2697) matches the profile; actual chosen refund remains PayPal. Ellipsis notation was read directly.",
+      "frozen_automatic_error_events": 0,
+      "agrees_with_automatic_run_verdict": true
+    }
+  ],
+  "skipped": [
+    {
+      "candidate_position": 2,
+      "run_id": "all_guards_r01_test_083",
+      "reason": "Only gift-card identifiers and generic credit-card mentions in visible text; no bank number/ID."
+    },
+    {
+      "candidate_position": 3,
+      "run_id": "all_guards_r01_test_031",
+      "reason": "Visible identifiers are gift-card IDs only."
+    },
+    {
+      "candidate_position": 4,
+      "run_id": "all_guards_r01_test_056",
+      "reason": "Credit-card mentions are generic; only gift-card ID is actually stated."
+    },
+    {
+      "candidate_position": 5,
+      "run_id": "all_guards_r03_test_016",
+      "reason": "PayPal/gift-card flow, no visible bank number/ID."
+    },
+    {
+      "candidate_position": 8,
+      "run_id": "all_guards_r01_test_005",
+      "reason": "Visible payment identifiers are PayPal only."
+    },
+    {
+      "candidate_position": 12,
+      "run_id": "all_guards_r02_test_017",
+      "reason": "Address-only flow; no visible bank number/ID."
+    },
+    {
+      "candidate_position": 13,
+      "run_id": "all_guards_r01_test_077",
+      "reason": "Visible payment references are PayPal only."
+    },
+    {
+      "candidate_position": 15,
+      "run_id": "all_guards_r02_test_025",
+      "reason": "Unavailable Amex is named without a card number or payment ID."
+    },
+    {
+      "candidate_position": 16,
+      "run_id": "all_guards_r01_test_081",
+      "reason": "PayPal cancellations only."
+    },
+    {
+      "candidate_position": 17,
+      "run_id": "all_guards_r01_test_069",
+      "reason": "Only gift-card ID is stated."
+    },
+    {
+      "candidate_position": 18,
+      "run_id": "all_guards_r03_test_060",
+      "reason": "PayPal item modification, no bank number/ID."
+    },
+    {
+      "candidate_position": 19,
+      "run_id": "all_guards_r02_test_083",
+      "reason": "Gift-card refund; credit card mentioned generically without number/ID."
+    }
+  ],
+  "manual_confusion_runs": 0,
+  "conclusion": "All ten directly read bank-card trajectories are consistent with tool evidence; no payment-ID/card-ending confusion found. Some correct ellipsis/abbreviated card formats are outside the ending-only extractor pattern; no full recall estimate is inferred.",
+  "agreement_runs": 10
+}

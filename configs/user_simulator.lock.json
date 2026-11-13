@@ -1,0 +1,7 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "provider": "openai",
+  "api_base": "https://ark.cn-beijing.volces.com/api/coding/v3",
+  "api_key_env": "ARK_USER_API_KEY",
+  "temperature": 0
+}

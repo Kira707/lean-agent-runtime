@@ -1,0 +1,366 @@
+{
+  "tau_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+  "f1_baseline": {
+    "results_folder": "docs/results/f1_20261102_011103",
+    "variant": "baseline",
+    "recorded_runs": 150,
+    "task_count": 50,
+    "trials_per_task": 3,
+    "protocol_hash": "be6ba1b65a621a5729f70bbd02773041f1ea4330cfe3e6b0b9ab89bb8a9827bb",
+    "implementation_commit": "10c70f9c202009b1805aefe2cc0564b618738f48",
+    "frozen_config_reference": "configs/f1_multi_freeze.json:core.configs.baseline",
+    "reuse_conditions": [
+      "相同50题及每题3次、相同评分／失败计入口径",
+      "相同模型、用户模拟器、参数、提示词、路由、工具schema与policy",
+      "相同Baseline运行路径／停止规则／步数与token等预算",
+      "相同τ版本、批准补丁、数据版本与传输重试配置；费用比较沿用相同价格口径"
+    ],
+    "usage": "满足同一冻结条件时可复用原始Baseline记录，无需重跑；条件改变时只作为历史参考，不冒充新配置的同条件对照。已分析的50题作为已曝光回归／报告资源，不再算新留出题。",
+    "raw_trajectory_uses": [
+      "相同冻结条件及相同50题上的历史回归对照",
+      "新增H前离线测自然问题频率，优先使用无H的Baseline原始轨迹；检测器改版另记版本，不覆写旧结论"
+    ]
+  },
+  "future_retail_holdout": {
+    "domain": "retail",
+    "split": "test",
+    "count": 65,
+    "status": "reserved_unused_in_this_project",
+    "selection": "index range 0..114 minus the fifty fixed F1 test task IDs; registration reads IDs only.",
+    "task_refs": [
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 0
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 2
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 3
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 4
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 6
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 7
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 8
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 9
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 11
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 14
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 19
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 20
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 21
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 22
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 24
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 26
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 28
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 30
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 33
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 34
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 38
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 41
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 43
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 44
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 45
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 47
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 48
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 49
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 52
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 55
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 58
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 61
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 63
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 67
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 68
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 70
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 71
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 72
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 75
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 76
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 78
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 79
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 80
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 82
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 85
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 86
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 87
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 88
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 89
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 90
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 91
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 92
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 93
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 95
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 96
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 99
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 100
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 101
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 102
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 103
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 105
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 106
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 107
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 110
+      },
+      {
+        "domain": "retail",
+        "split": "test",
+        "index": 114
+      }
+    ],
+    "rules": [
+      "本轮仅登记ID，没有运行、读取题意／答案或进行失败分析",
+      "未来新实验冻结后按另行授权的协议使用；不纳入当前开发池",
+      "一旦用于调参或诊断，就标为已曝光，不继续称作新留出集",
+      "留出单位是任务；仍共享同一retail业务数据与政策",
+      "原50题Baseline不能直接替代新留出题的同题Baseline；未来评估按新协议安排同题对照。"
+    ],
+    "authorized_to_run_now": false
+  }
+}

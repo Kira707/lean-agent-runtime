@@ -1,0 +1,138 @@
+diff --git a/tau_bench/envs/__init__.py b/tau_bench/envs/__init__.py
+index e20a98f..1a7e53d 100644
+--- a/tau_bench/envs/__init__.py
++++ b/tau_bench/envs/__init__.py
+@@ -12,6 +12,7 @@ def get_env(
+     task_split: str,
+     user_provider: Optional[str] = None,
+     task_index: Optional[int] = None,
++    user_temperature: Optional[float] = None,
+ ) -> Env:
+     if env_name == "retail":
+         from tau_bench.envs.retail import MockRetailDomainEnv
+@@ -22,6 +23,7 @@ def get_env(
+             task_split=task_split,
+             user_provider=user_provider,
+             task_index=task_index,
++            user_temperature=user_temperature,
+         )
+     elif env_name == "airline":
+         from tau_bench.envs.airline import MockAirlineDomainEnv
+@@ -32,6 +34,7 @@ def get_env(
+             task_split=task_split,
+             user_provider=user_provider,
+             task_index=task_index,
++            user_temperature=user_temperature,
+         )
+     else:
+         raise ValueError(f"Unknown environment: {env_name}")
+diff --git a/tau_bench/envs/airline/env.py b/tau_bench/envs/airline/env.py
+index 4a02922..ddede0b 100644
+--- a/tau_bench/envs/airline/env.py
++++ b/tau_bench/envs/airline/env.py
+@@ -17,6 +17,7 @@ class MockAirlineDomainEnv(Env):
+         user_provider: Optional[str] = None,
+         task_split: str = "test",
+         task_index: Optional[int] = None,
++        user_temperature: Optional[float] = None,
+     ):
+         match task_split:
+             case "test":
+@@ -33,5 +34,6 @@ class MockAirlineDomainEnv(Env):
+             user_model=user_model,
+             user_provider=user_provider,
+             task_index=task_index,
++            user_temperature=user_temperature,
+         )
+         self.terminate_tools = ["transfer_to_human_agents"]
+diff --git a/tau_bench/envs/base.py b/tau_bench/envs/base.py
+index 2461c3e..2313160 100644
+--- a/tau_bench/envs/base.py
++++ b/tau_bench/envs/base.py
+@@ -53,6 +53,7 @@ class Env(object):
+         user_model: str,
+         user_provider: Optional[str] = None,
+         task_index: Optional[int] = None,
++        user_temperature: Optional[float] = None,
+     ) -> None:
+         super().__init__()
+         self.data_load_func = data_load_func
+@@ -71,7 +72,8 @@ class Env(object):
+         self.wiki = wiki
+         self.rules = rules
+         self.user = load_user(
+-            user_strategy=user_strategy, model=user_model, provider=user_provider
++            user_strategy=user_strategy, model=user_model, provider=user_provider,
++            temperature=user_temperature,
+         )
+         self.actions: List[Action] = []
+ 
+diff --git a/tau_bench/envs/retail/env.py b/tau_bench/envs/retail/env.py
+index fc4874c..164951a 100644
+--- a/tau_bench/envs/retail/env.py
++++ b/tau_bench/envs/retail/env.py
+@@ -17,6 +17,7 @@ class MockRetailDomainEnv(Env):
+         user_provider: Optional[str] = None,
+         task_split: str = "test",
+         task_index: Optional[int] = None,
++        user_temperature: Optional[float] = None,
+     ):
+         match task_split:
+             case "test":
+@@ -37,5 +38,6 @@ class MockRetailDomainEnv(Env):
+             user_model=user_model,
+             user_provider=user_provider,
+             task_index=task_index,
++            user_temperature=user_temperature,
+         )
+         self.terminate_tools = ["transfer_to_human_agents"]
+diff --git a/tau_bench/envs/user.py b/tau_bench/envs/user.py
+index eb9ee84..8e7b27d 100644
+--- a/tau_bench/envs/user.py
++++ b/tau_bench/envs/user.py
+@@ -35,21 +35,25 @@ class HumanUserSimulationEnv(BaseUserSimulationEnv):
+ 
+ 
+ class LLMUserSimulationEnv(BaseUserSimulationEnv):
+-    def __init__(self, model: str, provider: str) -> None:
++    def __init__(self, model: str, provider: str, temperature: Optional[float] = None) -> None:
+         super().__init__()
+         self.messages: List[Dict[str, Any]] = []
+         self.model = model
+         self.provider = provider
++        self.temperature = temperature
+         self.total_cost = 0.0
+         self.reset()
+ 
+     def generate_next_message(self, messages: List[Dict[str, Any]]) -> str:
+         res = completion(
+-            model=self.model, custom_llm_provider=self.provider, messages=messages
++            model=self.model, custom_llm_provider=self.provider, messages=messages,
++            **({"temperature": self.temperature} if getattr(self, "temperature", None) is not None else {}),
+         )
+         message = res.choices[0].message
+         self.messages.append(message.model_dump())
+-        self.total_cost = res._hidden_params["response_cost"]
++        cost = res._hidden_params.get("response_cost")
++        previous = getattr(self, "total_cost", 0.0)
++        self.total_cost = previous + cost if previous is not None and cost is not None else None
+         return message.content
+ 
+     def build_system_prompt(self, instruction: Optional[str]) -> str:
+@@ -321,6 +325,7 @@ def load_user(
+     user_strategy: Union[str, UserStrategy],
+     model: Optional[str] = "gpt-4o",
+     provider: Optional[str] = None,
++    temperature: Optional[float] = None,
+ ) -> BaseUserSimulationEnv:
+     if isinstance(user_strategy, str):
+         user_strategy = UserStrategy(user_strategy)
+@@ -331,7 +336,7 @@ def load_user(
+             raise ValueError("LLM user strategy requires a model")
+         if provider is None:
+             raise ValueError("LLM user strategy requires a model provider")
+-        return LLMUserSimulationEnv(model=model, provider=provider)
++        return LLMUserSimulationEnv(model=model, provider=provider, temperature=temperature)
+     elif user_strategy == UserStrategy.REACT:
+         if model is None:
+             raise ValueError("React user strategy requires a model")

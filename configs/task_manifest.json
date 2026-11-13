@@ -1,0 +1,745 @@
+{
+  "tau_commit": "59a200c6d575d595120f1cb70fea53cef0632f6b",
+  "seed": 20261029,
+  "counts": {
+    "retail/dev": 20,
+    "retail/train": 500,
+    "retail/test": 115,
+    "airline/test": 50
+  },
+  "development": [
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 0
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 1
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 2
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 3
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 4
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 5
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 6
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 7
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 8
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 9
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 10
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 11
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 12
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 13
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 14
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 15
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 16
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 17
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 18
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 19
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 44
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 92
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 115
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 133
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 138
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 145
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 178
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 217
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 226
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 234
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 235
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 273
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 327
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 350
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 354
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 356
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 369
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 400
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 452
+    },
+    {
+      "domain": "retail",
+      "split": "train",
+      "index": 496
+    }
+  ],
+  "test": [
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 1
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 5
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 10
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 12
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 13
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 15
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 16
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 17
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 18
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 23
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 25
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 27
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 29
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 31
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 32
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 35
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 36
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 37
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 39
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 40
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 42
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 46
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 50
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 51
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 53
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 54
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 56
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 57
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 59
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 60
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 62
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 64
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 65
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 66
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 69
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 73
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 74
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 77
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 81
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 83
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 84
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 94
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 97
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 98
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 104
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 108
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 109
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 111
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 112
+    },
+    {
+      "domain": "retail",
+      "split": "test",
+      "index": 113
+    }
+  ],
+  "pilot": [
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 4
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 5
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 9
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 14
+    },
+    {
+      "domain": "retail",
+      "split": "dev",
+      "index": 18
+    }
+  ],
+  "airline_holdout": [
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 0
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 1
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 2
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 3
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 4
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 5
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 6
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 7
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 8
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 9
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 10
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 11
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 12
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 13
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 14
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 15
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 16
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 17
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 18
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 19
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 20
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 21
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 22
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 23
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 24
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 25
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 26
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 27
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 28
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 29
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 30
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 31
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 32
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 33
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 34
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 35
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 36
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 37
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 38
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 39
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 40
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 41
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 42
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 43
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 44
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 45
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 46
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 47
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 48
+    },
+    {
+      "domain": "airline",
+      "split": "test",
+      "index": 49
+    }
+  ],
+  "test_execution": "Only after M1 mechanism and configuration freeze",
+  "airline_execution": "All tasks; do not run before M2 transfer evaluation"
+}
